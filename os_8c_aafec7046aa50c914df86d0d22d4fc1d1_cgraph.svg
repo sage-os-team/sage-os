@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="x86_2qemu_2mpe_8c.html#ab701de78cad32896c923ce900087e714" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="mpe_8c.html#ab701de78cad32896c923ce900087e714" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="201,-38.5 201,-57.5 269,-57.5 269,-38.5 201,-38.5"/>
 <text text-anchor="middle" x="235" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">cpu_current</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="x86_2qemu_2trm_8c.html#a6351d8706733262e7e325926b1a9aab7" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="trm_8c.html#a6351d8706733262e7e325926b1a9aab7" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="214.5,-0.5 214.5,-19.5 255.5,-19.5 255.5,-0.5 214.5,-0.5"/>
 <text text-anchor="middle" x="235" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">putch</text>
 </a>
