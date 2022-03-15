@@ -18,10 +18,13 @@ var searchData=
   ['to_5fhost_15',['to_host',['../x86_2qemu_2ioe_8c.html#ad547bdc4b74724fe49a28ebf5b929d6f',1,'ioe.c']]],
   ['tostring_16',['TOSTRING',['../klib-macros_8h.html#a4d95951664739591823c58f26c5d59b8',1,'klib-macros.h']]],
   ['tpr_17',['TPR',['../x86_2qemu_2ioe_8c.html#a0d378efcaaff1100c96bff8856bfc036',1,'ioe.c']]],
-  ['trap_5fframe_18',['trap_frame',['../structtrap__frame.html',1,'']]],
-  ['trap_5fpage_5fstart_19',['TRAP_PAGE_START',['../platform_8c.html#a31b01ab577d3d15153c803814a4bab77',1,'platform.c']]],
-  ['trm_2ec_20',['trm.c',['../x86_2qemu_2trm_8c.html',1,'(Global Namespace)'],['../native_2trm_8c.html',1,'(Global Namespace)']]],
-  ['trm_5finit_21',['trm_init',['../native_2trm_8c.html#a0975420c03d9f359209bdf9cd02779af',1,'trm.c']]],
-  ['tss_22',['tss',['../structcpu__local.html#aba4835737dee38df6da0157ebbf45a06',1,'cpu_local']]],
-  ['type_23',['type',['../amdev_8h.html#acb5cfd209ba75c853d03f701e7f91679',1,'type():&#160;amdev.h'],['../struct_m_p_desc.html#a1d127017fb298b889f4ba24752d08b8e',1,'MPDesc::type()'],['../structgpu__canvas.html#acb5cfd209ba75c853d03f701e7f91679',1,'gpu_canvas::type()'],['../struct_seg_desc.html#ad44b615021ed3ccb734fcaf583ef4a03',1,'SegDesc::type()'],['../struct_gate_desc32.html#ad44b615021ed3ccb734fcaf583ef4a03',1,'GateDesc32::type()'],['../struct_gate_desc64.html#ad44b615021ed3ccb734fcaf583ef4a03',1,'GateDesc64::type()']]]
+  ['trace_5fentry_18',['TRACE_ENTRY',['../logger_8h.html#a467f50c2111ee062ca0db5d54c8d58f6',1,'logger.h']]],
+  ['trace_5fexit_19',['TRACE_EXIT',['../logger_8h.html#aefc1351ad1453affbdc3bf4fbda3be06',1,'logger.h']]],
+  ['trap_5fframe_20',['trap_frame',['../structtrap__frame.html',1,'']]],
+  ['trap_5fpage_5fstart_21',['TRAP_PAGE_START',['../platform_8c.html#a31b01ab577d3d15153c803814a4bab77',1,'platform.c']]],
+  ['trm_2ec_22',['trm.c',['../native_2trm_8c.html',1,'(Global Namespace)'],['../x86_2qemu_2trm_8c.html',1,'(Global Namespace)']]],
+  ['trm_5finit_23',['trm_init',['../native_2trm_8c.html#a0975420c03d9f359209bdf9cd02779af',1,'trm.c']]],
+  ['tss_24',['tss',['../structcpu__local.html#aba4835737dee38df6da0157ebbf45a06',1,'cpu_local']]],
+  ['type_25',['type',['../amdev_8h.html#acb5cfd209ba75c853d03f701e7f91679',1,'type():&#160;amdev.h'],['../struct_gate_desc64.html#ad44b615021ed3ccb734fcaf583ef4a03',1,'GateDesc64::type()'],['../structgpu__canvas.html#acb5cfd209ba75c853d03f701e7f91679',1,'gpu_canvas::type()'],['../struct_seg_desc.html#ad44b615021ed3ccb734fcaf583ef4a03',1,'SegDesc::type()'],['../struct_gate_desc32.html#ad44b615021ed3ccb734fcaf583ef4a03',1,'GateDesc32::type()'],['../struct_m_p_desc.html#a1d127017fb298b889f4ba24752d08b8e',1,'MPDesc::type()']]],
+  ['type_5fstr_26',['type_str',['../logger_8h.html#a40b77b435dfd1866d919d7750236417d',1,'type_str():&#160;logger.c'],['../logger_8c.html#a40b77b435dfd1866d919d7750236417d',1,'type_str():&#160;logger.c']]]
 ];

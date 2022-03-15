@@ -53,9 +53,9 @@ var NAVTREEINDEX =
 [
 "abstract-machine_2am_2src_2x86_2qemu_2boot_2main_8c.html",
 "globals_r.html",
-"platform_8c.html#a9730b6fe94ece5291a8f4e78b5189304",
-"struct_seg_desc.html#a1b064e2f6a6eae2b71e0444d64736a36",
-"x86_2qemu_2trm_8c.html#a12a49ff4d3a586b2315e292c5da3df7e"
+"native_2vme_8c.html#a369266c24eacffb87046522897a570d5",
+"struct_gate_desc64.html#ad44b615021ed3ccb734fcaf583ef4a03",
+"x86_2qemu_2ioe_8c.html#acec8cff36b5e5b2b4bda262480db2af2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

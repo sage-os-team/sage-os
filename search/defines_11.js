@@ -9,5 +9,7 @@ var searchData=
   ['timer_5fhz_6',['TIMER_HZ',['../native_2cte_8c.html#a429afe1773b2b1b37429368dc2691c40',1,'cte.c']]],
   ['tostring_7',['TOSTRING',['../klib-macros_8h.html#a4d95951664739591823c58f26c5d59b8',1,'klib-macros.h']]],
   ['tpr_8',['TPR',['../x86_2qemu_2ioe_8c.html#a0d378efcaaff1100c96bff8856bfc036',1,'ioe.c']]],
-  ['trap_5fpage_5fstart_9',['TRAP_PAGE_START',['../platform_8c.html#a31b01ab577d3d15153c803814a4bab77',1,'platform.c']]]
+  ['trace_5fentry_9',['TRACE_ENTRY',['../logger_8h.html#a467f50c2111ee062ca0db5d54c8d58f6',1,'logger.h']]],
+  ['trace_5fexit_10',['TRACE_EXIT',['../logger_8h.html#aefc1351ad1453affbdc3bf4fbda3be06',1,'logger.h']]],
+  ['trap_5fpage_5fstart_11',['TRAP_PAGE_START',['../platform_8c.html#a31b01ab577d3d15153c803814a4bab77',1,'platform.c']]]
 ];

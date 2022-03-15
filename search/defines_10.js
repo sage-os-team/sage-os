@@ -19,6 +19,8 @@ var searchData=
   ['sts_5fig_16',['STS_IG',['../x86_8h.html#ae459351ebd406535d96968d8bc1b15a1',1,'x86.h']]],
   ['sts_5ft32a_17',['STS_T32A',['../x86_8h.html#a1b27d53cef04c198f3b048345d28016c',1,'x86.h']]],
   ['sts_5ftg_18',['STS_TG',['../x86_8h.html#a52ec5ba90269a2040fc29d6a11e5c14c',1,'x86.h']]],
-  ['svr_19',['SVR',['../x86_2qemu_2ioe_8c.html#a062fc16f4eacb723c76e2c87c8495412',1,'ioe.c']]],
-  ['syscall_5finstr_5flen_20',['SYSCALL_INSTR_LEN',['../native_2cte_8c.html#acc210cf964b6754d26ec9ad923f28535',1,'cte.c']]]
+  ['success_19',['success',['../logger_8h.html#a5b7530a5e9f8f636a623592a951647dc',1,'logger.h']]],
+  ['success_5fdetail_20',['success_detail',['../logger_8h.html#a99ee8e2eafd19315cb11afbe8bd0a9b5',1,'logger.h']]],
+  ['svr_21',['SVR',['../x86_2qemu_2ioe_8c.html#a062fc16f4eacb723c76e2c87c8495412',1,'ioe.c']]],
+  ['syscall_5finstr_5flen_22',['SYSCALL_INSTR_LEN',['../native_2cte_8c.html#acc210cf964b6754d26ec9ad923f28535',1,'cte.c']]]
 ];

@@ -18,7 +18,17 @@ var searchData=
   ['load_5felf64_15',['load_elf64',['../abstract-machine_2am_2src_2x86_2qemu_2boot_2main_8c.html#a64c8b07ebf7ef54bc8c4f300db46716e',1,'main.c']]],
   ['load_5fkernel_16',['load_kernel',['../abstract-machine_2am_2src_2x86_2qemu_2boot_2main_8c.html#a1799aa2202da76699182c2c1654510bb',1,'main.c']]],
   ['load_5fprogram_17',['load_program',['../abstract-machine_2am_2src_2x86_2qemu_2boot_2main_8c.html#a3113c23ca15bbe1871820f4d9ae9c015',1,'main.c']]],
-  ['long_5fdouble_5fbits_18',['long_double_bits',['../unionlong__double__bits.html',1,'']]],
-  ['low_19',['low',['../structuqwords.html#a3f52aa9ba586375f63e65d06e63984b8',1,'uqwords::low()'],['../unionudwords.html#aa8808d04ef26a57c2797d761b736379d',1,'udwords::low()'],['../uniondwords.html#aa8808d04ef26a57c2797d761b736379d',1,'dwords::low()']]],
-  ['lut_20',['lut',['../native_2ioe_8c.html#a219bb62e0fda13228fdefc9199095660',1,'lut():&#160;ioe.c'],['../x86_2qemu_2ioe_8c.html#a219bb62e0fda13228fdefc9199095660',1,'lut():&#160;ioe.c']]]
+  ['log_18',['log',['../logger_8h.html#a579d10697d1c2bb395c3ce49dc020823',1,'logger.h']]],
+  ['log_19',['Log',['../logger_8h.html#a0c38ca677b912fa03329447f5e235dc2',1,'logger.h']]],
+  ['log_5fdetail_20',['log_detail',['../logger_8h.html#ae094691a5e6acc45e0a05462219a8fb7',1,'logger.h']]],
+  ['log_5ferror_21',['LOG_ERROR',['../logger_8h.html#aced66975c154ea0e2a8ec3bc818b4e08',1,'logger.h']]],
+  ['log_5finfo_22',['LOG_INFO',['../logger_8h.html#aeb4f36db01bd128c7afeac5889dac311',1,'logger.h']]],
+  ['log_5fmask_23',['LOG_MASK',['../logger_8h.html#a7664625611df48781e4e2a234ee9c302',1,'logger.h']]],
+  ['log_5fsuccess_24',['LOG_SUCCESS',['../logger_8h.html#a41a95f9112ce515b554571d40c926251',1,'logger.h']]],
+  ['log_5fwarn_25',['LOG_WARN',['../logger_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27',1,'logger.h']]],
+  ['logger_2ec_26',['logger.c',['../logger_8c.html',1,'']]],
+  ['logger_2eh_27',['logger.h',['../logger_8h.html',1,'']]],
+  ['long_5fdouble_5fbits_28',['long_double_bits',['../unionlong__double__bits.html',1,'']]],
+  ['low_29',['low',['../structuqwords.html#a3f52aa9ba586375f63e65d06e63984b8',1,'uqwords::low()'],['../unionudwords.html#aa8808d04ef26a57c2797d761b736379d',1,'udwords::low()'],['../uniondwords.html#aa8808d04ef26a57c2797d761b736379d',1,'dwords::low()']]],
+  ['lut_30',['lut',['../native_2ioe_8c.html#a219bb62e0fda13228fdefc9199095660',1,'lut():&#160;ioe.c'],['../x86_2qemu_2ioe_8c.html#a219bb62e0fda13228fdefc9199095660',1,'lut():&#160;ioe.c']]]
 ];
