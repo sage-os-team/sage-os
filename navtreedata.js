@@ -29,11 +29,11 @@ var NAVTREE =
     [ "测试框架使用说明", "md_test__r_e_a_d_m_e.html", [
       [ "介绍", "md_test__r_e_a_d_m_e.html#autotoc_md3", [
         [ "目录结构说明", "md_test__r_e_a_d_m_e.html#autotoc_md4", null ],
-        [ "运行架构", "md_test__r_e_a_d_m_e.html#autotoc_md5", null ],
-        [ "行为说明", "md_test__r_e_a_d_m_e.html#autotoc_md6", null ]
+        [ "行为说明", "md_test__r_e_a_d_m_e.html#autotoc_md5", null ]
       ] ],
-      [ "使用", "md_test__r_e_a_d_m_e.html#autotoc_md7", [
-        [ "编写单元测试", "md_test__r_e_a_d_m_e.html#autotoc_md8", null ],
+      [ "使用", "md_test__r_e_a_d_m_e.html#autotoc_md6", [
+        [ "编写单元测试", "md_test__r_e_a_d_m_e.html#autotoc_md7", null ],
+        [ "环境变量", "md_test__r_e_a_d_m_e.html#autotoc_md8", null ],
         [ "运行测试", "md_test__r_e_a_d_m_e.html#autotoc_md9", null ]
       ] ],
       [ "问题和注意事项", "md_test__r_e_a_d_m_e.html#autotoc_md10", null ]

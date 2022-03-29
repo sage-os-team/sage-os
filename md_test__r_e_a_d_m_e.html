@@ -129,9 +129,6 @@ $(document).ready(function(){initNavTree('md_test__r_e_a_d_m_e.html',''); initRe
 <div class="line">├── include     # 存放头文件</div>
 <div class="line">└── units       # 存放单元测试</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
-运行架构</h2>
-<p >当前支持 <code>native</code> 和 <code>x86_64-qemu</code>.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
 行为说明</h2>
 <p >下面以 <code>make run</code> 为例，说明当你运行回归测试时发生了什么：</p>
 <ol type="1">
@@ -145,9 +142,9 @@ $(document).ready(function(){initNavTree('md_test__r_e_a_d_m_e.html',''); initRe
 </li>
 <li>打印出测试结果</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 使用</h1>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 编写单元测试</h2>
 <p >你可以在 <code>units</code> 目录下编写单元测试：</p>
 <ul>
@@ -156,12 +153,20 @@ $(document).ready(function(){initNavTree('md_test__r_e_a_d_m_e.html',''); initRe
 </ul>
 <p >你可以参考 <code>add.c</code> 文件，使用数组对多种输入输出进行判断。</p>
 <p >在编写时，如果你的测试比较庞大，建议使用 <code>logger</code> 而不是 <code>printf</code> 打印结果。</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+环境变量</h2>
+<p >你可以直接执行 <code>export</code> 定义环境变量，也可以在 make 命令中加入环境变量。前者有时会更方便。</p>
+<p >可配置的环境变量有：</p>
+<ul>
+<li><code>ARCH</code>: 当前支持 <code>native</code> 和 <code>x86_64-qemu</code>, 若 ARCH 不指定，则默认为 <code>native</code>.</li>
+<li><code>smp</code>: 处理器数量，默认为 1</li>
+<li><code>CFLAGS_EXTRA</code>: gcc 编译时的额外选项，默认为空。例如 <code>"-DSIMULATE_PMM"</code> （已默认加上 <code>-DTEST</code>）</li>
+</ul>
 <h2><a class="anchor" id="autotoc_md9"></a>
 运行测试</h2>
 <p ><b>运行全部测试：</b></p>
 <div class="fragment"><div class="line">make run ARCH=x86_64-qemu</div>
-</div><!-- fragment --><p >若 ARCH 不指定，则默认为 <code>native</code>.</p>
-<p >如果出现错误，可以查看 <code>out</code> 文件夹内的输出内容。</p>
+</div><!-- fragment --><p >如果出现错误，可以查看 <code>out</code> 文件夹内的输出内容。</p>
 <p ><b>编译单个测试：</b></p>
 <div class="fragment"><div class="line">make build ARCH=x86_64-qemu target=xxx</div>
 </div><!-- fragment --><p >必须要指定 <code>target=xxx</code>，其中 <code>xxx</code> 是在 <code>units</code> 目录下的文件名（没有 .c 后缀）。</p>
