@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnoprstuvwxyz",
+  0: "_abcdefghijklmnoprstuvwxyz测",
   1: "_abcdefgiklmpstuv",
   2: "aciklmoprstvx",
   3: "_abcdefghiklmnoprstuvwxy",
@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "cdghis",
   6: "ae",
   7: "_abcdefgiklmnprstuvwx",
-  8: "ks"
+  8: "ks测"
 };
 
 var indexSectionNames =

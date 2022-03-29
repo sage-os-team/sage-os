@@ -26,6 +26,18 @@ var NAVTREE =
 [
   [ "SageOS", "index.html", [
     [ "Kernel 说明", "md_docs_kernel.html", null ],
+    [ "测试框架使用说明", "md_test__r_e_a_d_m_e.html", [
+      [ "介绍", "md_test__r_e_a_d_m_e.html#autotoc_md3", [
+        [ "目录结构说明", "md_test__r_e_a_d_m_e.html#autotoc_md4", null ],
+        [ "运行架构", "md_test__r_e_a_d_m_e.html#autotoc_md5", null ],
+        [ "行为说明", "md_test__r_e_a_d_m_e.html#autotoc_md6", null ]
+      ] ],
+      [ "使用", "md_test__r_e_a_d_m_e.html#autotoc_md7", [
+        [ "编写单元测试", "md_test__r_e_a_d_m_e.html#autotoc_md8", null ],
+        [ "运行测试", "md_test__r_e_a_d_m_e.html#autotoc_md9", null ]
+      ] ],
+      [ "问题和注意事项", "md_test__r_e_a_d_m_e.html#autotoc_md10", null ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -52,9 +64,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "am_8h.html",
-"ioe_8c.html#a75b12a8cb0f0a572d356e542420e3356",
-"struct_gate_desc64.html#a0d2831d72593d18076f5421cb1dd3c50",
-"x86_8h.html#ac521cb17ae679a95547e6981812db7be"
+"ioe_8c.html#a73f717b7aae31163c2a85f67883bf0ed",
+"struct_gate_desc32.html#a2dee666f0c1fe072c549ff86b1d0a8ab",
+"x86_8h.html#aa0cce706d7a3321fdd62e48a74284aa3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
