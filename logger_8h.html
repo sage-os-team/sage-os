@@ -199,14 +199,10 @@ Macros</h2></td></tr>
 <tr class="separator:ad7f0dd4b49e536be3e3430a76c2f933f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f5d91b3c890dbad02bc3988e397cea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#ac2f5d91b3c890dbad02bc3988e397cea">error_detail</a>(format, ...)&#160;&#160;&#160;<a class="el" href="logger_8h.html#ae094691a5e6acc45e0a05462219a8fb7">log_detail</a>(<a class="el" href="logger_8h.html#aced66975c154ea0e2a8ec3bc818b4e08">LOG_ERROR</a>, format, ##__VA_ARGS__)</td></tr>
 <tr class="separator:ac2f5d91b3c890dbad02bc3988e397cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c38ca677b912fa03329447f5e235dc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a0c38ca677b912fa03329447f5e235dc2">Log</a>(format, ...)&#160;&#160;&#160;;</td></tr>
-<tr class="separator:a0c38ca677b912fa03329447f5e235dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a846011f0fa014292e0d5224ffe860bed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a846011f0fa014292e0d5224ffe860bed">CLog</a>(color,  format, ...)</td></tr>
-<tr class="separator:a846011f0fa014292e0d5224ffe860bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a467f50c2111ee062ca0db5d54c8d58f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a467f50c2111ee062ca0db5d54c8d58f6">TRACE_ENTRY</a>&#160;&#160;&#160;((void)0)</td></tr>
+<tr class="memitem:a467f50c2111ee062ca0db5d54c8d58f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a467f50c2111ee062ca0db5d54c8d58f6">TRACE_ENTRY</a>&#160;&#160;&#160;<a class="el" href="logger_8h.html#a8ee1f79b193a2069a4f74c155ce97f66">info</a>(&quot;[trace] %s:entry\n&quot;, __func__)</td></tr>
 <tr class="memdesc:a467f50c2111ee062ca0db5d54c8d58f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether enable function trace.  <a href="logger_8h.html#a467f50c2111ee062ca0db5d54c8d58f6">More...</a><br /></td></tr>
 <tr class="separator:a467f50c2111ee062ca0db5d54c8d58f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc1351ad1453affbdc3bf4fbda3be06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#aefc1351ad1453affbdc3bf4fbda3be06">TRACE_EXIT</a>&#160;&#160;&#160;((void)0)</td></tr>
+<tr class="memitem:aefc1351ad1453affbdc3bf4fbda3be06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#aefc1351ad1453affbdc3bf4fbda3be06">TRACE_EXIT</a>&#160;&#160;&#160;<a class="el" href="logger_8h.html#a8ee1f79b193a2069a4f74c155ce97f66">info</a>(&quot;[trace] %s:exit\n&quot;, __func__)</td></tr>
 <tr class="separator:aefc1351ad1453affbdc3bf4fbda3be06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -321,40 +317,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define BG_YELLOW&#160;&#160;&#160;&quot;\033[1;43m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a846011f0fa014292e0d5224ffe860bed" name="a846011f0fa014292e0d5224ffe860bed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a846011f0fa014292e0d5224ffe860bed">&#9670;&nbsp;</a></span>CLog</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CLog</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">color, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">format, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -601,34 +563,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0c38ca677b912fa03329447f5e235dc2" name="a0c38ca677b912fa03329447f5e235dc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c38ca677b912fa03329447f5e235dc2">&#9670;&nbsp;</a></span>Log</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define Log</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">format, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a579d10697d1c2bb395c3ce49dc020823" name="a579d10697d1c2bb395c3ce49dc020823"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a579d10697d1c2bb395c3ce49dc020823">&#9670;&nbsp;</a></span>log</h2>
 
@@ -848,7 +782,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TRACE_ENTRY&#160;&#160;&#160;((void)0)</td>
+          <td class="memname">#define TRACE_ENTRY&#160;&#160;&#160;<a class="el" href="logger_8h.html#a8ee1f79b193a2069a4f74c155ce97f66">info</a>(&quot;[trace] %s:entry\n&quot;, __func__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -864,7 +798,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TRACE_EXIT&#160;&#160;&#160;((void)0)</td>
+          <td class="memname">#define TRACE_EXIT&#160;&#160;&#160;<a class="el" href="logger_8h.html#a8ee1f79b193a2069a4f74c155ce97f66">info</a>(&quot;[trace] %s:exit\n&quot;, __func__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
