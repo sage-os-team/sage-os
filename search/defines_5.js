@@ -2,8 +2,8 @@ var searchData=
 [
   ['enable_0',['ENABLE',['../ioe_8c.html#a514ad415fb6125ba296793df7d1a468a',1,'ioe.c']]],
   ['eoi_1',['EOI',['../ioe_8c.html#a04c9015da7e7ea45f3b80793809e2d7b',1,'ioe.c']]],
-  ['error_2',['error',['../logger_8h.html#a5b9a882fdc463a3d4dcc99840fd0adb8',1,'logger.h']]],
-  ['error_3',['ERROR',['../ioe_8c.html#a8fe83ac76edc595f6b98cd4a4127aed5',1,'ioe.c']]],
+  ['error_2',['ERROR',['../ioe_8c.html#a8fe83ac76edc595f6b98cd4a4127aed5',1,'ioe.c']]],
+  ['error_3',['error',['../logger_8h.html#a5b9a882fdc463a3d4dcc99840fd0adb8',1,'logger.h']]],
   ['error_5fdetail_4',['error_detail',['../logger_8h.html#ac2f5d91b3c890dbad02bc3988e397cea',1,'logger.h']]],
   ['esr_5',['ESR',['../ioe_8c.html#ae4ad5e3805ffa2cbe03b65421edd8f99',1,'ioe.c']]],
   ['ex_5fde_6',['EX_DE',['../x86_8h.html#a91f6f4c389eaafffb036f301add50f4f',1,'x86.h']]],

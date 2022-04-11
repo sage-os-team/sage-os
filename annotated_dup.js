@@ -3,7 +3,6 @@ var annotated_dup =
     [ "__attribute__", "struct____attribute____.html", "struct____attribute____" ],
     [ "AddrSpace", "struct_addr_space.html", "struct_addr_space" ],
     [ "Area", "struct_area.html", "struct_area" ],
-    [ "arg", "unionarg.html", "unionarg" ],
     [ "BootRecord", "struct_boot_record.html", "struct_boot_record" ],
     [ "cpu_local", "structcpu__local.html", "structcpu__local" ],
     [ "Dcomplex", "struct_dcomplex.html", "struct_dcomplex" ],

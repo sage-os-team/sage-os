@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "_abcdefghijklmnoprstuvwxyz",
   5: "cdghis",
   6: "ae",
-  7: "_abcdefgiklmnprstuvwx",
+  7: "_abcdefgiklmnoprstuvwx",
   8: "ks测"
 };
 
