@@ -1,12 +1,10 @@
 <map id="strncpy" name="strncpy">
-<area shape="rect" id="node1" title=" " alt="" coords="619,56,683,83"/>
-<area shape="rect" id="node2" href="$stdio_8c.html#abf852e417a205348767989f2940059ad" title="write at most n bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="499,56,571,83"/>
-<area shape="rect" id="node3" href="$stdio_8c.html#a01e71b83290d0444ab13988f6d3a7ebd" title=" " alt="" coords="385,5,451,32"/>
-<area shape="rect" id="node4" href="$stdio_8c.html#addca8d5b24829d42f4a3f2831349a316" title=" " alt="" coords="389,56,447,83"/>
-<area shape="rect" id="node5" href="$stdio_8c.html#a44a6734c6f8f81d8e1fa3b9d476c5134" title="write bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="385,107,451,133"/>
-<area shape="rect" id="node6" href="$stdio_8c.html#a55f3d956bb2ba20b5059e9e25484a47f" title=" " alt="" coords="287,107,337,133"/>
-<area shape="rect" id="node7" href="$os_8c.html#a5f9cb32664e017ca15c49ec66e5342e4" title=" " alt="" coords="171,81,232,108"/>
-<area shape="rect" id="node9" href="$pmm_8c.html#a393796678826afd801058312f851ca43" title=" " alt="" coords="164,132,239,159"/>
-<area shape="rect" id="node8" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,81,116,108"/>
-<area shape="rect" id="node10" href="$pmm_8c.html#a7ada9deb0ae8705f2cc158b0283aaeb3" title=" " alt="" coords="5,132,116,159"/>
+<area shape="rect" id="node1" title=" " alt="" coords="605,56,669,83"/>
+<area shape="rect" id="node2" href="$stdio_8c.html#abf852e417a205348767989f2940059ad" title="write at most n bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="485,56,557,83"/>
+<area shape="rect" id="node3" href="$stdio_8c.html#a01e71b83290d0444ab13988f6d3a7ebd" title=" " alt="" coords="372,5,437,32"/>
+<area shape="rect" id="node4" href="$stdio_8c.html#addca8d5b24829d42f4a3f2831349a316" title=" " alt="" coords="375,56,434,83"/>
+<area shape="rect" id="node5" href="$stdio_8c.html#a44a6734c6f8f81d8e1fa3b9d476c5134" title="write bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="372,107,437,133"/>
+<area shape="rect" id="node6" href="$stdio_8c.html#a55f3d956bb2ba20b5059e9e25484a47f" title=" " alt="" coords="273,107,324,133"/>
+<area shape="rect" id="node7" href="$os_8c.html#a5f9cb32664e017ca15c49ec66e5342e4" title=" " alt="" coords="164,107,225,133"/>
+<area shape="rect" id="node8" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,107,116,133"/>
 </map>

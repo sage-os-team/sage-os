@@ -11,9 +11,10 @@ var searchData=
   ['unused_8',['UNUSED',['../int64_8c.html#addf5ec070e9499d36b7f2009ce736076',1,'int64.c']]],
   ['uptsc_9',['uptsc',['../ioe_8c.html#a3780e7fd9807d9a77d6006c1660e7523',1,'ioe.c']]],
   ['uqwords_10',['uqwords',['../structuqwords.html',1,'']]],
-  ['usel_11',['USEL',['../x86_8h.html#a0c89aeca9ab959fde3684812c2971625',1,'x86.h']]],
-  ['user_5fentry_12',['user_entry',['../mpe_8c.html#a08e351a912f60253ccc758c8accc24a9',1,'mpe.c']]],
-  ['user_5fhandler_13',['user_handler',['../cte_8c.html#a3f2ad7c510d9238956e365ff4ecfe211',1,'cte.c']]],
-  ['uvm_14',['uvm',['../structcpu__local.html#a4e528be799c4158b750e28fb3a56a704',1,'cpu_local']]],
-  ['uvm_5farea_15',['uvm_area',['../vme_8c.html#a6f265a39e56522831f14451e3a8a25b5',1,'vme.c']]]
+  ['used_11',['used',['../structchunk.html#accd366cbfd7b8a1b904ca4177a894f95',1,'chunk']]],
+  ['usel_12',['USEL',['../x86_8h.html#a0c89aeca9ab959fde3684812c2971625',1,'x86.h']]],
+  ['user_5fentry_13',['user_entry',['../mpe_8c.html#a08e351a912f60253ccc758c8accc24a9',1,'mpe.c']]],
+  ['user_5fhandler_14',['user_handler',['../cte_8c.html#a3f2ad7c510d9238956e365ff4ecfe211',1,'cte.c']]],
+  ['uvm_15',['uvm',['../structcpu__local.html#a4e528be799c4158b750e28fb3a56a704',1,'cpu_local']]],
+  ['uvm_5farea_16',['uvm_area',['../vme_8c.html#a6f265a39e56522831f14451e3a8a25b5',1,'vme.c']]]
 ];

@@ -1,0 +1,6 @@
+<map id="kernel/include/list.h" name="kernel/include/list.h">
+<area shape="rect" id="node1" title="double circular linked list impl without concurrency" alt="" coords="77,5,210,32"/>
+<area shape="rect" id="node2" href="$buddy_8h.html" title=" " alt="" coords="68,80,219,107"/>
+<area shape="rect" id="node3" href="$buddy_8c.html" title="impl of buddy system" alt="" coords="5,155,132,181"/>
+<area shape="rect" id="node4" href="$pmm_8c.html" title=" " alt="" coords="157,155,279,181"/>
+</map>

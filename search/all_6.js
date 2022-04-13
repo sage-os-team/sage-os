@@ -18,5 +18,7 @@ var searchData=
   ['fnalias_15',['FNALIAS',['../int64_8c.html#a2bd7a25a3384fa411cf641573512b52b',1,'int64.c']]],
   ['framebuffer_16',['framebuffer',['../structvbe__info.html#a72f2ff083631702e83d597be300061c9',1,'vbe_info::framebuffer()'],['../ioe_8c.html#a72f2ff083631702e83d597be300061c9',1,'framebuffer():&#160;ioe.c']]],
   ['free_17',['free',['../klib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c'],['../stdlib_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c']]],
-  ['freq_5fmhz_18',['freq_mhz',['../ioe_8c.html#aad9edfc0ad47b1de64101b37303f3c1f',1,'ioe.c']]]
+  ['free_5flist_18',['free_list',['../structfree__list.html#a338aea6183dad7ec975539e4e1def837',1,'free_list::free_list()'],['../structfree__list.html',1,'free_list']]],
+  ['free_5flists_19',['free_lists',['../structpmm__pool.html#a87d3039a28511f9847305331f764702e',1,'pmm_pool']]],
+  ['freq_5fmhz_20',['freq_mhz',['../ioe_8c.html#aad9edfc0ad47b1de64101b37303f3c1f',1,'ioe.c']]]
 ];

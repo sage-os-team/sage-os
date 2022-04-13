@@ -20,5 +20,6 @@ var searchData=
   ['sts_5ftg_17',['STS_TG',['../x86_8h.html#a52ec5ba90269a2040fc29d6a11e5c14c',1,'x86.h']]],
   ['success_18',['success',['../logger_8h.html#a5b7530a5e9f8f636a623592a951647dc',1,'logger.h']]],
   ['success_5fdetail_19',['success_detail',['../logger_8h.html#a99ee8e2eafd19315cb11afbe8bd0a9b5',1,'logger.h']]],
-  ['svr_20',['SVR',['../ioe_8c.html#a062fc16f4eacb723c76e2c87c8495412',1,'ioe.c']]]
+  ['svr_20',['SVR',['../ioe_8c.html#a062fc16f4eacb723c76e2c87c8495412',1,'ioe.c']]],
+  ['sz_5fpage_21',['SZ_PAGE',['../buddy_8h.html#afacf184e439fc3b5c6c58c6be6ce488c',1,'buddy.h']]]
 ];

@@ -5,13 +5,14 @@ var searchData=
   ['off_5f15_5f0_2',['off_15_0',['../struct_gate_desc32.html#aa327cf2984f25a01a5a8e3d4188b3cab',1,'GateDesc32::off_15_0()'],['../struct_gate_desc64.html#aa327cf2984f25a01a5a8e3d4188b3cab',1,'GateDesc64::off_15_0()']]],
   ['off_5f31_5f16_3',['off_31_16',['../struct_gate_desc32.html#ac4eda34e0186fdd496030d660371342e',1,'GateDesc32::off_31_16()'],['../struct_gate_desc64.html#ac4eda34e0186fdd496030d660371342e',1,'GateDesc64::off_31_16()']]],
   ['off_5f63_5f32_4',['off_63_32',['../struct_gate_desc64.html#ae800e44ad8dc731977a727f009f2e228',1,'GateDesc64']]],
-  ['os_2ec_5',['os.c',['../os_8c.html',1,'']]],
-  ['os_5finit_6',['os_init',['../os_8c.html#aef4448ba4711b237d8254529f2a4b621',1,'os.c']]],
-  ['os_5frun_7',['os_run',['../os_8c.html#a5f9cb32664e017ca15c49ec66e5342e4',1,'os.c']]],
-  ['othercpu_5fentry_8',['othercpu_entry',['../mpe_8c.html#aec8f7f25be4263648b704092672a566b',1,'mpe.c']]],
-  ['outb_9',['outb',['../x86_8h.html#ade961b44e45ddacbc3c3b7609cf36dc6',1,'x86.h']]],
-  ['outbuf_10',['outbuf',['../stdio_8c.html#a9502705e82b89fd3463213f2b7a8f180',1,'stdio.c']]],
-  ['outbuf_5fsize_11',['OUTBUF_SIZE',['../stdio_8c.html#a3df829d6427c2cd4fbd387268040cc65',1,'stdio.c']]],
-  ['outl_12',['outl',['../x86_8h.html#a6732a48aa03137d406ae5f7b346320f3',1,'x86.h']]],
-  ['outw_13',['outw',['../x86_8h.html#af92fc55c49437b9152499a13ba2b6585',1,'x86.h']]]
+  ['order_5',['order',['../structchunk.html#aa44597f38af03f4bb6ef069ba7efb24c',1,'chunk']]],
+  ['os_2ec_6',['os.c',['../os_8c.html',1,'']]],
+  ['os_5finit_7',['os_init',['../os_8c.html#aef4448ba4711b237d8254529f2a4b621',1,'os.c']]],
+  ['os_5frun_8',['os_run',['../os_8c.html#a5f9cb32664e017ca15c49ec66e5342e4',1,'os.c']]],
+  ['othercpu_5fentry_9',['othercpu_entry',['../mpe_8c.html#aec8f7f25be4263648b704092672a566b',1,'mpe.c']]],
+  ['outb_10',['outb',['../x86_8h.html#ade961b44e45ddacbc3c3b7609cf36dc6',1,'x86.h']]],
+  ['outbuf_11',['outbuf',['../stdio_8c.html#a9502705e82b89fd3463213f2b7a8f180',1,'stdio.c']]],
+  ['outbuf_5fsize_12',['OUTBUF_SIZE',['../stdio_8c.html#a3df829d6427c2cd4fbd387268040cc65',1,'stdio.c']]],
+  ['outl_13',['outl',['../x86_8h.html#a6732a48aa03137d406ae5f7b346320f3',1,'x86.h']]],
+  ['outw_14',['outw',['../x86_8h.html#af92fc55c49437b9152499a13ba2b6585',1,'x86.h']]]
 ];

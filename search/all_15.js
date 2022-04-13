@@ -7,12 +7,13 @@ var searchData=
   ['vbuf_5fsize_4',['VBUF_SIZE',['../stdio_8c.html#a068ff316f8de266228fcf939ebbd97f5',1,'stdio.c']]],
   ['ver_5',['VER',['../ioe_8c.html#a98ed931f97fef7e06e3ea441d0326c67',1,'ioe.c']]],
   ['version_6',['version',['../struct_m_p_conf.html#ab22abc2906422da61885ac6c8e6a1a59',1,'MPConf']]],
-  ['vm_5farea_7',['vm_area',['../structvm__area.html',1,'']]],
-  ['vm_5fareas_8',['vm_areas',['../vme_8c.html#aabd6d0176a15f8db91d5f77151241689',1,'vme.c']]],
-  ['vme_2ec_9',['vme.c',['../vme_8c.html',1,'']]],
-  ['vme_5finit_10',['vme_init',['../am_8h.html#ad494a936062fad2d199a556be02e2233',1,'vme_init(void *(*pgalloc)(int), void(*pgfree)(void *)):&#160;am.h'],['../vme_8c.html#a102a03634ce449f78facc63eee85d9b8',1,'vme_init(void *(*_pgalloc)(int size), void(*_pgfree)(void *)):&#160;vme.c']]],
-  ['vmem_11',['vmem',['../ioe_8c.html#ae7e4d867b798ce0384109f0f80f2c4a4',1,'ioe.c']]],
-  ['vmem_5fsize_12',['VMEM_SIZE',['../ioe_8c.html#ab0e414a465e494b9a04280c047f7a087',1,'ioe.c']]],
-  ['vsnprintf_13',['vsnprintf',['../klib_8h.html#a2cadafbeb2d6e0d5781f6e5106d41fc2',1,'vsnprintf(char *str, size_t size, const char *format, va_list ap):&#160;stdio.c'],['../stdio_8c.html#abf852e417a205348767989f2940059ad',1,'vsnprintf(char *out, size_t n, const char *fmt, va_list ap):&#160;stdio.c']]],
-  ['vsprintf_14',['vsprintf',['../klib_8h.html#aab3db67c98c32122fcb3d076d4207bbc',1,'vsprintf(char *str, const char *format, va_list ap):&#160;stdio.c'],['../stdio_8c.html#a44a6734c6f8f81d8e1fa3b9d476c5134',1,'vsprintf(char *out, const char *fmt, va_list ap):&#160;stdio.c']]]
+  ['virt2chunk_7',['virt2chunk',['../buddy_8c.html#ad1eda4b9fbb516f58586845217f68723',1,'virt2chunk(struct pmm_pool *mm_pool, void *virt):&#160;buddy.c'],['../buddy_8h.html#ad1eda4b9fbb516f58586845217f68723',1,'virt2chunk(struct pmm_pool *mm_pool, void *virt):&#160;buddy.c']]],
+  ['vm_5farea_8',['vm_area',['../structvm__area.html',1,'']]],
+  ['vm_5fareas_9',['vm_areas',['../vme_8c.html#aabd6d0176a15f8db91d5f77151241689',1,'vme.c']]],
+  ['vme_2ec_10',['vme.c',['../vme_8c.html',1,'']]],
+  ['vme_5finit_11',['vme_init',['../am_8h.html#ad494a936062fad2d199a556be02e2233',1,'vme_init(void *(*pgalloc)(int), void(*pgfree)(void *)):&#160;am.h'],['../vme_8c.html#a102a03634ce449f78facc63eee85d9b8',1,'vme_init(void *(*_pgalloc)(int size), void(*_pgfree)(void *)):&#160;vme.c']]],
+  ['vmem_12',['vmem',['../ioe_8c.html#ae7e4d867b798ce0384109f0f80f2c4a4',1,'ioe.c']]],
+  ['vmem_5fsize_13',['VMEM_SIZE',['../ioe_8c.html#ab0e414a465e494b9a04280c047f7a087',1,'ioe.c']]],
+  ['vsnprintf_14',['vsnprintf',['../klib_8h.html#a2cadafbeb2d6e0d5781f6e5106d41fc2',1,'vsnprintf(char *str, size_t size, const char *format, va_list ap):&#160;stdio.c'],['../stdio_8c.html#abf852e417a205348767989f2940059ad',1,'vsnprintf(char *out, size_t n, const char *fmt, va_list ap):&#160;stdio.c']]],
+  ['vsprintf_15',['vsprintf',['../klib_8h.html#aab3db67c98c32122fcb3d076d4207bbc',1,'vsprintf(char *str, const char *format, va_list ap):&#160;stdio.c'],['../stdio_8c.html#a44a6734c6f8f81d8e1fa3b9d476c5134',1,'vsprintf(char *out, const char *fmt, va_list ap):&#160;stdio.c']]]
 ];
