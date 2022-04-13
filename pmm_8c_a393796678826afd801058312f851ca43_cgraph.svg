@@ -80,7 +80,7 @@
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
-<g id="a_node16"><a xlink:href="string_8c.html#a7a8fd43b209c9ea19addab23a5f23995" target="_top" xlink:title=" ">
+<g id="a_node16"><a xlink:href="string_8c.html#a313175102214d45434bf045db18dddf0" target="_top" xlink:title="Make n bits are the character c.">
 <polygon fill="none" stroke="black" points="209.5,-0.5 209.5,-19.5 261.5,-19.5 261.5,-0.5 209.5,-0.5"/>
 <text text-anchor="middle" x="235.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">memset</text>
 </a>

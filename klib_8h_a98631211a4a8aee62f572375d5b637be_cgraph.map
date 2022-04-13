@@ -1,9 +1,8 @@
 <map id="printf" name="printf">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,56,108"/>
-<area shape="rect" id="node2" href="$stdio_8c.html#a44a6734c6f8f81d8e1fa3b9d476c5134" title="write bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="104,81,169,108"/>
-<area shape="rect" id="node3" href="$stdio_8c.html#abf852e417a205348767989f2940059ad" title="write at most n bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="217,81,289,108"/>
-<area shape="rect" id="node4" href="$stdio_8c.html#af978fa291399f159cc8d94cb650cef4d" title="print padding char" alt="" coords="341,5,412,32"/>
-<area shape="rect" id="node5" href="$stdio_8c.html#a0e2811092b514de48ac2dd675d6cf2b4" title="print decimal into buffer,return length" alt="" coords="337,56,416,83"/>
-<area shape="rect" id="node6" href="$string_8c.html#aa383452fe445bfae989358c9d7d96f4f" title=" " alt="" coords="349,107,404,133"/>
-<area shape="rect" id="node7" href="$string_8c.html#a82f08f2390a9067f3c94b638e90e03bd" title=" " alt="" coords="345,157,409,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node2" href="$stdio_8c.html#a44a6734c6f8f81d8e1fa3b9d476c5134" title="write bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="104,56,169,83"/>
+<area shape="rect" id="node3" href="$stdio_8c.html#abf852e417a205348767989f2940059ad" title="write at most n bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="217,56,289,83"/>
+<area shape="rect" id="node4" href="$stdio_8c.html#a0e2811092b514de48ac2dd675d6cf2b4" title="print decimal into buffer,return length" alt="" coords="337,5,416,32"/>
+<area shape="rect" id="node5" href="$string_8c.html#aa383452fe445bfae989358c9d7d96f4f" title="Return the length of the string s." alt="" coords="349,56,404,83"/>
+<area shape="rect" id="node6" href="$string_8c.html#a82f08f2390a9067f3c94b638e90e03bd" title="Copy at most n bytes from string src to dst, returning a pointer to the start of dst." alt="" coords="345,107,409,133"/>
 </map>

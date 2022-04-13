@@ -10,5 +10,6 @@ var searchData=
   ['fg_5fyellow_7',['FG_YELLOW',['../logger_8h.html#a266aa539aa271da1b1f711d2413b1bfa',1,'logger.h']]],
   ['fixed_8',['FIXED',['../ioe_8c.html#a20207ffc8e6f0bdcefb5c42a5b5c3fb8',1,'ioe.c']]],
   ['fl_5fif_9',['FL_IF',['../x86_8h.html#ab481068357bb42797aafe91864a2d085',1,'x86.h']]],
-  ['fnalias_10',['FNALIAS',['../int64_8c.html#a2bd7a25a3384fa411cf641573512b52b',1,'int64.c']]]
+  ['fnalias_10',['FNALIAS',['../int64_8c.html#a2bd7a25a3384fa411cf641573512b52b',1,'int64.c']]],
+  ['format_5ferror_11',['FORMAT_ERROR',['../stdio_8c.html#aee85ee662a975234843514ad1ad3f1d1',1,'stdio.c']]]
 ];

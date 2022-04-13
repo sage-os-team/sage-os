@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Return the length of the string s.">
 <polygon fill="#bfbfbf" stroke="black" points="450,-57.5 450,-76.5 491,-76.5 491,-57.5 450,-57.5"/>
 <text text-anchor="middle" x="470.5" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">strlen</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="string_8c.html#a9517a4a50477f651785c09b27826d8ce" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="string_8c.html#a9517a4a50477f651785c09b27826d8ce" target="_top" xlink:title="Append the string src to the string dst, returning a pointer dst.">
 <polygon fill="none" stroke="black" points="366.5,-76.5 366.5,-95.5 407.5,-95.5 407.5,-76.5 366.5,-76.5"/>
 <text text-anchor="middle" x="387" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">strcat</text>
 </a>

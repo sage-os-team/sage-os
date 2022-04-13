@@ -1,8 +1,10 @@
 var stdio_8c =
 [
+    [ "add_pad", "stdio_8c.html#a0bd9cc44d7d24fe68dbf48988d3444de", null ],
+    [ "add_single_pad", "stdio_8c.html#a0b52c7746800cb4200f0b4abc4644288", null ],
+    [ "FORMAT_ERROR", "stdio_8c.html#aee85ee662a975234843514ad1ad3f1d1", null ],
     [ "OUTBUF_SIZE", "stdio_8c.html#a3df829d6427c2cd4fbd387268040cc65", null ],
     [ "VBUF_SIZE", "stdio_8c.html#a068ff316f8de266228fcf939ebbd97f5", null ],
-    [ "add_pad", "stdio_8c.html#af978fa291399f159cc8d94cb650cef4d", null ],
     [ "print_num", "stdio_8c.html#a0e2811092b514de48ac2dd675d6cf2b4", null ],
     [ "printf", "stdio_8c.html#a55f3d956bb2ba20b5059e9e25484a47f", null ],
     [ "snprintf", "stdio_8c.html#a01e71b83290d0444ab13988f6d3a7ebd", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"x86-qemu_8h.html#a6dbc147226148b9a52e4ddb3fcfb3f9f":[3,0,0,0,1,0,0,5,25],
+"x86-qemu_8h.html#a75e130ff99ad31f9a1df206b5ff8252a":[3,0,0,0,1,0,0,5,18],
 "x86-qemu_8h.html#a762fba92887f89bd1d06481975b0e4f1":[3,0,0,0,1,0,0,5,30],
 "x86-qemu_8h.html#a82e59fca1d69cfb5f8099aff9aa48810":[3,0,0,0,1,0,0,5,6],
 "x86-qemu_8h.html#a85b694d969eb01e547197c21db219f4b":[3,0,0,0,1,0,0,5,16],

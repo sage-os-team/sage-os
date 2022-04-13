@@ -113,35 +113,47 @@ $(document).ready(function(){initNavTree('string_8c.html',''); initResizable(); 
   <div class="headertitle"><div class="title">string.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="klib_8h_source.html">klib.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="klib_8h_source.html">klib.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="klib-macros_8h_source.html">klib-macros.h</a>&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for string.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string_8c__incl.svg" width="362" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="string_8c__incl.svg" width="458" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa383452fe445bfae989358c9d7d96f4f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a> (const char *s)</td></tr>
+<tr class="memdesc:aa383452fe445bfae989358c9d7d96f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the length of the string s.  <a href="string_8c.html#aa383452fe445bfae989358c9d7d96f4f">More...</a><br /></td></tr>
 <tr class="separator:aa383452fe445bfae989358c9d7d96f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66e363031a1cbf510d5eafe40d49a790"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a66e363031a1cbf510d5eafe40d49a790">strcpy</a> (char *dst, const char *src)</td></tr>
+<tr class="memdesc:a66e363031a1cbf510d5eafe40d49a790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the string src to dst, returning a pointer to the start of dst.  <a href="string_8c.html#a66e363031a1cbf510d5eafe40d49a790">More...</a><br /></td></tr>
 <tr class="separator:a66e363031a1cbf510d5eafe40d49a790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f08f2390a9067f3c94b638e90e03bd"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a82f08f2390a9067f3c94b638e90e03bd">strncpy</a> (char *dst, const char *src, size_t n)</td></tr>
+<tr class="memdesc:a82f08f2390a9067f3c94b638e90e03bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy at most n bytes from string src to dst, returning a pointer to the start of dst.  <a href="string_8c.html#a82f08f2390a9067f3c94b638e90e03bd">More...</a><br /></td></tr>
 <tr class="separator:a82f08f2390a9067f3c94b638e90e03bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9517a4a50477f651785c09b27826d8ce"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a9517a4a50477f651785c09b27826d8ce">strcat</a> (char *dst, const char *src)</td></tr>
+<tr class="memdesc:a9517a4a50477f651785c09b27826d8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append the string src to the string dst, returning a pointer dst.  <a href="string_8c.html#a9517a4a50477f651785c09b27826d8ce">More...</a><br /></td></tr>
 <tr class="separator:a9517a4a50477f651785c09b27826d8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11bd144d7d44914099a3aeddf1c8567d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a11bd144d7d44914099a3aeddf1c8567d">strcmp</a> (const char *s1, const char *s2)</td></tr>
+<tr class="memdesc:a11bd144d7d44914099a3aeddf1c8567d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the strings s1 with s2.  <a href="string_8c.html#a11bd144d7d44914099a3aeddf1c8567d">More...</a><br /></td></tr>
 <tr class="separator:a11bd144d7d44914099a3aeddf1c8567d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07f4a84c11c106e95c32b6ab509346ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a07f4a84c11c106e95c32b6ab509346ef">strncmp</a> (const char *s1, const char *s2, size_t n)</td></tr>
+<tr class="memdesc:a07f4a84c11c106e95c32b6ab509346ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare at most n bytes of the strings s1 and s2.  <a href="string_8c.html#a07f4a84c11c106e95c32b6ab509346ef">More...</a><br /></td></tr>
 <tr class="separator:a07f4a84c11c106e95c32b6ab509346ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8fd43b209c9ea19addab23a5f23995"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a7a8fd43b209c9ea19addab23a5f23995">memset</a> (void *v, int c, size_t n)</td></tr>
-<tr class="separator:a7a8fd43b209c9ea19addab23a5f23995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313175102214d45434bf045db18dddf0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a313175102214d45434bf045db18dddf0">memset</a> (void *s, int c, size_t n)</td></tr>
+<tr class="memdesc:a313175102214d45434bf045db18dddf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make n bits are the character c.  <a href="string_8c.html#a313175102214d45434bf045db18dddf0">More...</a><br /></td></tr>
+<tr class="separator:a313175102214d45434bf045db18dddf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ad5be721af7967095807a80038b4ef"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a82ad5be721af7967095807a80038b4ef">memmove</a> (void *dst, const void *src, size_t n)</td></tr>
+<tr class="memdesc:a82ad5be721af7967095807a80038b4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy at most n bytes from unknown data type src to dst, returning a pointer to the start of dst.  <a href="string_8c.html#a82ad5be721af7967095807a80038b4ef">More...</a><br /></td></tr>
+<tr class="separator:a82ad5be721af7967095807a80038b4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a122fb623035cad42e3c35846be8923e1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a122fb623035cad42e3c35846be8923e1">memcpy</a> (void *out, const void *in, size_t n)</td></tr>
+<tr class="memdesc:a122fb623035cad42e3c35846be8923e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy at most n bytes from unknown data type src to dst, returning a pointer to the start of dst.(The same as memmove without overlap)  <a href="string_8c.html#a122fb623035cad42e3c35846be8923e1">More...</a><br /></td></tr>
 <tr class="separator:a122fb623035cad42e3c35846be8923e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340d11725e5c81a874f508fbcdf1c5ef"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a340d11725e5c81a874f508fbcdf1c5ef">memmove</a> (void *dest, const void *src, size_t n)</td></tr>
-<tr class="separator:a340d11725e5c81a874f508fbcdf1c5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6df54ee04e18a3772335580e2ed872"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8c.html#a9e6df54ee04e18a3772335580e2ed872">memcmp</a> (const void *s1, const void *s2, size_t n)</td></tr>
+<tr class="memdesc:a9e6df54ee04e18a3772335580e2ed872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare at most n bytes of the unknown data type s1 and s2.  <a href="string_8c.html#a9e6df54ee04e18a3772335580e2ed872">More...</a><br /></td></tr>
 <tr class="separator:a9e6df54ee04e18a3772335580e2ed872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -177,6 +189,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Compare at most n bytes of the unknown data type s1 and s2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td></td></tr>
+    <tr><td class="paramname">s2</td><td></td></tr>
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
 </div>
 </div>
 <a id="a122fb623035cad42e3c35846be8923e1" name="a122fb623035cad42e3c35846be8923e1"></a>
@@ -210,17 +233,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string_8c_a122fb623035cad42e3c35846be8923e1_icgraph.svg" width="212" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+
+<p>Copy at most n bytes from unknown data type src to dst, returning a pointer to the start of dst.(The same as memmove without overlap) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td></td></tr>
+    <tr><td class="paramname">in</td><td></td></tr>
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void* </dd></dl>
 
 </div>
 </div>
-<a id="a340d11725e5c81a874f508fbcdf1c5ef" name="a340d11725e5c81a874f508fbcdf1c5ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a340d11725e5c81a874f508fbcdf1c5ef">&#9670;&nbsp;</a></span>memmove()</h2>
+<a id="a82ad5be721af7967095807a80038b4ef" name="a82ad5be721af7967095807a80038b4ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ad5be721af7967095807a80038b4ef">&#9670;&nbsp;</a></span>memmove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +257,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">void * memmove </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dest</em>, </td>
+          <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -250,17 +278,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string_8c_a340d11725e5c81a874f508fbcdf1c5ef_cgraph.svg" width="212" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+
+<p>Copy at most n bytes from unknown data type src to dst, returning a pointer to the start of dst. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td></td></tr>
+    <tr><td class="paramname">src</td><td></td></tr>
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void* </dd></dl>
 
 </div>
 </div>
-<a id="a7a8fd43b209c9ea19addab23a5f23995" name="a7a8fd43b209c9ea19addab23a5f23995"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a8fd43b209c9ea19addab23a5f23995">&#9670;&nbsp;</a></span>memset()</h2>
+<a id="a313175102214d45434bf045db18dddf0" name="a313175102214d45434bf045db18dddf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313175102214d45434bf045db18dddf0">&#9670;&nbsp;</a></span>memset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +302,7 @@ Here is the call graph for this function:</div>
           <td class="memname">void * memset </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -290,10 +323,21 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Make n bits are the character c. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td></td></tr>
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void* </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string_8c_a7a8fd43b209c9ea19addab23a5f23995_icgraph.svg" width="490" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="string_8c_a313175102214d45434bf045db18dddf0_icgraph.svg" width="490" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -324,6 +368,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Append the string src to the string dst, returning a pointer dst. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td></td></tr>
+    <tr><td class="paramname">src</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -359,6 +413,16 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Compare the strings s1 with s2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td></td></tr>
+    <tr><td class="paramname">s2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
 </div>
 </div>
 <a id="a66e363031a1cbf510d5eafe40d49a790" name="a66e363031a1cbf510d5eafe40d49a790"></a>
@@ -387,6 +451,16 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Copy the string src to dst, returning a pointer to the start of dst. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td></td></tr>
+    <tr><td class="paramname">src</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* </dd></dl>
+
 </div>
 </div>
 <a id="aa383452fe445bfae989358c9d7d96f4f" name="aa383452fe445bfae989358c9d7d96f4f"></a>
@@ -404,6 +478,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return the length of the string s. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size_t </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -445,6 +528,17 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Compare at most n bytes of the strings s1 and s2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td></td></tr>
+    <tr><td class="paramname">s2</td><td></td></tr>
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
 </div>
 </div>
 <a id="a82f08f2390a9067f3c94b638e90e03bd" name="a82f08f2390a9067f3c94b638e90e03bd"></a>
@@ -478,6 +572,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Copy at most n bytes from string src to dst, returning a pointer to the start of dst. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td></td></tr>
+    <tr><td class="paramname">src</td><td></td></tr>
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
