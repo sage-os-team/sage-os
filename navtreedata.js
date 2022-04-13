@@ -42,8 +42,8 @@ var NAVTREE =
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
@@ -54,8 +54,9 @@ var NAVTREE =
         [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
   ] ]
@@ -64,9 +65,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "am_8h.html",
-"ioe_8c.html#a20207ffc8e6f0bdcefb5c42a5b5c3fb8",
-"stdlib_8c.html#a196e7f007a501cf9d0907cb2bab0b622",
-"x86-qemu_8h.html#a6dbc147226148b9a52e4ddb3fcfb3f9f"
+"functions_s.html",
+"ioe_8c.html#aed01298d37e73ed9737c8a6b70e67caa",
+"struct____attribute____.html#a6163461798acb053ba062347095330e0",
+"structuqwords.html#a3f52aa9ba586375f63e65d06e63984b8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

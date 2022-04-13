@@ -155,12 +155,15 @@ $(document).ready(function(){initNavTree('md_test__r_e_a_d_m_e.html',''); initRe
 <p >在编写时，如果你的测试比较庞大，建议使用 <code>logger</code> 而不是 <code>printf</code> 打印结果。</p>
 <h2><a class="anchor" id="autotoc_md8"></a>
 环境变量</h2>
-<p >你可以直接执行 <code>export</code> 定义环境变量，也可以在 make 命令中加入环境变量。前者有时会更方便。</p>
-<p >可配置的环境变量有：</p>
+<p >你可以直接执行 <code>export</code> 定义环境变量，也可以在 make 命令中加入环境变量。建议使用前者，例如：</p>
+<div class="fragment"><div class="line">export smp=4</div>
+<div class="line">export LOG_MASK=15</div>
+</div><!-- fragment --><p >可配置的环境变量有：</p>
 <ul>
 <li><code>ARCH</code>: 当前支持 <code>native</code> 和 <code>x86_64-qemu</code>, 若 ARCH 不指定，则默认为 <code>x86_64-qemu</code>.</li>
-<li><code>smp</code>: 处理器数量，默认为 1</li>
-<li><code>CFLAGS_EXTRA</code>: gcc 编译时的额外选项，默认为空。例如 <code>"-DSIMULATE_PMM"</code> （已默认加上 <code>-DTEST</code>）</li>
+<li><code>smp</code>: 处理器数量，默认为 2</li>
+<li><code>CFLAGS_EXTRA</code>: gcc 编译时的额外选项，默认为空。例如 <code>"-DSIMULATE_PMM"</code> （已默认加上 <code>-DTEST</code> 和 <code>-DLOG_MASK=xxx</code>）</li>
+<li><code>LOG_MASK</code>: logger 输出mask, 详见 logger.h. 默认输出 <a class="el" href="logger_8h.html#a5b9a882fdc463a3d4dcc99840fd0adb8">error(8)</a>, <a class="el" href="logger_8h.html#aaa6ad2ce683c5c5f5984faef407531d7">warn(4)</a>, <a class="el" href="logger_8h.html#a8ee1f79b193a2069a4f74c155ce97f66">info(2)</a>, 也就是说默认值为14. 如果你要输出success(1)，设置为15即可</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md9"></a>
 运行测试</h2>

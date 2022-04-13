@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="string_8c.html#aa383452fe445bfae989358c9d7d96f4f" target="_top" xlink:title="Return the length of the string s.">
+<g id="a_node3"><a xlink:href="string_8c.html#aa383452fe445bfae989358c9d7d96f4f" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="99,-38.5 99,-57.5 140,-57.5 140,-38.5 99,-38.5"/>
 <text text-anchor="middle" x="119.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">strlen</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="string_8c.html#a82f08f2390a9067f3c94b638e90e03bd" target="_top" xlink:title="Copy at most n bytes from string src to dst, returning a pointer to the start of dst.">
+<g id="a_node4"><a xlink:href="string_8c.html#a82f08f2390a9067f3c94b638e90e03bd" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="95.5,-0.5 95.5,-19.5 143.5,-19.5 143.5,-0.5 95.5,-0.5"/>
 <text text-anchor="middle" x="119.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">strncpy</text>
 </a>

@@ -1,9 +1,26 @@
 <map id="cli" name="cli">
-<area shape="rect" id="node1" title=" " alt="" coords="380,56,419,83"/>
-<area shape="rect" id="node2" href="$trm_8c.html#a483cb97188e557c3c68d3a1572c2cc92" title=" " alt="" coords="289,31,332,57"/>
-<area shape="rect" id="node7" href="$cte_8c.html#a4a139958742786c5085172be1f69bfd0" title=" " alt="" coords="289,81,332,108"/>
-<area shape="rect" id="node3" href="$trm_8c.html#a12a49ff4d3a586b2315e292c5da3df7e" title=" " alt="" coords="164,5,241,32"/>
-<area shape="rect" id="node5" href="$os_8c.html#a5f9cb32664e017ca15c49ec66e5342e4" title=" " alt="" coords="172,56,233,83"/>
-<area shape="rect" id="node4" href="$trm_8c.html#a54a85aeee6f6a8ef875d4cca663f9fd8" title=" " alt="" coords="26,5,95,32"/>
-<area shape="rect" id="node6" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,56,116,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="884,208,923,235"/>
+<area shape="rect" id="node2" href="$trm_8c.html#a483cb97188e557c3c68d3a1572c2cc92" title=" " alt="" coords="793,145,836,172"/>
+<area shape="rect" id="node5" href="$cte_8c.html#a4a139958742786c5085172be1f69bfd0" title=" " alt="" coords="793,233,836,260"/>
+<area shape="rect" id="node3" href="$trm_8c.html#a12a49ff4d3a586b2315e292c5da3df7e" title=" " alt="" coords="659,107,737,133"/>
+<area shape="rect" id="node4" href="$trm_8c.html#a54a85aeee6f6a8ef875d4cca663f9fd8" title=" " alt="" coords="513,107,582,133"/>
+<area shape="rect" id="node6" href="$pmm_8c.html#a20ccb461126d548299c6c21f157e6668" title=" " alt="" coords="654,157,742,184"/>
+<area shape="rect" id="node8" href="$pmm_8c.html#af2f46f4bce6a599542ce4d462aec9e2f" title=" " alt="" coords="657,208,739,235"/>
+<area shape="rect" id="node9" href="$os_8c.html#a5f9cb32664e017ca15c49ec66e5342e4" title="cpu start entry" alt="" coords="517,397,578,424"/>
+<area shape="rect" id="node11" href="$spinlock_8c.html#afc9565dc7a5ddf77e1fa76f5d91caf78" title="interrupt able" alt="" coords="655,309,741,336"/>
+<area shape="rect" id="node24" href="$spinlock_8c.html#ab213874cda54fdbbeb1bec1e5fa90b28" title="interrupt disable" alt="" coords="651,259,745,285"/>
+<area shape="rect" id="node7" href="$pmm_8c.html#a7ada9deb0ae8705f2cc158b0283aaeb3" title=" " alt="" coords="492,157,603,184"/>
+<area shape="rect" id="node10" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,385,116,412"/>
+<area shape="rect" id="node12" href="$spinlock_8c.html#ad4be0d674a7ca4dc90c2dbf8b34562cc" title="check current cpu has the lock" alt="" coords="500,259,595,285"/>
+<area shape="rect" id="node23" href="$spinlock_8c.html#acdf118d615a4bc4064e991add9a80995" title="release spinlock from current cpu" alt="" coords="335,309,425,336"/>
+<area shape="rect" id="node13" href="$kmt_8c.html#af9c485ce0d89d6624e6e80e31d8ed207" title="handler: save context to current task" alt="" coords="316,5,444,32"/>
+<area shape="rect" id="node16" href="$kmt_8c.html#a5ddb8743298012e84cf9cb5faf22212b" title="create thread" alt="" coords="173,208,259,235"/>
+<area shape="rect" id="node17" href="$kmt_8c.html#ad3fbc643b7b6092120c5152b4c890354" title="handler: handle program errors" alt="" coords="341,56,419,83"/>
+<area shape="rect" id="node18" href="$kmt_8c.html#ad4d70b4093829da1c0b0631abdff7747" title="handler: schedule next task to run Notice: this should be the only handler which returns real Context" alt="" coords="329,107,431,133"/>
+<area shape="rect" id="node19" href="$kmt_8c.html#a47d8887c87041abd5ea3148232b65c93" title="tear down a thread" alt="" coords="164,107,268,133"/>
+<area shape="rect" id="node20" href="$os_8c.html#a2be1c9facb49d4439f41b1537d0f3ef8" title="System trap entry." alt="" coords="183,360,249,387"/>
+<area shape="rect" id="node21" href="$spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce" title="acquire spinlock to current cpu" alt="" coords="341,208,419,235"/>
+<area shape="rect" id="node14" href="$kmt_8c.html#a0c68a294cecc4be7cb4b495f15b883a0" title="initialize kmt module" alt="" coords="182,56,250,83"/>
+<area shape="rect" id="node15" href="$kmt_8c.html#af360ef0d98ca30e481cc58ea3695fd58" title=" " alt="" coords="5,157,116,184"/>
+<area shape="rect" id="node22" href="$kernel_8h.html#a7ef2d722f9c7f8acc1801144a5188825" title=" " alt="" coords="177,259,255,285"/>
 </map>

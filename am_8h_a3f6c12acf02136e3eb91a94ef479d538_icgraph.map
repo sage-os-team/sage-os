@@ -1,0 +1,21 @@
+<map id="ienabled" name="ienabled">
+<area shape="rect" id="node1" title=" " alt="" coords="793,81,864,108"/>
+<area shape="rect" id="node2" href="$pmm_8c.html#a20ccb461126d548299c6c21f157e6668" title=" " alt="" coords="654,5,742,32"/>
+<area shape="rect" id="node4" href="$pmm_8c.html#af2f46f4bce6a599542ce4d462aec9e2f" title=" " alt="" coords="657,56,739,83"/>
+<area shape="rect" id="node5" href="$os_8c.html#a5f9cb32664e017ca15c49ec66e5342e4" title="cpu start entry" alt="" coords="517,95,578,121"/>
+<area shape="rect" id="node7" href="$spinlock_8c.html#ab213874cda54fdbbeb1bec1e5fa90b28" title="interrupt disable" alt="" coords="651,157,745,184"/>
+<area shape="rect" id="node3" href="$pmm_8c.html#a7ada9deb0ae8705f2cc158b0283aaeb3" title=" " alt="" coords="492,19,603,45"/>
+<area shape="rect" id="node6" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,81,116,108"/>
+<area shape="rect" id="node8" href="$spinlock_8c.html#ad4be0d674a7ca4dc90c2dbf8b34562cc" title="check current cpu has the lock" alt="" coords="500,259,595,285"/>
+<area shape="rect" id="node17" href="$spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce" title="acquire spinlock to current cpu" alt="" coords="341,157,419,184"/>
+<area shape="rect" id="node9" href="$kmt_8c.html#af9c485ce0d89d6624e6e80e31d8ed207" title="handler: save context to current task" alt="" coords="316,411,444,437"/>
+<area shape="rect" id="node12" href="$kmt_8c.html#a5ddb8743298012e84cf9cb5faf22212b" title="create thread" alt="" coords="173,309,259,336"/>
+<area shape="rect" id="node13" href="$kmt_8c.html#ad3fbc643b7b6092120c5152b4c890354" title="handler: handle program errors" alt="" coords="341,461,419,488"/>
+<area shape="rect" id="node14" href="$kmt_8c.html#ad4d70b4093829da1c0b0631abdff7747" title="handler: schedule next task to run Notice: this should be the only handler which returns real Context" alt="" coords="329,360,431,387"/>
+<area shape="rect" id="node15" href="$kmt_8c.html#a47d8887c87041abd5ea3148232b65c93" title="tear down a thread" alt="" coords="164,259,268,285"/>
+<area shape="rect" id="node16" href="$os_8c.html#a2be1c9facb49d4439f41b1537d0f3ef8" title="System trap entry." alt="" coords="183,107,249,133"/>
+<area shape="rect" id="node19" href="$spinlock_8c.html#acdf118d615a4bc4064e991add9a80995" title="release spinlock from current cpu" alt="" coords="335,259,425,285"/>
+<area shape="rect" id="node10" href="$kmt_8c.html#a0c68a294cecc4be7cb4b495f15b883a0" title="initialize kmt module" alt="" coords="182,411,250,437"/>
+<area shape="rect" id="node11" href="$kmt_8c.html#af360ef0d98ca30e481cc58ea3695fd58" title=" " alt="" coords="5,309,116,336"/>
+<area shape="rect" id="node18" href="$kernel_8h.html#a7ef2d722f9c7f8acc1801144a5188825" title=" " alt="" coords="177,208,255,235"/>
+</map>
