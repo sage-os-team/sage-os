@@ -206,11 +206,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="klib_8h.html#a3153a272f18d0f805028fce7e4337b53">assert</a>(<a class="code hl_function" href="klib_8h.html#a9e6df54ee04e18a3772335580e2ed872">memcmp</a>(<a class="code hl_variable" href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a>, (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;fenceA, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a>)) == 0); \</div>
-<div class="line">  assert(<a class="code hl_function" href="klib_8h.html#a9e6df54ee04e18a3772335580e2ed872">memcmp</a>(<a class="code hl_variable" href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a>, (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;fenceB, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a>)) == 0)</div>
-<div class="ttc" id="aklib_8h_html_a3153a272f18d0f805028fce7e4337b53"><div class="ttname"><a href="klib_8h.html#a3153a272f18d0f805028fce7e4337b53">assert</a></div><div class="ttdeci">#define assert(cond)</div><div class="ttdef"><b>Definition:</b> klib.h:45</div></div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="logger_8h.html#a678f4cd7c86a601397a81eee1cf29785">assert_msg</a>(<a class="code hl_function" href="klib_8h.html#a9e6df54ee04e18a3772335580e2ed872">memcmp</a>(<a class="code hl_variable" href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a>, (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;fenceA, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a>)) == 0, \</div>
+<div class="line">             <span class="stringliteral">&quot;stack overflow! pid=%d, name=%d, fenceA at 0x%x&quot;</span>, (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;pid, \</div>
+<div class="line">             (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;name, (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;fenceA); \</div>
+<div class="line">  assert_msg(<a class="code hl_function" href="klib_8h.html#a9e6df54ee04e18a3772335580e2ed872">memcmp</a>(<a class="code hl_variable" href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a>, (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;fenceB, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a>)) == 0, \</div>
+<div class="line">             <span class="stringliteral">&quot;stack overflow! pid=%d, name=%d, fenceB at 0x%x&quot;</span>, (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;pid, \</div>
+<div class="line">             (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;name, (<a class="code hl_struct" href="structtask.html">task</a>)-&gt;fenceB);</div>
 <div class="ttc" id="aklib_8h_html_a9e6df54ee04e18a3772335580e2ed872"><div class="ttname"><a href="klib_8h.html#a9e6df54ee04e18a3772335580e2ed872">memcmp</a></div><div class="ttdeci">int memcmp(const void *s1, const void *s2, size_t n)</div><div class="ttdef"><b>Definition:</b> string.c:126</div></div>
 <div class="ttc" id="akmt_8c_html_a6afa7997991e292f651864827a0452f4"><div class="ttname"><a href="kmt_8c.html#a6afa7997991e292f651864827a0452f4">fence_val</a></div><div class="ttdeci">const char fence_val[32]</div><div class="ttdef"><b>Definition:</b> kmt.c:21</div></div>
+<div class="ttc" id="alogger_8h_html_a678f4cd7c86a601397a81eee1cf29785"><div class="ttname"><a href="logger_8h.html#a678f4cd7c86a601397a81eee1cf29785">assert_msg</a></div><div class="ttdeci">#define assert_msg(cond, format,...)</div><div class="ttdef"><b>Definition:</b> logger.h:96</div></div>
 <div class="ttc" id="astructtask_html"><div class="ttname"><a href="structtask.html">task</a></div><div class="ttdef"><b>Definition:</b> thread.h:26</div></div>
 </div><!-- fragment -->
 <p>check the fence protection value. </p>
@@ -627,7 +631,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a47d8887c87041abd5ea3148232b65c93_cgraph.svg" width="786" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a47d8887c87041abd5ea3148232b65c93_cgraph.svg" width="647" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
@@ -745,7 +749,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_af360ef0d98ca30e481cc58ea3695fd58_cgraph.svg" width="1168" height="722"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_af360ef0d98ca30e481cc58ea3695fd58_cgraph.svg" width="1168" height="747"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
