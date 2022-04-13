@@ -24,10 +24,12 @@ var searchData=
   ['arg_21',['arg',['../structtask.html#a9ce2ec4812a92cb6ab39f6e81e9173a9',1,'task']]],
   ['argbuf_22',['argbuf',['../stdio_8c.html#a2afb8bd088e89f1bd71ac4e6e574b136',1,'stdio.c']]],
   ['args_23',['args',['../struct_gate_desc32.html#acef4e7778f4539b08a274ba9f95860fd',1,'GateDesc32']]],
-  ['assert_24',['assert',['../klib_8h.html#a3153a272f18d0f805028fce7e4337b53',1,'klib.h']]],
-  ['assert_25',['ASSERT',['../ioe_8c.html#af343b20373ba49a92fce523e948f2ab3',1,'ioe.c']]],
-  ['atoi_26',['atoi',['../klib_8h.html#ad228deceea1bac4d9f171f647c265059',1,'atoi(const char *nptr):&#160;stdlib.c'],['../stdlib_8c.html#ad228deceea1bac4d9f171f647c265059',1,'atoi(const char *nptr):&#160;stdlib.c']]],
-  ['atomic_5fxchg_27',['atomic_xchg',['../am_8h.html#aaaad47c97c82065cf463f83b98b23c30',1,'atomic_xchg(int *addr, int newval):&#160;mpe.c'],['../mpe_8c.html#aaaad47c97c82065cf463f83b98b23c30',1,'atomic_xchg(int *addr, int newval):&#160;mpe.c']]],
-  ['audio_5fconfig_28',['audio_config',['../ioe_8c.html#af57093430b0f09680df09ce07d8511b6',1,'ioe.c']]],
-  ['avl_29',['avl',['../struct_seg_desc.html#a16eb11c869751ae18d8b77466933a526',1,'SegDesc']]]
+  ['assert_24',['ASSERT',['../ioe_8c.html#af343b20373ba49a92fce523e948f2ab3',1,'ioe.c']]],
+  ['assert_25',['assert',['../klib_8h.html#a3153a272f18d0f805028fce7e4337b53',1,'klib.h']]],
+  ['assert_5fmsg_26',['assert_msg',['../logger_8h.html#a678f4cd7c86a601397a81eee1cf29785',1,'logger.h']]],
+  ['assert_5fmsg_5fblock_27',['assert_msg_block',['../logger_8h.html#a1ab6bfe5db58074fd54a3c4952132ade',1,'logger.h']]],
+  ['atoi_28',['atoi',['../klib_8h.html#ad228deceea1bac4d9f171f647c265059',1,'atoi(const char *nptr):&#160;stdlib.c'],['../stdlib_8c.html#ad228deceea1bac4d9f171f647c265059',1,'atoi(const char *nptr):&#160;stdlib.c']]],
+  ['atomic_5fxchg_29',['atomic_xchg',['../am_8h.html#aaaad47c97c82065cf463f83b98b23c30',1,'atomic_xchg(int *addr, int newval):&#160;mpe.c'],['../mpe_8c.html#aaaad47c97c82065cf463f83b98b23c30',1,'atomic_xchg(int *addr, int newval):&#160;mpe.c']]],
+  ['audio_5fconfig_30',['audio_config',['../ioe_8c.html#af57093430b0f09680df09ce07d8511b6',1,'ioe.c']]],
+  ['avl_31',['avl',['../struct_seg_desc.html#a16eb11c869751ae18d8b77466933a526',1,'SegDesc']]]
 ];

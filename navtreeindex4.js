@@ -1,5 +1,9 @@
 var NAVTREEINDEX4 =
 {
+"structtty__t.html#ae4a937b3cc888445968d5fbc0aaf0392":[2,0,45,3],
+"structtty__t.html#af36a76a97c2cc0ea7b1c0c25933934a9":[2,0,45,5],
+"structuqwords.html":[2,0,47],
+"structuqwords.html#a2ea4c71274132105caafa410bc04a543":[2,0,47,0],
 "structuqwords.html#a3f52aa9ba586375f63e65d06e63984b8":[2,0,47,1],
 "structvbe__info.html":[2,0,48],
 "structvbe__info.html#a1a5e166b63c4f4d2ed242ebcd53aa251":[2,0,48,3],

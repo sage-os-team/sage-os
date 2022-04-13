@@ -67,8 +67,8 @@ var NAVTREEINDEX =
 "am_8h.html",
 "functions_s.html",
 "ioe_8c.html#aed01298d37e73ed9737c8a6b70e67caa",
-"struct____attribute____.html#a6163461798acb053ba062347095330e0",
-"structuqwords.html#a3f52aa9ba586375f63e65d06e63984b8"
+"struct____attribute____.html",
+"structtty__t.html#ae4a937b3cc888445968d5fbc0aaf0392"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

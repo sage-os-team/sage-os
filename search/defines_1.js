@@ -10,6 +10,8 @@ var searchData=
   ['am_5fgpu_5ftexture_7',['AM_GPU_TEXTURE',['../amdev_8h.html#a9582387338649ddf8cdd8a9b16c5c4e5',1,'amdev.h']]],
   ['am_5fkey_5fnames_8',['AM_KEY_NAMES',['../amdev_8h.html#ab33b5573880e95a61b449f6f181ef53c',1,'amdev.h']]],
   ['am_5fkeys_9',['AM_KEYS',['../amdev_8h.html#a5aef801838afd1c022ac318ce993e7fe',1,'amdev.h']]],
-  ['assert_10',['assert',['../klib_8h.html#a3153a272f18d0f805028fce7e4337b53',1,'klib.h']]],
-  ['assert_11',['ASSERT',['../ioe_8c.html#af343b20373ba49a92fce523e948f2ab3',1,'ioe.c']]]
+  ['assert_10',['ASSERT',['../ioe_8c.html#af343b20373ba49a92fce523e948f2ab3',1,'ioe.c']]],
+  ['assert_11',['assert',['../klib_8h.html#a3153a272f18d0f805028fce7e4337b53',1,'klib.h']]],
+  ['assert_5fmsg_12',['assert_msg',['../logger_8h.html#a678f4cd7c86a601397a81eee1cf29785',1,'logger.h']]],
+  ['assert_5fmsg_5fblock_13',['assert_msg_block',['../logger_8h.html#a1ab6bfe5db58074fd54a3c4952132ade',1,'logger.h']]]
 ];

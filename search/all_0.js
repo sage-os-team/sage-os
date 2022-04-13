@@ -43,5 +43,6 @@ var searchData=
   ['_5f_5fumoddi3_40',['__umoddi3',['../int64_8c.html#a1fea4a7b9ebde888133aa19c564e66cd',1,'int64.c']]],
   ['_5fchunk_41',['_chunk',['../structpage.html#a512ab1d3250949875a7dd91f751b3d77',1,'page']]],
   ['_5fconcat_42',['_CONCAT',['../klib-macros_8h.html#a0a908d5899f2e39720968e60b6158966',1,'klib-macros.h']]],
-  ['_5fstart_5fc_43',['_start_c',['../trm_8c.html#a54a85aeee6f6a8ef875d4cca663f9fd8',1,'trm.c']]]
+  ['_5flog_5fmask_43',['_log_mask',['../logger_8h.html#abdb32ac1c236ce3f953a081fc268fbc7',1,'_log_mask():&#160;logger.h'],['../logger_8c.html#abdb32ac1c236ce3f953a081fc268fbc7',1,'_log_mask():&#160;logger.c']]],
+  ['_5fstart_5fc_44',['_start_c',['../trm_8c.html#a54a85aeee6f6a8ef875d4cca663f9fd8',1,'trm.c']]]
 ];
