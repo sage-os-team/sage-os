@@ -1,15 +1,16 @@
 <map id="xchg" name="xchg">
-<area shape="rect" id="node1" title=" " alt="" coords="648,157,697,184"/>
-<area shape="rect" id="node2" href="$mpe_8c.html#aaaad47c97c82065cf463f83b98b23c30" title=" " alt="" coords="499,107,594,133"/>
-<area shape="rect" id="node9" href="$mpe_8c.html#a2e4a724e2d067425ff3fd49bc0bf42e1" title=" " alt="" coords="511,157,582,184"/>
-<area shape="rect" id="node11" href="$mpe_8c.html#aec8f7f25be4263648b704092672a566b" title=" " alt="" coords="493,208,600,235"/>
-<area shape="rect" id="node3" href="$spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce" title="acquire spinlock to current cpu" alt="" coords="333,107,411,133"/>
-<area shape="rect" id="node4" href="$kmt_8c.html#a5ddb8743298012e84cf9cb5faf22212b" title="create thread" alt="" coords="164,5,251,32"/>
-<area shape="rect" id="node5" href="$kmt_8c.html#af360ef0d98ca30e481cc58ea3695fd58" title=" " alt="" coords="5,31,116,57"/>
-<area shape="rect" id="node6" href="$kernel_8h.html#a7ef2d722f9c7f8acc1801144a5188825" title=" " alt="" coords="168,107,247,133"/>
-<area shape="rect" id="node7" href="$os_8c.html#a2be1c9facb49d4439f41b1537d0f3ef8" title="System trap entry." alt="" coords="175,157,240,184"/>
-<area shape="rect" id="node8" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,157,116,184"/>
-<area shape="rect" id="node10" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="347,157,397,184"/>
-<area shape="rect" id="node12" href="$mpe_8c.html#af9524b1c09898b69d9980310682a8bea" title=" " alt="" coords="299,208,445,235"/>
-<area shape="rect" id="node13" href="$trm_8c.html#a54a85aeee6f6a8ef875d4cca663f9fd8" title=" " alt="" coords="173,208,242,235"/>
+<area shape="rect" id="node1" title=" " alt="" coords="665,164,715,191"/>
+<area shape="rect" id="node2" href="$mpe_8c.html#aaaad47c97c82065cf463f83b98b23c30" title=" " alt="" coords="517,112,611,139"/>
+<area shape="rect" id="node10" href="$mpe_8c.html#a2e4a724e2d067425ff3fd49bc0bf42e1" title=" " alt="" coords="529,164,599,191"/>
+<area shape="rect" id="node12" href="$mpe_8c.html#aec8f7f25be4263648b704092672a566b" title=" " alt="" coords="511,221,617,248"/>
+<area shape="rect" id="node3" href="$spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce" title="acquire spinlock to current cpu" alt="" coords="351,111,428,137"/>
+<area shape="rect" id="node4" href="$kmt_8c.html#a5ddb8743298012e84cf9cb5faf22212b" title="create thread" alt="" coords="173,5,259,32"/>
+<area shape="rect" id="node5" href="$kmt_8c.html#af360ef0d98ca30e481cc58ea3695fd58" title=" " alt="" coords="5,56,116,83"/>
+<area shape="rect" id="node6" href="$kmt_8c.html#a47d8887c87041abd5ea3148232b65c93" title="tear down a thread" alt="" coords="164,107,268,133"/>
+<area shape="rect" id="node7" href="$kernel_8h.html#a7ef2d722f9c7f8acc1801144a5188825" title=" " alt="" coords="177,157,255,184"/>
+<area shape="rect" id="node8" href="$os_8c.html#a2be1c9facb49d4439f41b1537d0f3ef8" title="System trap entry." alt="" coords="183,208,249,235"/>
+<area shape="rect" id="node9" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,208,116,235"/>
+<area shape="rect" id="node11" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="364,164,415,191"/>
+<area shape="rect" id="node13" href="$mpe_8c.html#af9524b1c09898b69d9980310682a8bea" title=" " alt="" coords="316,233,463,260"/>
+<area shape="rect" id="node14" href="$trm_8c.html#a54a85aeee6f6a8ef875d4cca663f9fd8" title=" " alt="" coords="181,259,251,285"/>
 </map>

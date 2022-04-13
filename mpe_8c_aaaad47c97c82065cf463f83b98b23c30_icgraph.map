@@ -1,9 +1,10 @@
 <map id="atomic_xchg" name="atomic_xchg">
-<area shape="rect" id="node1" title=" " alt="" coords="424,81,519,108"/>
-<area shape="rect" id="node2" href="$spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce" title="acquire spinlock to current cpu" alt="" coords="299,81,376,108"/>
-<area shape="rect" id="node3" href="$kmt_8c.html#a5ddb8743298012e84cf9cb5faf22212b" title="create thread" alt="" coords="164,5,251,32"/>
-<area shape="rect" id="node4" href="$kmt_8c.html#af360ef0d98ca30e481cc58ea3695fd58" title=" " alt="" coords="5,31,116,57"/>
-<area shape="rect" id="node5" href="$kernel_8h.html#a7ef2d722f9c7f8acc1801144a5188825" title=" " alt="" coords="168,107,247,133"/>
-<area shape="rect" id="node6" href="$os_8c.html#a2be1c9facb49d4439f41b1537d0f3ef8" title="System trap entry." alt="" coords="175,157,240,184"/>
-<area shape="rect" id="node7" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,157,116,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="441,107,536,133"/>
+<area shape="rect" id="node2" href="$spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce" title="acquire spinlock to current cpu" alt="" coords="316,107,393,133"/>
+<area shape="rect" id="node3" href="$kmt_8c.html#a5ddb8743298012e84cf9cb5faf22212b" title="create thread" alt="" coords="173,5,259,32"/>
+<area shape="rect" id="node4" href="$kmt_8c.html#af360ef0d98ca30e481cc58ea3695fd58" title=" " alt="" coords="5,56,116,83"/>
+<area shape="rect" id="node5" href="$kmt_8c.html#a47d8887c87041abd5ea3148232b65c93" title="tear down a thread" alt="" coords="164,107,268,133"/>
+<area shape="rect" id="node6" href="$kernel_8h.html#a7ef2d722f9c7f8acc1801144a5188825" title=" " alt="" coords="177,157,255,184"/>
+<area shape="rect" id="node7" href="$os_8c.html#a2be1c9facb49d4439f41b1537d0f3ef8" title="System trap entry." alt="" coords="183,208,249,235"/>
+<area shape="rect" id="node8" href="$os_8c.html#aafec7046aa50c914df86d0d22d4fc1d1" title=" " alt="" coords="5,208,116,235"/>
 </map>
