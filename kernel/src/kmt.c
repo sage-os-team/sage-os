@@ -44,8 +44,12 @@ task_t *cpu_tasks[MAX_CPU] = {};
  * @param task
  */
 #define CHECK_FENCE(task) \
-  assert(memcmp(fence_val, (task)->fenceA, sizeof(fence_val)) == 0); \
-  assert(memcmp(fence_val, (task)->fenceB, sizeof(fence_val)) == 0)
+  assert_msg(memcmp(fence_val, (task)->fenceA, sizeof(fence_val)) == 0, \
+             "stack overflow! pid=%d, name=%d, fenceA at 0x%x", (task)->pid, \
+             (task)->name, (task)->fenceA); \
+  assert_msg(memcmp(fence_val, (task)->fenceB, sizeof(fence_val)) == 0, \
+             "stack overflow! pid=%d, name=%d, fenceB at 0x%x", (task)->pid, \
+             (task)->name, (task)->fenceB);
 
 /**
  * @brief initialize kmt module
@@ -82,7 +86,9 @@ void kmt_init() {
  */
 int kmt_create(task_t *task, const char *name, void (*entry)(void *arg),
                void *arg) {
-  assert(task != NULL && name != NULL && entry != NULL);
+  assert_msg(!spin_holding(&ir_lock), "do not allow kmt_create in trap");
+  assert_msg(task != NULL && name != NULL && entry != NULL,
+             "invalid arguments");
   task->pid      = next_pid++;
   task->name     = name;
   task->entry    = entry;
@@ -120,10 +126,8 @@ int kmt_create(task_t *task, const char *name, void (*entry)(void *arg),
  * @param task task of thread
  */
 void kmt_teardown(task_t *task) {
-  bool holding = spin_holding(&ir_lock);
-  if (!holding) spin_lock(&ir_lock);
+  assert_msg(!spin_holding(&ir_lock), "do not allow kmt_teardown in trap");
   task->killed = 1;
-  if (!holding) spin_unlock(&ir_lock);
 }
 
 /**
@@ -134,16 +138,16 @@ void kmt_teardown(task_t *task) {
  * @return Context* always NULL
  */
 Context *kmt_context_save(Event ev, Context *context) {
-  assert(spin_holding(&ir_lock));
+  assert_msg(spin_holding(&ir_lock), "call outside trap");
   task_t *cur = kmt_get_task();
   if (cur) {
-    assert(!cur->context);
+    assert_msg(!cur->context, "current task's context not null");
     // TODO: more checks for context
     cur->state   = ST_W;
     cur->context = context;
   } else {
     // if no current task (initial), save to null_context
-    assert(!null_contexts[cpu_current()]);
+    assert_msg(!null_contexts[cpu_current()], "repeatedly save null context");
     null_contexts[cpu_current()] = context;
   }
   return NULL;
@@ -169,7 +173,7 @@ Context *kmt_yield(Event ev, Context *context) {
  * @return Context*
  */
 Context *kmt_schedule(Event ev, Context *context) {
-  assert(spin_holding(&ir_lock));
+  assert_msg(spin_holding(&ir_lock), "call outside trap");
   task_t *cur = kmt_get_task();
 
   // free killed process
@@ -199,17 +203,17 @@ Context *kmt_schedule(Event ev, Context *context) {
     CHECK_FENCE(tp);
     tp->state   = ST_R;
     ret         = tp->context;
-    tp->context = NULL;
+    tp->context = NULL;  // clear current task's context
     tp->count   = (tp->count + 1) % 1024;
 
     // TODO: more checks here
     kmt_set_task(tp);
 
-    info("schedule: run next pid=%d, name=%s, count=%d", tp->pid, tp->name,
-         tp->count);
+    info("schedule: run next pid=%d, name=%s, count=%d, event=%d %s", tp->pid,
+         tp->name, tp->count, ev.event, ev.msg);
   } else {
     // if no task to run
-    warn("schedule: no task to run");
+    warn("schedule: no task to run! event=%d %s", ev.event, ev.msg);
     kmt_print_all_tasks();
     kmt_print_cpu_tasks();
     ret = null_contexts[cpu_current()];
@@ -219,7 +223,8 @@ Context *kmt_schedule(Event ev, Context *context) {
   }
 
   if (ret == NULL) {
-    error_detail("switch to null context");
+    error_detail("schedule: switch to null context! event=%d %s", ev.event,
+                 ev.msg);
     kmt_print_all_tasks();
     kmt_print_cpu_tasks();
     panic("");
@@ -246,11 +251,12 @@ Context *kmt_timer(Event ev, Context *context) {
  * @return Context* always NULL
  */
 Context *kmt_error(Event ev, Context *context) {
-  assert(spin_holding(&ir_lock));
+  assert_msg(spin_holding(&ir_lock), "call outside trap");
   assert(ev.event == EVENT_ERROR);
   error_detail("error detected: %s", ev.msg);
   kmt_print_all_tasks();
   kmt_print_cpu_tasks();
+  panic("event_error");
   return NULL;
 }
 
@@ -281,8 +287,9 @@ void kmt_set_task(task_t *task) {
 void kmt_print_all_tasks() {
   printf("\n[all tasks]:\n");
   for (task_t *tp = &root_task; tp != NULL; tp = tp->next) {
-    printf("pid=%d\tname=%s\towner=%d\tstate=%d\tcount=%d\twait_sem=%s\n",
-           tp->pid, tp->name, tp->owner, tp->state, tp->count, "pos->wait_sem");
+    printf("pid=%d, name=%s, owner=%d, state=%s, count=%d, wait_sem=%s\n",
+           tp->pid, tp->name, tp->owner, task_states_str[tp->state], tp->count,
+           "pos->wait_sem");
   }
 }
 
@@ -293,12 +300,11 @@ void kmt_print_all_tasks() {
 void kmt_print_cpu_tasks() {
   printf("\n[cpu tasks]:\n");
   for (int i = 0; i < cpu_count(); i++) {
-    task_t *pos = cpu_tasks[i];
-    if (pos)
-      printf(
-          "#%d: pid=%d\tname=%s\towner=%d\tstate=%d\tcount=%d\twait_sem=%s\n",
-          i, pos->pid, pos->name, pos->owner, pos->state, pos->count,
-          "pos->wait_sem");
+    task_t *tp = cpu_tasks[i];
+    if (tp)
+      printf("pid=%d, name=%s, owner=%d, state=%s, count=%d, wait_sem=%s\n",
+             tp->pid, tp->name, tp->owner, task_states_str[tp->state],
+             tp->count, "pos->wait_sem");
     else
       printf("#%d: empty\n", i);
   }
