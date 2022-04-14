@@ -20,5 +20,6 @@ var kmt_8c =
     [ "next_pid", "kmt_8c.html#a7862efcd924f4ea4a57d32e1f73abc85", null ],
     [ "null_contexts", "kmt_8c.html#a6b16e2cac622d98b18a36af45c72f3d6", null ],
     [ "root_task", "kmt_8c.html#a1eb275eb797e6738872d17fb84e6c64a", null ],
+    [ "task_list_lock", "kmt_8c.html#a9bd12bbaf1ec68de0db0ded78d69241d", null ],
     [ "task_states_str", "kmt_8c.html#a24ae66985a7028b41a15f77027e05405", null ]
 ];

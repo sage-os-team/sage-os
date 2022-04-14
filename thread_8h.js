@@ -18,5 +18,6 @@ var thread_8h =
     ] ],
     [ "kmt_print_all_tasks", "thread_8h.html#a0ac321d3074b24b276695a080e835866", null ],
     [ "kmt_print_cpu_tasks", "thread_8h.html#ac69761d0146d9aacda65da757868d3c7", null ],
+    [ "task_list_lock", "thread_8h.html#a9bd12bbaf1ec68de0db0ded78d69241d", null ],
     [ "task_states_str", "thread_8h.html#ac3f913b8c53f273e22875cf3b8fa2dda", null ]
 ];
