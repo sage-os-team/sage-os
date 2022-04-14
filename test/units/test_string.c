@@ -1,11 +1,13 @@
 #include "trap.h"
 
-void init(char *a,char *b,char *c){
+void init(char *a,char *b,char *c)
+{
     strcpy(a,"Welcome to sage-os!");
     strcpy(b,"Welcome");
     strcpy(c,"000000000000000000");
 }
-int main() {
+int main()
+{
   char a[30]="Welcome to sage-os!";
   char b[30]="Welcome";
   char c[30];
