@@ -44,8 +44,6 @@
  *  3: only INFO and SUCCESS
  *
  */
-int _log_mask;
-
 #ifndef LOG_MASK
 #define LOG_MASK \
   (LOG_INFO | LOG_WARN | LOG_ERROR)  // defalt print INFO and above
@@ -54,24 +52,19 @@ int _log_mask;
 extern const char* type_str[10];
 
 #ifdef NODEBUG
-
 #define log(type, format, ...)        ;
 #define log_detail(type, format, ...) ;
-
 #else
-
 #define log(type, format, ...) \
-  if (type & _log_mask) { \
+  if (type & LOG_MASK) { \
     printf("#%d %s: " format "\n", cpu_current(), type_str[type], \
            ##__VA_ARGS__); \
   }
-
 #define log_detail(type, format, ...) \
-  if (type & _log_mask) { \
+  if (type & LOG_MASK) { \
     printf("#%d %s (%s:%d, %s):\n" format "\n", cpu_current(), type_str[type], \
            __FILE__, __LINE__, __func__, ##__VA_ARGS__); \
   }
-
 #endif
 
 #define success(format, ...) log(LOG_SUCCESS, format, ##__VA_ARGS__)
@@ -83,22 +76,6 @@ extern const char* type_str[10];
 #define info_detail(format, ...)  log_detail(LOG_INFO, format, ##__VA_ARGS__)
 #define warn_detail(format, ...)  log_detail(LOG_WARN, format, ##__VA_ARGS__)
 #define error_detail(format, ...) log_detail(LOG_ERROR, format, ##__VA_ARGS__)
-
-#define assert_msg_block(cond, format, ...) \
-  if (!(cond)) { \
-    printf("#%d " FG_RED "ASSERT_FAILED" COLOR_NONE "(%s:%d, %s):\n" format \
-           "\n", \
-           cpu_current(), __FILE__, __LINE__, __func__, ##__VA_ARGS__); \
-    while (1) \
-      ; \
-  }
-
-#define assert_msg(cond, format, ...) \
-  if (!(cond)) \
-    printf("#%d " FG_RED "ASSERT_FAILED" COLOR_NONE "(%s:%d, %s):\n" format \
-           "\n", \
-           cpu_current(), __FILE__, __LINE__, __func__, ##__VA_ARGS__); \
-  assert((cond));
 
 /**
  * @brief Control whether enable function trace

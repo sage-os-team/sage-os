@@ -1,7 +1,7 @@
 #include "trap.h"
 
 int main() {
-  int friends = 10;
+  int friends = 11;
   char out[200];
   snprintf(out, 15, "Hello,I am %s,I have %05.3d friends.", "Tom", friends);
   check(strcmp(out, "Hello,I am Tom") == 0);

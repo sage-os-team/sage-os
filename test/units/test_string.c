@@ -1,31 +1,25 @@
 #include "trap.h"
 
-void init(char *a,char *b,char *c){
-    strcpy(a,"Welcome to sage-os!");
-    strcpy(b,"Welcome");
-    strcpy(c,"000000000000000000");
-}
+char *s[] = {"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+             "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+             "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+             ", World!\n",
+             "Hello, World!\n",
+             "#####"};
+
+char str1[] = "Hello";
+char str[20];
+
 int main() {
-  char a[30]="Welcome to sage-os!";
-  char b[30]="Welcome";
-  char c[30];
-  char d[20]="OOOOOO";
-  char e[20]=" to sage-os!";
-  check((strlen(b)==7)==1);
-  check((strcmp(strncpy(c,a,7),b)==0)==1);
-  init(a,b,c);
-  check((strcmp(strcpy(c,a),a)==0)==1);
-  init(a,b,c);
-  check((strcmp(strcat(b,e),a)==0)==1);
-  init(a,b,c);
-  check((strncmp(a,b,7)==0)==1);
-  init(a,b,c);
-  check((memcmp(memset(c,'O',7),d,6)==0)==1);
-  init(a,b,c);
-  check((memcmp(memcpy(c,a,7),b,7)==0)==1);
-  init(a,b,c);
-  check((memcmp(memmove(c,a,7),b,7)==0)==1);
-  init(a,b,c);
-  check((memcmp(a,b,7)==0)==1);
+  check(strcmp(s[0], s[2]) == 0);
+  check(strcmp(s[0], s[1]) < 0);
+  check(strcmp(s[0] + 1, s[1] + 1) < 0);
+  check(strcmp(s[0] + 2, s[1] + 2) < 0);
+  check(strcmp(s[0] + 3, s[1] + 3) < 0);
+
+  check(strcmp(strcat(strcpy(str, str1), s[3]), s[4]) == 0);
+
+  check(memcmp(memset(str, '#', 5), s[5], 5) == 0);
+
   return 0;
 }

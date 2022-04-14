@@ -55,7 +55,11 @@ void buddy_init(struct pmm_pool* mm_pool, struct chunk* start_chunk,
  */
 
 void chunk_free(struct pmm_pool* mm_pool, struct chunk* chunk) {
-  assert_msg(chunk->used, "try to FREE an unalloced page");
+  if (!chunk->used) {
+    warn("try to FREE an unalloced page");
+    return;
+  }
+
   chunk->used = false;
   chunk_append(mm_pool, chunk);
   chunk_merge(mm_pool, chunk);
