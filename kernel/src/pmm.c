@@ -1,10 +1,18 @@
 #include <common.h>
 #include <buddy.h>
 #include <logger.h>
+#include <slab.h>
 
-struct pmm_pool global_mm_pool;
+#define _SIZE (1UL << SLAB_MAX_ORDER)
+
+
 
 static void* kalloc(size_t size) {
+  if (size <= _SIZE) {
+    printf("small:alloc_in_slab\n");
+		return alloc_in_slab(size);
+	}
+  printf("big:alloc in buddy system\n");
   int npage         = (size + 1) / SZ_PAGE;
   int acquire_order = power2ify(npage);
   log_detail(LOG_INFO, "acquire order: %d", acquire_order);
@@ -20,8 +28,15 @@ static void* kalloc(size_t size) {
 
 static void kfree(void* ptr) {
   struct chunk* chunk = virt2chunk(&global_mm_pool, ptr);
-  chunk_free(&global_mm_pool, chunk);
-  info_detail("free successfully, address: %#x", ptr);
+  if (chunk && chunk->slab){
+    printf("small:free in slab\n");
+		free_in_slab(ptr);
+  }
+  else{
+    printf("big:free in buddy system\n");
+    chunk_free(&global_mm_pool, chunk);
+    info_detail("free successfully, address: %#x", ptr);
+  }
 }
 
 static void pmm_init() {
@@ -43,6 +58,14 @@ static void pmm_init() {
       pg_start, pi_start, nr_page);
   log_detail(LOG_INFO, "begin to init buddy system");
   buddy_init(&global_mm_pool, pi_start, pg_start, nr_page);
+  printf("begin to init slabbbbb\n");
+  slab_init();
+
+  printf("begin to test\n");
+  printf("test slab\n");
+  kfree(kalloc(_SIZE-1));
+  printf("test buddy system\n");
+  kfree(kalloc(SZ_PAGE*4));
 }
 
 MODULE_DEF(pmm) = {

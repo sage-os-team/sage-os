@@ -8,15 +8,6 @@
 #define SZ_PAGE         (4 * KB)
 
 /**
- * @brief page metadata
- */
-struct page {
-  void* start_addr;
-  struct chunk* _chunk;
-  // struct slab*
-};
-
-/**
  * @brief free list api, including counter of free page.
  *
  */
@@ -32,6 +23,7 @@ struct chunk {
   struct list_head node;
   uint8_t order;
   bool used;
+  void* slab;
 };
 
 /**
@@ -45,6 +37,9 @@ struct pmm_pool {
   struct chunk* chunk_metadata;
   struct free_list free_lists[BUDDY_MAX_ORDER];
 };
+
+struct pmm_pool global_mm_pool;
+
 void* chunk2virt(struct pmm_pool* mm_pool, struct chunk* chunk);
 
 struct chunk* virt2chunk(struct pmm_pool* mm_pool, void* virt);
