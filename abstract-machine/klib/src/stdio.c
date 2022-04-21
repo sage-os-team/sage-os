@@ -36,6 +36,15 @@ char *argbuf;              // arg buf
   } \
   (ret)++;
 
+#define print_buf_to_out(pout, n, ret, len) \
+  if (n > 1) { \
+    len = len > n - 1 ? n - 1 : len; \
+    ret += len; \
+    strncpy(pout, argbuf, len); \
+    pout += len; \
+    n -= len; \
+  }
+
 // void add_pad(char **out, size_t *n, int *ret, char pad, int num) {
 //   while (num--) {
 //     if (*n > 1) {
@@ -148,6 +157,7 @@ int vsnprintf(char *out, size_t n, const char *fmt, va_list ap) {
   int wellnumber = 0;      //#
   int value;
   int negative = 0;
+  int mines    = 0;
   int legal    = 1;  // check if the format is legal
 
   while (*pfmt) {
@@ -177,11 +187,14 @@ int vsnprintf(char *out, size_t n, const char *fmt, va_list ap) {
     pad       = ' ';  // padding char
     space     = 0;    // space
     precision = 0;    // precision,default length is 6
+    mines     = 0;
     legal     = 1;
     /*flags*/
     while (1) {
       if (*pfmt == ' ') {
         space = 1;
+      } else if (*pfmt == '-') {
+        mines = 1;
       } else if (*pfmt == '0') {
         pad = '0';
       } else if (*pfmt == '#')
@@ -234,7 +247,7 @@ int vsnprintf(char *out, size_t n, const char *fmt, va_list ap) {
       switch (spec) {
         case 'c':
           *argbuf = va_arg(ap, int);
-          len     = 1;
+          len = 1;
           break;
         case 's':
           argbuf = va_arg(ap, char *);
@@ -259,21 +272,16 @@ int vsnprintf(char *out, size_t n, const char *fmt, va_list ap) {
       }
       /*can hold the length of buf*/
       if (legal) {
-        if (n > len) {
-          /*need padding*/
-          if (spec != 'c' && spec != 's') {
+        if (spec != 'c' && spec != 's') {
+          if (n > len) {
+            /*need padding*/
             if (space) {  // space padding
-              // add_pad(pout, n, ret, ' ', 1);
-              if ((n) > 1) {
-                *(out)++ = (pad);
-                (n)--;
-              }
-              (ret)++;
+              add_single_pad(pout, n, ret, ' ');
             }
-            if (negative) {
+            if (negative && spec != 'c' && spec != 's') {
               add_single_pad(pout, n, ret, '-');
             }
-            if (wellnumber) {
+            if (wellnumber && spec != 'c' && spec != 's') {
               add_single_pad(pout, n, ret, '0');
               add_single_pad(pout, n, ret, 'x');
             }
@@ -284,17 +292,10 @@ int vsnprintf(char *out, size_t n, const char *fmt, va_list ap) {
             } else if (minw - space - len > 0) {
               add_pad(pout, n, ret, pad, minw - space - len);
             }
-          }
 
-          if (n > 1) {
-            len = len > n - 1 ? n - 1 : len;
-            ret += len;
-            strncpy(pout, argbuf, len);
-            pout += len;
-            n -= len;
-          }
-        } else {
-          if (spec != 'c' && spec != 's') {
+            print_buf_to_out(pout, n, ret, len)
+
+          } else {
             if (negative) {
               add_single_pad(pout, n, ret, '-');
             }
@@ -302,21 +303,26 @@ int vsnprintf(char *out, size_t n, const char *fmt, va_list ap) {
               add_single_pad(pout, n, ret, '0');
               add_single_pad(pout, n, ret, 'x');
             }
+            ret += n - 1;
+            len = n - 1;
+            strncpy(pout, argbuf, len);
+            pout += len;
+            n = 1;
           }
-          ret += n - 1;
-          len = n - 1;
-          strncpy(pout, argbuf, len);
-          pout += len;
-          n = 1;
+        } else {
+          if (len > precision) {  // string max length
+            len = precision;
+          }
+          if (!mines && minw > len) {  // add space pad
+            add_pad(pout, n, ret, ' ', minw - len);
+          }
+          print_buf_to_out(pout, n, ret, len);
+          if (mines && minw > len) {  // add space pad
+            add_pad(pout, n, ret, ' ', minw - len);
+          }
         }
       } else {
-        if (n > 1) {
-          len = len > n - 1 ? n - 1 : len;
-          ret += len;
-          strncpy(pout, argbuf, len);
-          pout += len;
-          n -= len;
-        }
+        print_buf_to_out(pout, n, ret, len);
       }
     }
   }

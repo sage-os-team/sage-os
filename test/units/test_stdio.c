@@ -12,7 +12,8 @@ int main() {
   sprintf(out, "Hello,I am %s,I have %d friends.They are  at %#x.", "Tom",
           friends, friends);
   check(strcmp(out, "Hello,I am Tom,I have 10 friends.They are  at 0xa.") == 0);
-  printf("Hello,I am %s,I have %ld friends.They are  at %#x or %p.", "Tom",
+  printf("Hello,I am %5.2s,I have %ld friends.They are  at %#x or %p.", "Tom",
          friends, friends, &friends);
+  printf("Hello,I am %-5.2s.", "Tom");
   return 0;
 }
