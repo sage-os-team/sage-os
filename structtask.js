@@ -1,6 +1,7 @@
 var structtask =
 [
     [ "arg", "structtask.html#a9ce2ec4812a92cb6ab39f6e81e9173a9", null ],
+    [ "as", "structtask.html#a22996ac1c866f2aa808036cec926e515", null ],
     [ "context", "structtask.html#aa254a98e2e3d77626823cad539eced2b", null ],
     [ "count", "structtask.html#a86988a65e0d3ece7990c032c159786d6", null ],
     [ "entry", "structtask.html#a9d48ebdc24277ac3b5f3a89fa92e0c83", null ],

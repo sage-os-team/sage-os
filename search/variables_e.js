@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../structmmu__config_1_1ptinfo.html#a8f8f80d37794cde9472343e4487ba3eb',1,'mmu_config::ptinfo::name()'],['../structdevice.html#a8f8f80d37794cde9472343e4487ba3eb',1,'device::name()'],['../structspinlock.html#a8f8f80d37794cde9472343e4487ba3eb',1,'spinlock::name()'],['../structtask.html#a8f8f80d37794cde9472343e4487ba3eb',1,'task::name()']]],
+  ['name_0',['name',['../structdevice.html#a8f8f80d37794cde9472343e4487ba3eb',1,'device::name()'],['../structsemaphore.html#a8f8f80d37794cde9472343e4487ba3eb',1,'semaphore::name()'],['../structspinlock.html#a8f8f80d37794cde9472343e4487ba3eb',1,'spinlock::name()'],['../structtask.html#a8f8f80d37794cde9472343e4487ba3eb',1,'task::name()'],['../structmmu__config_1_1ptinfo.html#a8f8f80d37794cde9472343e4487ba3eb',1,'mmu_config::ptinfo::name()']]],
   ['ncli_1',['ncli',['../spinlock_8c.html#a49e126e4baf0416aee9bbf65a1bb3eb0',1,'spinlock.c']]],
   ['next_2',['next',['../structlist__head.html#ad6116fd07816a828c3a9830f54871bd0',1,'list_head::next()'],['../structtask.html#ae949d26b280beacfbb782fa148c8505d',1,'task::next()'],['../structirq__handler.html#a6dc4666e1c958ce0cef1907317be247d',1,'irq_handler::next()'],['../stdlib_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689',1,'next():&#160;stdlib.c']]],
   ['next_5fpid_3',['next_pid',['../kmt_8c.html#a7862efcd924f4ea4a57d32e1f73abc85',1,'kmt.c']]],

@@ -12,8 +12,9 @@ var searchData=
   ['complex_5fimaginary_9',['COMPLEX_IMAGINARY',['../int64_8c.html#a11126859f0b2b548a38014983a05443e',1,'int64.c']]],
   ['complex_5freal_10',['COMPLEX_REAL',['../int64_8c.html#afdecbe8dd27a952b61c45a138f5a9b73',1,'int64.c']]],
   ['concat_11',['CONCAT',['../klib-macros_8h.html#a2f18db18bca26cafa95e9719de4a41ef',1,'klib-macros.h']]],
-  ['cpu_12',['CPU',['../x86-qemu_8h.html#ad703205f9a4d4bb6af9c25257c23ce6d',1,'x86-qemu.h']]],
-  ['cr0_5fpe_13',['CR0_PE',['../x86_8h.html#aa899fa0a2a7dd414343fb2fada767622',1,'x86.h']]],
-  ['cr0_5fpg_14',['CR0_PG',['../x86_8h.html#a4f3b70ba40d96e55cae6026acc12cfed',1,'x86.h']]],
-  ['cr4_5fpae_15',['CR4_PAE',['../x86_8h.html#a1ca5cfd0c966d604caca75537046dd84',1,'x86.h']]]
+  ['cprintf_5fmax_5fline_5fchars_12',['CPRINTF_MAX_LINE_CHARS',['../devices_8h.html#a01dc5b744ac72026572602dcb0644423',1,'devices.h']]],
+  ['cpu_13',['CPU',['../x86-qemu_8h.html#ad703205f9a4d4bb6af9c25257c23ce6d',1,'x86-qemu.h']]],
+  ['cr0_5fpe_14',['CR0_PE',['../x86_8h.html#aa899fa0a2a7dd414343fb2fada767622',1,'x86.h']]],
+  ['cr0_5fpg_15',['CR0_PG',['../x86_8h.html#a4f3b70ba40d96e55cae6026acc12cfed',1,'x86.h']]],
+  ['cr4_5fpae_16',['CR4_PAE',['../x86_8h.html#a1ca5cfd0c966d604caca75537046dd84',1,'x86.h']]]
 ];

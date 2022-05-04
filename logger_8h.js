@@ -21,6 +21,8 @@ var logger_8h =
     [ "FG_RED", "logger_8h.html#a1dc5215d084174df6f00a9267cec2f17", null ],
     [ "FG_WHITE", "logger_8h.html#a7fbb956b9e769a1020c2eff1f6743857", null ],
     [ "FG_YELLOW", "logger_8h.html#a266aa539aa271da1b1f711d2413b1bfa", null ],
+    [ "FONT_BOLD", "logger_8h.html#a2687af87d6f5720034f5c3813acab894", null ],
+    [ "FONT_NORMAL", "logger_8h.html#a18bb58d9747aa2127f5abbed1fe7e401", null ],
     [ "info", "logger_8h.html#a8ee1f79b193a2069a4f74c155ce97f66", null ],
     [ "info_detail", "logger_8h.html#a95e904ba645fa61eb09794f6ea6233ea", null ],
     [ "log", "logger_8h.html#a579d10697d1c2bb395c3ce49dc020823", null ],
@@ -37,5 +39,5 @@ var logger_8h =
     [ "warn", "logger_8h.html#aaa6ad2ce683c5c5f5984faef407531d7", null ],
     [ "warn_detail", "logger_8h.html#ad7f0dd4b49e536be3e3430a76c2f933f", null ],
     [ "_log_mask", "logger_8h.html#abdb32ac1c236ce3f953a081fc268fbc7", null ],
-    [ "type_str", "logger_8h.html#a40b77b435dfd1866d919d7750236417d", null ]
+    [ "logger_type_str", "logger_8h.html#a271ec6bb33ce42085891a5722d5b8a15", null ]
 ];

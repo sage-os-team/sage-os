@@ -221,7 +221,13 @@ $(document).ready(function(){initNavTree('devices_8h_source.html',''); initResiz
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="structsd__t.html#a2c5f4ef732286b78e31ec8d1cb238215">  108</a></span>  uint8_t *<a class="code hl_variable" href="structsd__t.html#a2c5f4ef732286b78e31ec8d1cb238215">buf</a>;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>} <a class="code hl_struct" href="structsd__t.html">sd_t</a>;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">// ---------------</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="devices_8h.html#a01dc5b744ac72026572602dcb0644423">  113</a></span><span class="preprocessor">#define CPRINTF_MAX_LINE_CHARS 100</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keywordtype">int</span> <a class="code hl_function" href="devices_8h.html#add4cc2c1c0548108f208d7af0ff4805d">cprintf</a>(<span class="keywordtype">char</span> *tty_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
 <div class="ttc" id="adevices_8h_html_a1c8fdcba845271223d0e423e13daa51e"><div class="ttname"><a href="devices_8h.html#a1c8fdcba845271223d0e423e13daa51e">__attribute__</a></div><div class="ttdeci">typedef __attribute__</div></div>
 <div class="ttc" id="adevices_8h_html_a3db8caf06481e96e39a613af0c6e2d3b"><div class="ttname"><a href="devices_8h.html#a3db8caf06481e96e39a613af0c6e2d3b">sd_ops</a></div><div class="ttdeci">devops_t sd_ops</div><div class="ttdef"><b>Definition:</b> devices.h:14</div></div>
@@ -229,7 +235,8 @@ $(document).ready(function(){initNavTree('devices_8h_source.html',''); initResiz
 <div class="ttc" id="adevices_8h_html_a5e40e5ad0f2dcc8cb38770222b04772e"><div class="ttname"><a href="devices_8h.html#a5e40e5ad0f2dcc8cb38770222b04772e">TEXTURE_W</a></div><div class="ttdeci">#define TEXTURE_W</div><div class="ttdef"><b>Definition:</b> devices.h:53</div></div>
 <div class="ttc" id="adevices_8h_html_a662eb0e7208baadb19820727ce117be4"><div class="ttname"><a href="devices_8h.html#a662eb0e7208baadb19820727ce117be4">fb_ops</a></div><div class="ttdeci">devops_t fb_ops</div><div class="ttdef"><b>Definition:</b> devices.h:14</div></div>
 <div class="ttc" id="adevices_8h_html_a86253796ec054f08fa171da00ca0c4cb"><div class="ttname"><a href="devices_8h.html#a86253796ec054f08fa171da00ca0c4cb">TEXTURE_H</a></div><div class="ttdeci">#define TEXTURE_H</div><div class="ttdef"><b>Definition:</b> devices.h:54</div></div>
-<div class="ttc" id="adevices_8h_html_abd2ce85f566209281acc2431d2d030a7"><div class="ttname"><a href="devices_8h.html#abd2ce85f566209281acc2431d2d030a7">tty_ops</a></div><div class="ttdeci">devops_t tty_ops</div><div class="ttdef"><b>Definition:</b> dev_tty.c:257</div></div>
+<div class="ttc" id="adevices_8h_html_abd2ce85f566209281acc2431d2d030a7"><div class="ttname"><a href="devices_8h.html#abd2ce85f566209281acc2431d2d030a7">tty_ops</a></div><div class="ttdeci">devops_t tty_ops</div><div class="ttdef"><b>Definition:</b> dev_tty.c:289</div></div>
+<div class="ttc" id="adevices_8h_html_add4cc2c1c0548108f208d7af0ff4805d"><div class="ttname"><a href="devices_8h.html#add4cc2c1c0548108f208d7af0ff4805d">cprintf</a></div><div class="ttdeci">int cprintf(char *tty_name, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> dev_tty.c:351</div></div>
 <div class="ttc" id="adevices_8h_html_ae2fc4f3451719a730e6bea2cb144ec0a"><div class="ttname"><a href="devices_8h.html#ae2fc4f3451719a730e6bea2cb144ec0a">devops_t</a></div><div class="ttdeci">struct devops devops_t</div></div>
 <div class="ttc" id="asem_8h_html"><div class="ttname"><a href="sem_8h.html">sem.h</a></div></div>
 <div class="ttc" id="aspinlock_8h_html"><div class="ttname"><a href="spinlock_8h.html">spinlock.h</a></div></div>
@@ -268,7 +275,7 @@ $(document).ready(function(){initNavTree('devices_8h_source.html',''); initResiz
 <div class="ttc" id="astructsd__t_html"><div class="ttname"><a href="structsd__t.html">sd_t</a></div><div class="ttdef"><b>Definition:</b> devices.h:106</div></div>
 <div class="ttc" id="astructsd__t_html_a2c5f4ef732286b78e31ec8d1cb238215"><div class="ttname"><a href="structsd__t.html#a2c5f4ef732286b78e31ec8d1cb238215">sd_t::buf</a></div><div class="ttdeci">uint8_t * buf</div><div class="ttdef"><b>Definition:</b> devices.h:108</div></div>
 <div class="ttc" id="astructsd__t_html_a533d7eabc006360189375b4d9b791fc6"><div class="ttname"><a href="structsd__t.html#a533d7eabc006360189375b4d9b791fc6">sd_t::blkcnt</a></div><div class="ttdeci">uint32_t blkcnt</div><div class="ttdef"><b>Definition:</b> devices.h:107</div></div>
-<div class="ttc" id="astructsemaphore_html"><div class="ttname"><a href="structsemaphore.html">semaphore</a></div><div class="ttdef"><b>Definition:</b> sem.h:6</div></div>
+<div class="ttc" id="astructsemaphore_html"><div class="ttname"><a href="structsemaphore.html">semaphore</a></div><div class="ttdef"><b>Definition:</b> sem.h:12</div></div>
 <div class="ttc" id="astructspinlock_html"><div class="ttname"><a href="structspinlock.html">spinlock</a></div><div class="ttdef"><b>Definition:</b> spinlock.h:7</div></div>
 <div class="ttc" id="astructsprite_html"><div class="ttname"><a href="structsprite.html">sprite</a></div><div class="ttdef"><b>Definition:</b> devices.h:68</div></div>
 <div class="ttc" id="astructsprite_html_a2875803afe5be90dc75cf33650dac541"><div class="ttname"><a href="structsprite.html#a2875803afe5be90dc75cf33650dac541">sprite::texture</a></div><div class="ttdeci">uint16_t texture</div><div class="ttdef"><b>Definition:</b> devices.h:69</div></div>

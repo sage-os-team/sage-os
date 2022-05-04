@@ -6,5 +6,7 @@ var searchData=
   ['spinlock_2eh_3',['spinlock.h',['../spinlock_8h.html',1,'']]],
   ['stdio_2ec_4',['stdio.c',['../stdio_8c.html',1,'']]],
   ['stdlib_2ec_5',['stdlib.c',['../stdlib_8c.html',1,'']]],
-  ['string_2ec_6',['string.c',['../string_8c.html',1,'']]]
+  ['string_2ec_6',['string.c',['../string_8c.html',1,'']]],
+  ['syscall_2ec_7',['syscall.c',['../syscall_8c.html',1,'']]],
+  ['syscall_2eh_8',['syscall.h',['../syscall_8h.html',1,'']]]
 ];

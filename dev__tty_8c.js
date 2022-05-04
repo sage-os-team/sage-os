@@ -1,6 +1,7 @@
 var dev__tty_8c =
 [
     [ "TTY_COOK_BUF_SZ", "dev__tty_8c.html#a7fbbbac2c52be06e1128550c1735a768", null ],
+    [ "cprintf", "dev__tty_8c.html#add4cc2c1c0548108f208d7af0ff4805d", null ],
     [ "dev_tty_task", "dev__tty_8c.html#a1f58ad55bfbcfcb3de4088f34f76c976", null ],
     [ "tty_cook", "dev__tty_8c.html#ac4b5c77d7cdc337272542d1d577b2725", null ],
     [ "tty_defaultch", "dev__tty_8c.html#a569181c1c5120ddc8ad22be97d5cd3fe", null ],
@@ -22,5 +23,5 @@ var dev__tty_8c =
     [ "welcome", "dev__tty_8c.html#aa67dfec7213f84343166faddae16c485", null ],
     [ "show_cursor", "dev__tty_8c.html#aff1ef6f60e0fea2bea14e0334f427ff9", null ],
     [ "tty_ops", "dev__tty_8c.html#abd2ce85f566209281acc2431d2d030a7", null ],
-    [ "welcome_text", "dev__tty_8c.html#a205313ee8b8412b263d4cdbfab7db858", null ]
+    [ "welcome_text1", "dev__tty_8c.html#a0392f8479f94bf0023b1ab85abe8f6f3", null ]
 ];

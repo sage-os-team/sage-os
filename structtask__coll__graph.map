@@ -1,4 +1,7 @@
 <map id="task" name="task">
-<area shape="rect" id="node1" title=" " alt="" coords="25,95,72,121"/>
-<area shape="rect" id="node2" href="$structsemaphore.html" title=" " alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="80,184,127,211"/>
+<area shape="rect" id="node2" href="$structsemaphore.html" title=" " alt="" coords="5,95,92,121"/>
+<area shape="rect" id="node3" href="$structspinlock.html" title=" " alt="" coords="13,5,84,32"/>
+<area shape="rect" id="node4" href="$struct_addr_space.html" title=" " alt="" coords="116,95,203,121"/>
+<area shape="rect" id="node5" href="$struct_area.html" title=" " alt="" coords="135,5,184,32"/>
 </map>

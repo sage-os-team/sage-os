@@ -1,0 +1,17 @@
+<map id="sem_wait" name="sem_wait">
+<area shape="rect" id="node1" title="release semaphore(Mutex) and sleep task holding the sem" alt="" coords="5,107,84,133"/>
+<area shape="rect" id="node2" href="$spinlock_8c.html#ad4be0d674a7ca4dc90c2dbf8b34562cc" title="check current cpu has the lock" alt="" coords="271,81,365,108"/>
+<area shape="rect" id="node11" href="$spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce" title="acquire spinlock to current cpu" alt="" coords="139,132,216,159"/>
+<area shape="rect" id="node14" href="$spinlock_8c.html#acdf118d615a4bc4064e991add9a80995" title="release spinlock from current cpu" alt="" coords="132,31,223,57"/>
+<area shape="rect" id="node15" href="$cte_8c.html#a58c8b2ad0ea491a6642e5e1cbd358c89" title=" " alt="" coords="153,183,201,209"/>
+<area shape="rect" id="node3" href="$mpe_8c.html#ab701de78cad32896c923ce900087e714" title=" " alt="" coords="556,81,647,108"/>
+<area shape="rect" id="node4" href="$spinlock_8c.html#afc9565dc7a5ddf77e1fa76f5d91caf78" title="interrupt able" alt="" coords="417,31,504,57"/>
+<area shape="rect" id="node8" href="$spinlock_8c.html#ab213874cda54fdbbeb1bec1e5fa90b28" title="interrupt disable" alt="" coords="413,132,508,159"/>
+<area shape="rect" id="node5" href="$cte_8c.html#a4a139958742786c5085172be1f69bfd0" title=" " alt="" coords="580,31,623,57"/>
+<area shape="rect" id="node6" href="$x86_8h.html#acc919e7809ef1db2b20aa3804f540b5c" title=" " alt="" coords="705,56,744,83"/>
+<area shape="rect" id="node7" href="$x86_8h.html#a4657e97b270d7af5a23da2c4d642ada2" title=" " alt="" coords="705,5,744,32"/>
+<area shape="rect" id="node9" href="$cte_8c.html#a79659a2b801c42951e38f3a8821acbae" title=" " alt="" coords="566,132,637,159"/>
+<area shape="rect" id="node10" href="$x86_8h.html#a73d094f09c6a7dd3fc703aa8229933ee" title=" " alt="" coords="695,132,755,159"/>
+<area shape="rect" id="node12" href="$mpe_8c.html#aaaad47c97c82065cf463f83b98b23c30" title=" " alt="" coords="271,233,365,260"/>
+<area shape="rect" id="node13" href="$x86_8h.html#a48b2a6a16dc8d7e09d327aa3803f1112" title=" " alt="" coords="436,233,485,260"/>
+</map>

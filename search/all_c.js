@@ -28,7 +28,7 @@ var searchData=
   ['list_5fhead_5finit_25',['LIST_HEAD_INIT',['../list_8h.html#a4642d4b7df28478bb762fe43c85b5c63',1,'list.h']]],
   ['list_5fmove_26',['list_move',['../list_8h.html#aee8df43e41969c2272acfd6ed6e75d4c',1,'list.h']]],
   ['list_5fmove_5ftail_27',['list_move_tail',['../list_8h.html#a1c5ac6a6b04a03f5782e818daacf96e9',1,'list.h']]],
-  ['lock_28',['lock',['../structtty__t.html#ac301e000199ad937f060277b0736d4e1',1,'tty_t::lock()'],['../structinput__t.html#a79cda015c79ff2b4c1444e3070f0bb5d',1,'input_t::lock()']]],
+  ['lock_28',['lock',['../structsemaphore.html#a79cda015c79ff2b4c1444e3070f0bb5d',1,'semaphore::lock()'],['../structtty__t.html#ac301e000199ad937f060277b0736d4e1',1,'tty_t::lock()'],['../structinput__t.html#a79cda015c79ff2b4c1444e3070f0bb5d',1,'input_t::lock()']]],
   ['lock_5fflag_29',['lock_flag',['../structspinlock.html#a5379df879a195cd227c4b3e04fc324d4',1,'spinlock']]],
   ['log_30',['log',['../logger_8h.html#a579d10697d1c2bb395c3ce49dc020823',1,'logger.h']]],
   ['log_5fdetail_31',['log_detail',['../logger_8h.html#ae094691a5e6acc45e0a05462219a8fb7',1,'logger.h']]],
@@ -39,7 +39,8 @@ var searchData=
   ['log_5fwarn_36',['LOG_WARN',['../logger_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27',1,'logger.h']]],
   ['logger_2ec_37',['logger.c',['../logger_8c.html',1,'']]],
   ['logger_2eh_38',['logger.h',['../logger_8h.html',1,'']]],
-  ['long_5fdouble_5fbits_39',['long_double_bits',['../unionlong__double__bits.html',1,'']]],
-  ['low_40',['low',['../unionudwords.html#aa8808d04ef26a57c2797d761b736379d',1,'udwords::low()'],['../uniondwords.html#aa8808d04ef26a57c2797d761b736379d',1,'dwords::low()'],['../structuqwords.html#a3f52aa9ba586375f63e65d06e63984b8',1,'uqwords::low()']]],
-  ['lut_41',['lut',['../ioe_8c.html#a219bb62e0fda13228fdefc9199095660',1,'ioe.c']]]
+  ['logger_5ftype_5fstr_39',['logger_type_str',['../logger_8h.html#a271ec6bb33ce42085891a5722d5b8a15',1,'logger_type_str():&#160;logger.c'],['../logger_8c.html#a271ec6bb33ce42085891a5722d5b8a15',1,'logger_type_str():&#160;logger.c']]],
+  ['long_5fdouble_5fbits_40',['long_double_bits',['../unionlong__double__bits.html',1,'']]],
+  ['low_41',['low',['../unionudwords.html#aa8808d04ef26a57c2797d761b736379d',1,'udwords::low()'],['../uniondwords.html#aa8808d04ef26a57c2797d761b736379d',1,'dwords::low()'],['../structuqwords.html#a3f52aa9ba586375f63e65d06e63984b8',1,'uqwords::low()']]],
+  ['lut_42',['lut',['../ioe_8c.html#a219bb62e0fda13228fdefc9199095660',1,'ioe.c']]]
 ];

@@ -10,5 +10,6 @@ var kernel_8h =
     [ "MODULE", "kernel_8h.html#adfee56986108d7e34539023df7cce17d", null ],
     [ "MODULE", "kernel_8h.html#a7ef2d722f9c7f8acc1801144a5188825", null ],
     [ "MODULE", "kernel_8h.html#aa26eae0f4368a1b7b84898fccc5f4053", null ],
-    [ "MODULE", "kernel_8h.html#ab5fefb42282ff313d6e6526fe793e1c0", null ]
+    [ "MODULE", "kernel_8h.html#ab5fefb42282ff313d6e6526fe793e1c0", null ],
+    [ "MODULE", "kernel_8h.html#a79a46817ea5301ce6a371e1f0e09d342", null ]
 ];

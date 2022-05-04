@@ -122,11 +122,12 @@ $(document).ready(function(){initNavTree('globals_func_s.html',''); initResizabl
 <li>set_gdt()&#160;:&#160;<a class="el" href="x86_8h.html#a4dc007b346b1364320af9d9e1c105455">x86.h</a></li>
 <li>set_idt()&#160;:&#160;<a class="el" href="x86_8h.html#aec7546614338d8b90023fa2805432e22">x86.h</a></li>
 <li>set_tr()&#160;:&#160;<a class="el" href="x86_8h.html#a2d9f7bff4b1a6ec6b994dffdc4172bef">x86.h</a></li>
-<li>snprintf()&#160;:&#160;<a class="el" href="klib_8h.html#ad76145a6edfc98981ded8815a760e0cd">klib.h</a>, <a class="el" href="stdio_8c.html#a01e71b83290d0444ab13988f6d3a7ebd">stdio.c</a></li>
+<li>sleep()&#160;:&#160;<a class="el" href="ulib_8h.html#a4a920ec7e1766548b0422c649629d2ac">ulib.h</a></li>
+<li>snprintf()&#160;:&#160;<a class="el" href="stdio_8c.html#a01e71b83290d0444ab13988f6d3a7ebd">stdio.c</a>, <a class="el" href="klib_8h.html#ad76145a6edfc98981ded8815a760e0cd">klib.h</a></li>
 <li>spin_holding()&#160;:&#160;<a class="el" href="spinlock_8h.html#ad4be0d674a7ca4dc90c2dbf8b34562cc">spinlock.h</a>, <a class="el" href="spinlock_8c.html#ad4be0d674a7ca4dc90c2dbf8b34562cc">spinlock.c</a></li>
 <li>spin_init()&#160;:&#160;<a class="el" href="spinlock_8h.html#ab80f529a7b9f49f09fc91a404731c869">spinlock.h</a>, <a class="el" href="spinlock_8c.html#ab80f529a7b9f49f09fc91a404731c869">spinlock.c</a></li>
 <li>spin_lock()&#160;:&#160;<a class="el" href="spinlock_8h.html#ab6f3c37ec37006951feccc3c05387cce">spinlock.h</a>, <a class="el" href="spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce">spinlock.c</a></li>
-<li>spin_popcli()&#160;:&#160;<a class="el" href="spinlock_8c.html#afc9565dc7a5ddf77e1fa76f5d91caf78">spinlock.c</a>, <a class="el" href="spinlock_8h.html#afc9565dc7a5ddf77e1fa76f5d91caf78">spinlock.h</a></li>
+<li>spin_popcli()&#160;:&#160;<a class="el" href="spinlock_8h.html#afc9565dc7a5ddf77e1fa76f5d91caf78">spinlock.h</a>, <a class="el" href="spinlock_8c.html#afc9565dc7a5ddf77e1fa76f5d91caf78">spinlock.c</a></li>
 <li>spin_pushcli()&#160;:&#160;<a class="el" href="spinlock_8h.html#ab213874cda54fdbbeb1bec1e5fa90b28">spinlock.h</a>, <a class="el" href="spinlock_8c.html#ab213874cda54fdbbeb1bec1e5fa90b28">spinlock.c</a></li>
 <li>spin_unlock()&#160;:&#160;<a class="el" href="spinlock_8h.html#acdf118d615a4bc4064e991add9a80995">spinlock.h</a>, <a class="el" href="spinlock_8c.html#acdf118d615a4bc4064e991add9a80995">spinlock.c</a></li>
 <li>sprintf()&#160;:&#160;<a class="el" href="klib_8h.html#a3082155ec11e7229f7a20439b31a169e">klib.h</a>, <a class="el" href="stdio_8c.html#addca8d5b24829d42f4a3f2831349a316">stdio.c</a></li>
@@ -140,6 +141,16 @@ $(document).ready(function(){initNavTree('globals_func_s.html',''); initResizabl
 <li>strlen()&#160;:&#160;<a class="el" href="klib_8h.html#aa383452fe445bfae989358c9d7d96f4f">klib.h</a>, <a class="el" href="string_8c.html#aa383452fe445bfae989358c9d7d96f4f">string.c</a></li>
 <li>strncmp()&#160;:&#160;<a class="el" href="klib_8h.html#a07f4a84c11c106e95c32b6ab509346ef">klib.h</a>, <a class="el" href="string_8c.html#a07f4a84c11c106e95c32b6ab509346ef">string.c</a></li>
 <li>strncpy()&#160;:&#160;<a class="el" href="klib_8h.html#a82f08f2390a9067f3c94b638e90e03bd">klib.h</a>, <a class="el" href="string_8c.html#a82f08f2390a9067f3c94b638e90e03bd">string.c</a></li>
+<li>sys_exit()&#160;:&#160;<a class="el" href="syscall_8c.html#a37952c0d405d562fcf8045ef3ad0d31d">syscall.c</a></li>
+<li>sys_fork()&#160;:&#160;<a class="el" href="syscall_8c.html#a01fbd4b45143dd51bf6f338d8ee325da">syscall.c</a></li>
+<li>sys_getpid()&#160;:&#160;<a class="el" href="syscall_8c.html#ae8bed926811d570cb7cfa6801379ea99">syscall.c</a></li>
+<li>sys_kill()&#160;:&#160;<a class="el" href="syscall_8c.html#a72ac8bd40cfa63d17169646eefe10993">syscall.c</a></li>
+<li>sys_kputc()&#160;:&#160;<a class="el" href="syscall_8c.html#a4db31517ecb5073d90b698f23e6a1780">syscall.c</a></li>
+<li>sys_mmap()&#160;:&#160;<a class="el" href="syscall_8c.html#a878a5205fa9c5ab42ec4ee495dc36119">syscall.c</a></li>
+<li>sys_sleep()&#160;:&#160;<a class="el" href="syscall_8c.html#ae6e0d2c011be2b8b8e727731758abde2">syscall.c</a></li>
+<li>sys_uptime()&#160;:&#160;<a class="el" href="syscall_8c.html#a403f4a0abec500ed0f9ff55dfb6b2bd4">syscall.c</a></li>
+<li>sys_wait()&#160;:&#160;<a class="el" href="syscall_8c.html#afad669ae572ea9bd75dbb446380a7270">syscall.c</a></li>
+<li>syscall()&#160;:&#160;<a class="el" href="ulib_8h.html#a4e1838566fe4a90effacec77cdcf6227">ulib.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

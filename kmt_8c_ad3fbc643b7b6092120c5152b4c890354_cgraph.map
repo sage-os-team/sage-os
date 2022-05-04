@@ -1,8 +1,8 @@
 <map id="kmt_error" name="kmt_error">
 <area shape="rect" id="node1" title="handler: handle program errors" alt="" coords="5,233,83,260"/>
-<area shape="rect" id="node2" href="$kmt_8c.html#a0ac321d3074b24b276695a080e835866" title="print all tasks notice: do not garantee concurrency safety" alt="" coords="135,233,269,260"/>
+<area shape="rect" id="node2" href="$kmt_8c.html#a13cbe2d83bf10c3302124613fa18f8a4" title="print all tasks notice: do not garantee concurrency safety" alt="" coords="135,233,269,260"/>
 <area shape="rect" id="node9" href="$spinlock_8c.html#ad4be0d674a7ca4dc90c2dbf8b34562cc" title="check current cpu has the lock" alt="" coords="460,259,555,285"/>
-<area shape="rect" id="node22" href="$kmt_8c.html#ac69761d0146d9aacda65da757868d3c7" title="print all current_tasks notice: do not garantee concurrency safety" alt="" coords="131,171,273,197"/>
+<area shape="rect" id="node22" href="$kmt_8c.html#ab4e9dee1880e455874374b44b5785bc3" title="print all current_tasks notice: do not garantee concurrency safety" alt="" coords="131,171,273,197"/>
 <area shape="rect" id="node3" href="$stdio_8c.html#a55f3d956bb2ba20b5059e9e25484a47f" title=" " alt="" coords="341,107,392,133"/>
 <area shape="rect" id="node18" href="$spinlock_8c.html#ab6f3c37ec37006951feccc3c05387cce" title="acquire spinlock to current cpu" alt="" coords="328,157,405,184"/>
 <area shape="rect" id="node21" href="$spinlock_8c.html#acdf118d615a4bc4064e991add9a80995" title="release spinlock from current cpu" alt="" coords="321,309,412,336"/>

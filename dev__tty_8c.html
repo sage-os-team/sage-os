@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('dev__tty_8c.html',''); initResizable()
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dev_tty.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dev__tty_8c__incl.svg" width="559" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dev__tty_8c__incl.svg" width="540" height="650"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -168,13 +168,15 @@ Functions</h2></td></tr>
 <tr class="separator:a755a85e188e1ece8c73f0b8001895e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f58ad55bfbcfcb3de4088f34f76c976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dev__tty_8c.html#a1f58ad55bfbcfcb3de4088f34f76c976">dev_tty_task</a> (void *arg)</td></tr>
 <tr class="separator:a1f58ad55bfbcfcb3de4088f34f76c976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4cc2c1c0548108f208d7af0ff4805d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dev__tty_8c.html#add4cc2c1c0548108f208d7af0ff4805d">cprintf</a> (char *tty_name, const char *fmt,...)</td></tr>
+<tr class="separator:add4cc2c1c0548108f208d7af0ff4805d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aff1ef6f60e0fea2bea14e0334f427ff9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dev__tty_8c.html#aff1ef6f60e0fea2bea14e0334f427ff9">show_cursor</a> = 1</td></tr>
 <tr class="separator:aff1ef6f60e0fea2bea14e0334f427ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a205313ee8b8412b263d4cdbfab7db858"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dev__tty_8c.html#a205313ee8b8412b263d4cdbfab7db858">welcome_text</a> []</td></tr>
-<tr class="separator:a205313ee8b8412b263d4cdbfab7db858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0392f8479f94bf0023b1ab85abe8f6f3"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dev__tty_8c.html#a0392f8479f94bf0023b1ab85abe8f6f3">welcome_text1</a> []</td></tr>
+<tr class="separator:a0392f8479f94bf0023b1ab85abe8f6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd2ce85f566209281acc2431d2d030a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="devices_8h.html#ae2fc4f3451719a730e6bea2cb144ec0a">devops_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dev__tty_8c.html#abd2ce85f566209281acc2431d2d030a7">tty_ops</a></td></tr>
 <tr class="separator:abd2ce85f566209281acc2431d2d030a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -194,6 +196,46 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="add4cc2c1c0548108f208d7af0ff4805d" name="add4cc2c1c0548108f208d7af0ff4805d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4cc2c1c0548108f208d7af0ff4805d">&#9670;&nbsp;</a></span>cprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tty_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="dev__tty_8c_add4cc2c1c0548108f208d7af0ff4805d_cgraph.svg" width="316" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a1f58ad55bfbcfcb3de4088f34f76c976" name="a1f58ad55bfbcfcb3de4088f34f76c976"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f58ad55bfbcfcb3de4088f34f76c976">&#9670;&nbsp;</a></span>dev_tty_task()</h2>
 
@@ -962,18 +1004,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">  .init  = <a class="code hl_function" href="dev__tty_8c.html#a5e46c8baa62e87e974f5c7bf26e20969">tty_init</a>,</div>
-<div class="line">  .read  = <a class="code hl_function" href="dev__tty_8c.html#a9ff7e4d9c441f96a61238f3e0ec57764">tty_read</a>,</div>
-<div class="line">  .write = <a class="code hl_function" href="dev__tty_8c.html#a755a85e188e1ece8c73f0b8001895e79">tty_write</a>,</div>
+<div class="line">    .init  = <a class="code hl_function" href="dev__tty_8c.html#a5e46c8baa62e87e974f5c7bf26e20969">tty_init</a>,</div>
+<div class="line">    .read  = <a class="code hl_function" href="dev__tty_8c.html#a9ff7e4d9c441f96a61238f3e0ec57764">tty_read</a>,</div>
+<div class="line">    .write = <a class="code hl_function" href="dev__tty_8c.html#a755a85e188e1ece8c73f0b8001895e79">tty_write</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="adev__tty_8c_html_a5e46c8baa62e87e974f5c7bf26e20969"><div class="ttname"><a href="dev__tty_8c.html#a5e46c8baa62e87e974f5c7bf26e20969">tty_init</a></div><div class="ttdeci">static int tty_init(device_t *ttydev)</div><div class="ttdef"><b>Definition:</b> dev_tty.c:199</div></div>
-<div class="ttc" id="adev__tty_8c_html_a755a85e188e1ece8c73f0b8001895e79"><div class="ttname"><a href="dev__tty_8c.html#a755a85e188e1ece8c73f0b8001895e79">tty_write</a></div><div class="ttdeci">static int tty_write(device_t *dev, int offset, const void *buf, int count)</div><div class="ttdef"><b>Definition:</b> dev_tty.c:246</div></div>
-<div class="ttc" id="adev__tty_8c_html_a9ff7e4d9c441f96a61238f3e0ec57764"><div class="ttname"><a href="dev__tty_8c.html#a9ff7e4d9c441f96a61238f3e0ec57764">tty_read</a></div><div class="ttdeci">static int tty_read(device_t *dev, int offset, void *buf, int count)</div><div class="ttdef"><b>Definition:</b> dev_tty.c:225</div></div>
+<div class="ttc" id="adev__tty_8c_html_a5e46c8baa62e87e974f5c7bf26e20969"><div class="ttname"><a href="dev__tty_8c.html#a5e46c8baa62e87e974f5c7bf26e20969">tty_init</a></div><div class="ttdeci">static int tty_init(device_t *ttydev)</div><div class="ttdef"><b>Definition:</b> dev_tty.c:231</div></div>
+<div class="ttc" id="adev__tty_8c_html_a755a85e188e1ece8c73f0b8001895e79"><div class="ttname"><a href="dev__tty_8c.html#a755a85e188e1ece8c73f0b8001895e79">tty_write</a></div><div class="ttdeci">static int tty_write(device_t *dev, int offset, const void *buf, int count)</div><div class="ttdef"><b>Definition:</b> dev_tty.c:278</div></div>
+<div class="ttc" id="adev__tty_8c_html_a9ff7e4d9c441f96a61238f3e0ec57764"><div class="ttname"><a href="dev__tty_8c.html#a9ff7e4d9c441f96a61238f3e0ec57764">tty_read</a></div><div class="ttdeci">static int tty_read(device_t *dev, int offset, void *buf, int count)</div><div class="ttdef"><b>Definition:</b> dev_tty.c:257</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a205313ee8b8412b263d4cdbfab7db858" name="a205313ee8b8412b263d4cdbfab7db858"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a205313ee8b8412b263d4cdbfab7db858">&#9670;&nbsp;</a></span>welcome_text</h2>
+<a id="a0392f8479f94bf0023b1ab85abe8f6f3" name="a0392f8479f94bf0023b1ab85abe8f6f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0392f8479f94bf0023b1ab85abe8f6f3">&#9670;&nbsp;</a></span>welcome_text1</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -982,7 +1024,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char welcome_text[]</td>
+          <td class="memname">char welcome_text1[]</td>
         </tr>
       </table>
   </td>
@@ -991,13 +1033,19 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= </div>
-<div class="line">  <span class="stringliteral">&quot; 1111112 11111112112      111112 1111112 \n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;11533311211533336114     1153311211533112\n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;114   11411111112114     1111111411111156\n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;114   11473333114114     1153311411533112\n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;7111111561111111411111112114  11411111156\n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot; 7333336 7333333673333336736  7367333336 \n&quot;</span></div>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    <span class="stringliteral">&quot; ____                             _____   ____       \n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;/\\  _`\\                          /\\  __`\\/\\  _`\\     \n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;\\ \\,\\L\\_\\     __       __      __\\ \\ \\/\\ \\ \\,\\L\\_\\   \n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot; \\/_\\__ \\   /&#39;__`\\   /&#39;_ `\\  /&#39;__`\\ \\ \\ \\ \\/_\\__ \\   \n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;   /\\ \\L\\ \\/\\ \\L\\.\\_/\\ \\L\\ \\/\\  __/\\ \\ \\_\\ \\/\\ \\L\\ &quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;\\ \n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;   \\ `\\____\\ \\__/.\\_\\ \\____ \\ \\____\\\\ \\_____\\ `\\____\\\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;    \\/_____/\\/__/\\/_/\\/___L\\ \\/____/ \\/_____/\\/_____/\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;                       /\\____/                       \n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;                       \\_/__/                        \n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;                                2022/04/15 BUPT OSLAB\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;---------------------------------------------------------------------\n&quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>

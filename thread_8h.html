@@ -129,7 +129,7 @@ Include dependency graph for thread.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h__dep__incl.svg" width="794" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h__dep__incl.svg" width="850" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -171,12 +171,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0ac321d3074b24b276695a080e835866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a0ac321d3074b24b276695a080e835866">kmt_print_all_tasks</a> ()</td></tr>
-<tr class="memdesc:a0ac321d3074b24b276695a080e835866"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all tasks notice: do not garantee concurrency safety  <a href="thread_8h.html#a0ac321d3074b24b276695a080e835866">More...</a><br /></td></tr>
-<tr class="separator:a0ac321d3074b24b276695a080e835866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac69761d0146d9aacda65da757868d3c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac69761d0146d9aacda65da757868d3c7">kmt_print_cpu_tasks</a> ()</td></tr>
-<tr class="memdesc:ac69761d0146d9aacda65da757868d3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all current_tasks notice: do not garantee concurrency safety  <a href="thread_8h.html#ac69761d0146d9aacda65da757868d3c7">More...</a><br /></td></tr>
-<tr class="separator:ac69761d0146d9aacda65da757868d3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13cbe2d83bf10c3302124613fa18f8a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a13cbe2d83bf10c3302124613fa18f8a4">kmt_print_all_tasks</a> (int mask)</td></tr>
+<tr class="memdesc:a13cbe2d83bf10c3302124613fa18f8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all tasks notice: do not garantee concurrency safety  <a href="thread_8h.html#a13cbe2d83bf10c3302124613fa18f8a4">More...</a><br /></td></tr>
+<tr class="separator:a13cbe2d83bf10c3302124613fa18f8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e9dee1880e455874374b44b5785bc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ab4e9dee1880e455874374b44b5785bc3">kmt_print_cpu_tasks</a> (int mask)</td></tr>
+<tr class="memdesc:ab4e9dee1880e455874374b44b5785bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all current_tasks notice: do not garantee concurrency safety  <a href="thread_8h.html#ab4e9dee1880e455874374b44b5785bc3">More...</a><br /></td></tr>
+<tr class="separator:ab4e9dee1880e455874374b44b5785bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -184,6 +184,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac3f913b8c53f273e22875cf3b8fa2dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd12bbaf1ec68de0db0ded78d69241d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#a23e7982381ce4b480b250790ce149f3d">spinlock_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9bd12bbaf1ec68de0db0ded78d69241d">task_list_lock</a></td></tr>
 <tr class="separator:a9bd12bbaf1ec68de0db0ded78d69241d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40275177e8b08a861bdb003f24c6dc00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#ade04e552d18bad454515b6a32d31bb7b">task_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a40275177e8b08a861bdb003f24c6dc00">cpu_tasks</a> []</td></tr>
+<tr class="separator:a40275177e8b08a861bdb003f24c6dc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aee9a3b108700981d62e64a0680a0465e" name="aee9a3b108700981d62e64a0680a0465e"></a>
@@ -282,8 +284,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0ac321d3074b24b276695a080e835866" name="a0ac321d3074b24b276695a080e835866"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac321d3074b24b276695a080e835866">&#9670;&nbsp;</a></span>kmt_print_all_tasks()</h2>
+<a id="a13cbe2d83bf10c3302124613fa18f8a4" name="a13cbe2d83bf10c3302124613fa18f8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13cbe2d83bf10c3302124613fa18f8a4">&#9670;&nbsp;</a></span>kmt_print_all_tasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +293,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void kmt_print_all_tasks </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -301,20 +304,20 @@ Variables</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h_a0ac321d3074b24b276695a080e835866_cgraph.svg" width="816" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h_a13cbe2d83bf10c3302124613fa18f8a4_cgraph.svg" width="816" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h_a0ac321d3074b24b276695a080e835866_icgraph.svg" width="571" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h_a13cbe2d83bf10c3302124613fa18f8a4_icgraph.svg" width="571" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ac69761d0146d9aacda65da757868d3c7" name="ac69761d0146d9aacda65da757868d3c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac69761d0146d9aacda65da757868d3c7">&#9670;&nbsp;</a></span>kmt_print_cpu_tasks()</h2>
+<a id="ab4e9dee1880e455874374b44b5785bc3" name="ab4e9dee1880e455874374b44b5785bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e9dee1880e455874374b44b5785bc3">&#9670;&nbsp;</a></span>kmt_print_cpu_tasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +325,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void kmt_print_cpu_tasks </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -332,19 +336,33 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h_ac69761d0146d9aacda65da757868d3c7_cgraph.svg" width="824" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h_ab4e9dee1880e455874374b44b5785bc3_cgraph.svg" width="824" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h_ac69761d0146d9aacda65da757868d3c7_icgraph.svg" width="579" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8h_ab4e9dee1880e455874374b44b5785bc3_icgraph.svg" width="579" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a40275177e8b08a861bdb003f24c6dc00" name="a40275177e8b08a861bdb003f24c6dc00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40275177e8b08a861bdb003f24c6dc00">&#9670;&nbsp;</a></span>cpu_tasks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_8h.html#ade04e552d18bad454515b6a32d31bb7b">task_t</a>* cpu_tasks[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9bd12bbaf1ec68de0db0ded78d69241d" name="a9bd12bbaf1ec68de0db0ded78d69241d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bd12bbaf1ec68de0db0ded78d69241d">&#9670;&nbsp;</a></span>task_list_lock</h2>
 

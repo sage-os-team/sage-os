@@ -109,7 +109,8 @@ $(document).ready(function(){initNavTree('sem_8c.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">sem.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -117,18 +118,30 @@ $(document).ready(function(){initNavTree('sem_8c.html',''); initResizable(); });
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sem.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sem_8c__incl.svg" width="363" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sem_8c__incl.svg" width="571" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a07341aaf6201983d7c7b9ea1b69975f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sem_8c.html#a07341aaf6201983d7c7b9ea1b69975f9">sem_init</a> (<a class="el" href="kernel_8h.html#ae45b45406b418e90b69d59ec697cb4e2">sem_t</a> *sem, const char *name, int value)</td></tr>
+<tr class="memdesc:a07341aaf6201983d7c7b9ea1b69975f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">init a semaphore  <a href="sem_8c.html#a07341aaf6201983d7c7b9ea1b69975f9">More...</a><br /></td></tr>
 <tr class="separator:a07341aaf6201983d7c7b9ea1b69975f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ca67864bb0af1966a5c2463bd16fe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sem_8c.html#a85ca67864bb0af1966a5c2463bd16fe8">sem_wait</a> (<a class="el" href="kernel_8h.html#ae45b45406b418e90b69d59ec697cb4e2">sem_t</a> *sem)</td></tr>
+<tr class="memdesc:a85ca67864bb0af1966a5c2463bd16fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">release <a class="el" href="structsemaphore.html">semaphore(Mutex)</a> and sleep task holding the sem  <a href="sem_8c.html#a85ca67864bb0af1966a5c2463bd16fe8">More...</a><br /></td></tr>
 <tr class="separator:a85ca67864bb0af1966a5c2463bd16fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad994e433f3a6bf8626272437cb54c114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sem_8c.html#ad994e433f3a6bf8626272437cb54c114">sem_signal</a> (<a class="el" href="kernel_8h.html#ae45b45406b418e90b69d59ec697cb4e2">sem_t</a> *sem)</td></tr>
+<tr class="memdesc:ad994e433f3a6bf8626272437cb54c114"><td class="mdescLeft">&#160;</td><td class="mdescRight">wake up a task form tasks waiting for the semaphore instance  <a href="sem_8c.html#ad994e433f3a6bf8626272437cb54c114">More...</a><br /></td></tr>
 <tr class="separator:ad994e433f3a6bf8626272437cb54c114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5e82157cac4649d6aa7065584782fe23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#a23e7982381ce4b480b250790ce149f3d">spinlock_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sem_8c.html#a5e82157cac4649d6aa7065584782fe23">ir_lock</a></td></tr>
+<tr class="separator:a5e82157cac4649d6aa7065584782fe23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fcb7415097ed819e12b5c33a217020"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#ade04e552d18bad454515b6a32d31bb7b">task_t</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sem_8c.html#ae6fcb7415097ed819e12b5c33a217020">cpu_tasks</a></td></tr>
+<tr class="separator:ae6fcb7415097ed819e12b5c33a217020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb275eb797e6738872d17fb84e6c64a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#ade04e552d18bad454515b6a32d31bb7b">task_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sem_8c.html#a1eb275eb797e6738872d17fb84e6c64a">root_task</a></td></tr>
+<tr class="separator:a1eb275eb797e6738872d17fb84e6c64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a07341aaf6201983d7c7b9ea1b69975f9" name="a07341aaf6201983d7c7b9ea1b69975f9"></a>
@@ -162,6 +175,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>init a semaphore </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sem</td><td>// a semaphore instance </td></tr>
+    <tr><td class="paramname">name</td><td>// initial name of instance </td></tr>
+    <tr><td class="paramname">value</td><td>// initial value of instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="sem_8c_a07341aaf6201983d7c7b9ea1b69975f9_cgraph.svg" width="200" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -186,6 +215,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>wake up a task form tasks waiting for the semaphore instance </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sem</td><td>the semaphore instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="sem_8c_ad994e433f3a6bf8626272437cb54c114_cgraph.svg" width="770" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -210,12 +253,93 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>release <a class="el" href="structsemaphore.html">semaphore(Mutex)</a> and sleep task holding the sem </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sem</td><td>a semaphore instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="sem_8c_a85ca67864bb0af1966a5c2463bd16fe8_cgraph.svg" width="760" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="sem_8c_a85ca67864bb0af1966a5c2463bd16fe8_icgraph.svg" width="248" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae6fcb7415097ed819e12b5c33a217020" name="ae6fcb7415097ed819e12b5c33a217020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fcb7415097ed819e12b5c33a217020">&#9670;&nbsp;</a></span>cpu_tasks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_8h.html#ade04e552d18bad454515b6a32d31bb7b">task_t</a>** cpu_tasks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e82157cac4649d6aa7065584782fe23" name="a5e82157cac4649d6aa7065584782fe23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e82157cac4649d6aa7065584782fe23">&#9670;&nbsp;</a></span>ir_lock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_8h.html#a23e7982381ce4b480b250790ce149f3d">spinlock_t</a> ir_lock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1eb275eb797e6738872d17fb84e6c64a" name="a1eb275eb797e6738872d17fb84e6c64a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb275eb797e6738872d17fb84e6c64a">&#9670;&nbsp;</a></span>root_task</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_8h.html#ade04e552d18bad454515b6a32d31bb7b">task_t</a> root_task</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

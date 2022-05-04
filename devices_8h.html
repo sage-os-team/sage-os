@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('devices_8h.html',''); initResizable();
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for devices.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="devices_8h__incl.svg" width="559" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="devices_8h__incl.svg" width="540" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -171,6 +171,8 @@ Macros</h2></td></tr>
 <tr class="separator:a86253796ec054f08fa171da00ca0c4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1ee2b71451b6270c73ba2ca9f19706b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devices_8h.html#ac1ee2b71451b6270c73ba2ca9f19706b">SPRITE_BRK</a>&#160;&#160;&#160;0x1000000</td></tr>
 <tr class="separator:ac1ee2b71451b6270c73ba2ca9f19706b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01dc5b744ac72026572602dcb0644423"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devices_8h.html#a01dc5b744ac72026572602dcb0644423">CPRINTF_MAX_LINE_CHARS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a01dc5b744ac72026572602dcb0644423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -181,6 +183,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aa5234d79e794c322ae3a1501a6c15a7b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structsprite.html">sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devices_8h.html#aa5234d79e794c322ae3a1501a6c15a7b">__attribute__</a> ((packed))</td></tr>
 <tr class="separator:aa5234d79e794c322ae3a1501a6c15a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4cc2c1c0548108f208d7af0ff4805d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devices_8h.html#add4cc2c1c0548108f208d7af0ff4805d">cprintf</a> (char *tty_name, const char *fmt,...)</td></tr>
+<tr class="separator:add4cc2c1c0548108f208d7af0ff4805d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -206,6 +210,20 @@ Variables</h2></td></tr>
 <tr class="separator:a3d99b005d0fb73033dce14d4a135d01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a01dc5b744ac72026572602dcb0644423" name="a01dc5b744ac72026572602dcb0644423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01dc5b744ac72026572602dcb0644423">&#9670;&nbsp;</a></span>CPRINTF_MAX_LINE_CHARS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CPRINTF_MAX_LINE_CHARS&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac1ee2b71451b6270c73ba2ca9f19706b" name="ac1ee2b71451b6270c73ba2ca9f19706b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1ee2b71451b6270c73ba2ca9f19706b">&#9670;&nbsp;</a></span>SPRITE_BRK</h2>
 
@@ -279,6 +297,46 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="add4cc2c1c0548108f208d7af0ff4805d" name="add4cc2c1c0548108f208d7af0ff4805d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4cc2c1c0548108f208d7af0ff4805d">&#9670;&nbsp;</a></span>cprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tty_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="devices_8h_add4cc2c1c0548108f208d7af0ff4805d_cgraph.svg" width="316" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

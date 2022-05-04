@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['name_0',['name',['../structdevice.html#a8f8f80d37794cde9472343e4487ba3eb',1,'device::name()'],['../structspinlock.html#a8f8f80d37794cde9472343e4487ba3eb',1,'spinlock::name()'],['../structtask.html#a8f8f80d37794cde9472343e4487ba3eb',1,'task::name()'],['../structmmu__config_1_1ptinfo.html#a8f8f80d37794cde9472343e4487ba3eb',1,'mmu_config::ptinfo::name()']]],
+  ['name_0',['name',['../structdevice.html#a8f8f80d37794cde9472343e4487ba3eb',1,'device::name()'],['../structsemaphore.html#a8f8f80d37794cde9472343e4487ba3eb',1,'semaphore::name()'],['../structspinlock.html#a8f8f80d37794cde9472343e4487ba3eb',1,'spinlock::name()'],['../structtask.html#a8f8f80d37794cde9472343e4487ba3eb',1,'task::name()'],['../structmmu__config_1_1ptinfo.html#a8f8f80d37794cde9472343e4487ba3eb',1,'mmu_config::ptinfo::name()']]],
   ['ncli_1',['ncli',['../spinlock_8c.html#a49e126e4baf0416aee9bbf65a1bb3eb0',1,'spinlock.c']]],
   ['net_5fconfig_2',['net_config',['../ioe_8c.html#a033927e99f7ff22f96748b0b6fbec460',1,'ioe.c']]],
   ['nevents_3',['NEVENTS',['../dev__input_8c.html#a17294efca5c296c67ea592f87ab06b77',1,'dev_input.c']]],
-  ['next_4',['next',['../structirq__handler.html#a6dc4666e1c958ce0cef1907317be247d',1,'irq_handler::next()'],['../stdlib_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689',1,'next():&#160;stdlib.c'],['../structlist__head.html#ad6116fd07816a828c3a9830f54871bd0',1,'list_head::next()'],['../structtask.html#ae949d26b280beacfbb782fa148c8505d',1,'task::next()']]],
+  ['next_4',['next',['../structlist__head.html#ad6116fd07816a828c3a9830f54871bd0',1,'list_head::next()'],['../structtask.html#ae949d26b280beacfbb782fa148c8505d',1,'task::next()'],['../structirq__handler.html#a6dc4666e1c958ce0cef1907317be247d',1,'irq_handler::next()'],['../stdlib_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689',1,'next():&#160;stdlib.c']]],
   ['next_5fpid_5',['next_pid',['../kmt_8c.html#a7862efcd924f4ea4a57d32e1f73abc85',1,'kmt.c']]],
   ['node_6',['node',['../structchunk.html#a2054c2f57e759b2b20c4f5adb167b98c',1,'chunk']]],
   ['noinline_7',['NOINLINE',['../int64_8c.html#a1b173d22e57d9395897acbd8de62d505',1,'int64.c']]],

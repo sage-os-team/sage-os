@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('kmt_8c.html',''); initResizable(); });
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for kmt.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c__incl.svg" width="559" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c__incl.svg" width="544" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -155,12 +155,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4d70b4093829da1c0b0631abdff7747"><td class="memItemLeft" align="right" valign="top"><a class="el" href="am_8h.html#a7925e3baf84a3c60ae7f4ac180c2fd85">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmt_8c.html#ad4d70b4093829da1c0b0631abdff7747">kmt_schedule</a> (<a class="el" href="struct_event.html">Event</a> ev, <a class="el" href="am_8h.html#a7925e3baf84a3c60ae7f4ac180c2fd85">Context</a> *context)</td></tr>
 <tr class="memdesc:ad4d70b4093829da1c0b0631abdff7747"><td class="mdescLeft">&#160;</td><td class="mdescRight">handler: schedule next task to run Notice: this should be the only handler which returns real Context  <a href="kmt_8c.html#ad4d70b4093829da1c0b0631abdff7747">More...</a><br /></td></tr>
 <tr class="separator:ad4d70b4093829da1c0b0631abdff7747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac321d3074b24b276695a080e835866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmt_8c.html#a0ac321d3074b24b276695a080e835866">kmt_print_all_tasks</a> ()</td></tr>
-<tr class="memdesc:a0ac321d3074b24b276695a080e835866"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all tasks notice: do not garantee concurrency safety  <a href="kmt_8c.html#a0ac321d3074b24b276695a080e835866">More...</a><br /></td></tr>
-<tr class="separator:a0ac321d3074b24b276695a080e835866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac69761d0146d9aacda65da757868d3c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmt_8c.html#ac69761d0146d9aacda65da757868d3c7">kmt_print_cpu_tasks</a> ()</td></tr>
-<tr class="memdesc:ac69761d0146d9aacda65da757868d3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all current_tasks notice: do not garantee concurrency safety  <a href="kmt_8c.html#ac69761d0146d9aacda65da757868d3c7">More...</a><br /></td></tr>
-<tr class="separator:ac69761d0146d9aacda65da757868d3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13cbe2d83bf10c3302124613fa18f8a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmt_8c.html#a13cbe2d83bf10c3302124613fa18f8a4">kmt_print_all_tasks</a> (int mask)</td></tr>
+<tr class="memdesc:a13cbe2d83bf10c3302124613fa18f8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all tasks notice: do not garantee concurrency safety  <a href="kmt_8c.html#a13cbe2d83bf10c3302124613fa18f8a4">More...</a><br /></td></tr>
+<tr class="separator:a13cbe2d83bf10c3302124613fa18f8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e9dee1880e455874374b44b5785bc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmt_8c.html#ab4e9dee1880e455874374b44b5785bc3">kmt_print_cpu_tasks</a> (int mask)</td></tr>
+<tr class="memdesc:ab4e9dee1880e455874374b44b5785bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">print all current_tasks notice: do not garantee concurrency safety  <a href="kmt_8c.html#ab4e9dee1880e455874374b44b5785bc3">More...</a><br /></td></tr>
+<tr class="separator:ab4e9dee1880e455874374b44b5785bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c68a294cecc4be7cb4b495f15b883a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmt_8c.html#a0c68a294cecc4be7cb4b495f15b883a0">kmt_init</a> ()</td></tr>
 <tr class="memdesc:a0c68a294cecc4be7cb4b495f15b883a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize kmt module  <a href="kmt_8c.html#a0c68a294cecc4be7cb4b495f15b883a0">More...</a><br /></td></tr>
 <tr class="separator:a0c68a294cecc4be7cb4b495f15b883a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,7 +416,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a031a09141c265954f2b609183e573d1c_icgraph.svg" width="563" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a031a09141c265954f2b609183e573d1c_icgraph.svg" width="563" height="167"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -441,7 +441,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a0c68a294cecc4be7cb4b495f15b883a0_cgraph.svg" width="1108" height="643"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a0c68a294cecc4be7cb4b495f15b883a0_cgraph.svg" width="1108" height="676"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
@@ -453,8 +453,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a0ac321d3074b24b276695a080e835866" name="a0ac321d3074b24b276695a080e835866"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac321d3074b24b276695a080e835866">&#9670;&nbsp;</a></span>kmt_print_all_tasks()</h2>
+<a id="a13cbe2d83bf10c3302124613fa18f8a4" name="a13cbe2d83bf10c3302124613fa18f8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13cbe2d83bf10c3302124613fa18f8a4">&#9670;&nbsp;</a></span>kmt_print_all_tasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +462,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void kmt_print_all_tasks </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -472,20 +473,20 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a0ac321d3074b24b276695a080e835866_cgraph.svg" width="816" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a13cbe2d83bf10c3302124613fa18f8a4_cgraph.svg" width="816" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a0ac321d3074b24b276695a080e835866_icgraph.svg" width="571" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a13cbe2d83bf10c3302124613fa18f8a4_icgraph.svg" width="571" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ac69761d0146d9aacda65da757868d3c7" name="ac69761d0146d9aacda65da757868d3c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac69761d0146d9aacda65da757868d3c7">&#9670;&nbsp;</a></span>kmt_print_cpu_tasks()</h2>
+<a id="ab4e9dee1880e455874374b44b5785bc3" name="ab4e9dee1880e455874374b44b5785bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e9dee1880e455874374b44b5785bc3">&#9670;&nbsp;</a></span>kmt_print_cpu_tasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -493,7 +494,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void kmt_print_cpu_tasks </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -503,13 +505,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_ac69761d0146d9aacda65da757868d3c7_cgraph.svg" width="824" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_ab4e9dee1880e455874374b44b5785bc3_cgraph.svg" width="824" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_ac69761d0146d9aacda65da757868d3c7_icgraph.svg" width="579" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_ab4e9dee1880e455874374b44b5785bc3_icgraph.svg" width="579" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -721,6 +723,12 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Context* always NULL </dd></dl>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a75ea8dbba16d64a343a45962bd593930_cgraph.svg" width="766" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_a75ea8dbba16d64a343a45962bd593930_icgraph.svg" width="363" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
@@ -747,7 +755,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_af360ef0d98ca30e481cc58ea3695fd58_cgraph.svg" width="1328" height="987"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="kmt_8c_af360ef0d98ca30e481cc58ea3695fd58_cgraph.svg" width="1311" height="1064"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

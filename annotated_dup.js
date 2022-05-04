@@ -38,7 +38,7 @@ var annotated_dup =
     [ "pmm_pool", "structpmm__pool.html", "structpmm__pool" ],
     [ "sd_t", "structsd__t.html", "structsd__t" ],
     [ "SegDesc", "struct_seg_desc.html", "struct_seg_desc" ],
-    [ "semaphore", "structsemaphore.html", null ],
+    [ "semaphore", "structsemaphore.html", "structsemaphore" ],
     [ "spinlock", "structspinlock.html", "structspinlock" ],
     [ "sprite", "structsprite.html", "structsprite" ],
     [ "task", "structtask.html", "structtask" ],

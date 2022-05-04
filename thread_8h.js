@@ -16,8 +16,9 @@ var thread_8h =
       [ "ST_Z", "thread_8h.html#abd415a5584d9d9ca79908fb3cd57b391a3e501229a84c45a0900c380a95a86868", null ],
       [ "ST_X", "thread_8h.html#abd415a5584d9d9ca79908fb3cd57b391aaf49550b098d2423ca4fcb1c063f3553", null ]
     ] ],
-    [ "kmt_print_all_tasks", "thread_8h.html#a0ac321d3074b24b276695a080e835866", null ],
-    [ "kmt_print_cpu_tasks", "thread_8h.html#ac69761d0146d9aacda65da757868d3c7", null ],
+    [ "kmt_print_all_tasks", "thread_8h.html#a13cbe2d83bf10c3302124613fa18f8a4", null ],
+    [ "kmt_print_cpu_tasks", "thread_8h.html#ab4e9dee1880e455874374b44b5785bc3", null ],
+    [ "cpu_tasks", "thread_8h.html#a40275177e8b08a861bdb003f24c6dc00", null ],
     [ "task_list_lock", "thread_8h.html#a9bd12bbaf1ec68de0db0ded78d69241d", null ],
     [ "task_states_str", "thread_8h.html#ac3f913b8c53f273e22875cf3b8fa2dda", null ]
 ];

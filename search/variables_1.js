@@ -8,5 +8,6 @@ var searchData=
   ['arg_5',['arg',['../structtask.html#a9ce2ec4812a92cb6ab39f6e81e9173a9',1,'task']]],
   ['argbuf_6',['argbuf',['../stdio_8c.html#a2afb8bd088e89f1bd71ac4e6e574b136',1,'stdio.c']]],
   ['args_7',['args',['../struct_gate_desc32.html#acef4e7778f4539b08a274ba9f95860fd',1,'GateDesc32']]],
-  ['avl_8',['avl',['../struct_seg_desc.html#a16eb11c869751ae18d8b77466933a526',1,'SegDesc']]]
+  ['as_8',['as',['../structtask.html#a22996ac1c866f2aa808036cec926e515',1,'task']]],
+  ['avl_9',['avl',['../struct_seg_desc.html#a16eb11c869751ae18d8b77466933a526',1,'SegDesc']]]
 ];

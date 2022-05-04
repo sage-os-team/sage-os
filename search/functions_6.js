@@ -5,5 +5,6 @@ var searchData=
   ['fb_5fread_2',['fb_read',['../dev__video_8c.html#ae9bd1d049fba60d5f35784d0a36d94b7',1,'dev_video.c']]],
   ['fb_5fwrite_3',['fb_write',['../dev__video_8c.html#acc528703e027e52c83497e76547e81ab',1,'dev_video.c']]],
   ['font_5fload_4',['font_load',['../dev__video_8c.html#a42cbd58b15118b5ede13ac69a6f4c2c9',1,'dev_video.c']]],
-  ['free_5',['free',['../klib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c'],['../stdlib_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c']]]
+  ['fork_5',['fork',['../ulib_8h.html#a7c4a087850a341a5631b2faa27d7a93e',1,'ulib.h']]],
+  ['free_6',['free',['../klib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c'],['../stdlib_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c']]]
 ];

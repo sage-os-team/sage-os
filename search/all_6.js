@@ -28,12 +28,15 @@ var searchData=
   ['fl_5fif_25',['FL_IF',['../x86_8h.html#ab481068357bb42797aafe91864a2d085',1,'x86.h']]],
   ['float_5fbits_26',['float_bits',['../unionfloat__bits.html',1,'']]],
   ['fnalias_27',['FNALIAS',['../int64_8c.html#a2bd7a25a3384fa411cf641573512b52b',1,'int64.c']]],
-  ['font_5fload_28',['font_load',['../dev__video_8c.html#a42cbd58b15118b5ede13ac69a6f4c2c9',1,'dev_video.c']]],
-  ['format_5ferror_29',['FORMAT_ERROR',['../stdio_8c.html#aee85ee662a975234843514ad1ad3f1d1',1,'stdio.c']]],
-  ['framebuffer_30',['framebuffer',['../structvbe__info.html#a72f2ff083631702e83d597be300061c9',1,'vbe_info::framebuffer()'],['../ioe_8c.html#a72f2ff083631702e83d597be300061c9',1,'framebuffer():&#160;ioe.c']]],
-  ['free_31',['free',['../klib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c'],['../stdlib_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c']]],
-  ['free_5flist_32',['free_list',['../structfree__list.html',1,'free_list'],['../structfree__list.html#a338aea6183dad7ec975539e4e1def837',1,'free_list::free_list()']]],
-  ['free_5flists_33',['free_lists',['../structpmm__pool.html#a87d3039a28511f9847305331f764702e',1,'pmm_pool']]],
-  ['freq_5fmhz_34',['freq_mhz',['../ioe_8c.html#aad9edfc0ad47b1de64101b37303f3c1f',1,'ioe.c']]],
-  ['front_35',['front',['../structinput__t.html#ac261b45b6346e633de22d510c9f6a770',1,'input_t::front()'],['../structtty__queue.html#a5f48cae5f14b124a1cfbe33f14370e39',1,'tty_queue::front()']]]
+  ['font_5fbold_28',['FONT_BOLD',['../logger_8h.html#a2687af87d6f5720034f5c3813acab894',1,'logger.h']]],
+  ['font_5fload_29',['font_load',['../dev__video_8c.html#a42cbd58b15118b5ede13ac69a6f4c2c9',1,'dev_video.c']]],
+  ['font_5fnormal_30',['FONT_NORMAL',['../logger_8h.html#a18bb58d9747aa2127f5abbed1fe7e401',1,'logger.h']]],
+  ['fork_31',['fork',['../ulib_8h.html#a7c4a087850a341a5631b2faa27d7a93e',1,'ulib.h']]],
+  ['format_5ferror_32',['FORMAT_ERROR',['../stdio_8c.html#aee85ee662a975234843514ad1ad3f1d1',1,'stdio.c']]],
+  ['framebuffer_33',['framebuffer',['../structvbe__info.html#a72f2ff083631702e83d597be300061c9',1,'vbe_info::framebuffer()'],['../ioe_8c.html#a72f2ff083631702e83d597be300061c9',1,'framebuffer():&#160;ioe.c']]],
+  ['free_34',['free',['../klib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c'],['../stdlib_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'free(void *ptr):&#160;stdlib.c']]],
+  ['free_5flist_35',['free_list',['../structfree__list.html',1,'free_list'],['../structfree__list.html#a338aea6183dad7ec975539e4e1def837',1,'free_list::free_list()']]],
+  ['free_5flists_36',['free_lists',['../structpmm__pool.html#a87d3039a28511f9847305331f764702e',1,'pmm_pool']]],
+  ['freq_5fmhz_37',['freq_mhz',['../ioe_8c.html#aad9edfc0ad47b1de64101b37303f3c1f',1,'ioe.c']]],
+  ['front_38',['front',['../structinput__t.html#ac261b45b6346e633de22d510c9f6a770',1,'input_t::front()'],['../structtty__queue.html#a5f48cae5f14b124a1cfbe33f14370e39',1,'tty_queue::front()']]]
 ];

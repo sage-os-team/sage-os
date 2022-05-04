@@ -1,9 +1,10 @@
 <map id="vsprintf" name="vsprintf">
-<area shape="rect" id="node1" title="write bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="720,56,785,83"/>
-<area shape="rect" id="node2" href="$stdio_8c.html#a55f3d956bb2ba20b5059e9e25484a47f" title=" " alt="" coords="621,56,672,83"/>
+<area shape="rect" id="node1" title="write bytes (including the terminating null byte (&#39;\0&#39;)) to out." alt="" coords="720,81,785,108"/>
+<area shape="rect" id="node2" href="$stdio_8c.html#a55f3d956bb2ba20b5059e9e25484a47f" title=" " alt="" coords="621,81,672,108"/>
 <area shape="rect" id="node3" href="$dev__tty_8c.html#a1f58ad55bfbcfcb3de4088f34f76c976" title=" " alt="" coords="454,5,550,32"/>
-<area shape="rect" id="node4" href="$kmt_8c.html#a0ac321d3074b24b276695a080e835866" title="print all tasks notice: do not garantee concurrency safety" alt="" coords="435,107,569,133"/>
-<area shape="rect" id="node9" href="$kmt_8c.html#ac69761d0146d9aacda65da757868d3c7" title="print all current_tasks notice: do not garantee concurrency safety" alt="" coords="431,56,573,83"/>
+<area shape="rect" id="node4" href="$kmt_8c.html#a13cbe2d83bf10c3302124613fa18f8a4" title="print all tasks notice: do not garantee concurrency safety" alt="" coords="435,56,569,83"/>
+<area shape="rect" id="node9" href="$kmt_8c.html#ab4e9dee1880e455874374b44b5785bc3" title="print all current_tasks notice: do not garantee concurrency safety" alt="" coords="431,107,573,133"/>
+<area shape="rect" id="node10" href="$init_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="477,157,527,184"/>
 <area shape="rect" id="node5" href="$kmt_8c.html#ad3fbc643b7b6092120c5152b4c890354" title="handler: handle program errors" alt="" coords="293,56,370,83"/>
 <area shape="rect" id="node8" href="$kmt_8c.html#ad4d70b4093829da1c0b0631abdff7747" title="handler: schedule next task to run Notice: this should be the only handler which returns real Context" alt="" coords="280,107,383,133"/>
 <area shape="rect" id="node6" href="$kmt_8c.html#a0c68a294cecc4be7cb4b495f15b883a0" title="initialize kmt module" alt="" coords="164,81,232,108"/>

@@ -13,5 +13,7 @@ var searchData=
   ['fixed_10',['FIXED',['../ioe_8c.html#a20207ffc8e6f0bdcefb5c42a5b5c3fb8',1,'ioe.c']]],
   ['fl_5fif_11',['FL_IF',['../x86_8h.html#ab481068357bb42797aafe91864a2d085',1,'x86.h']]],
   ['fnalias_12',['FNALIAS',['../int64_8c.html#a2bd7a25a3384fa411cf641573512b52b',1,'int64.c']]],
-  ['format_5ferror_13',['FORMAT_ERROR',['../stdio_8c.html#aee85ee662a975234843514ad1ad3f1d1',1,'stdio.c']]]
+  ['font_5fbold_13',['FONT_BOLD',['../logger_8h.html#a2687af87d6f5720034f5c3813acab894',1,'logger.h']]],
+  ['font_5fnormal_14',['FONT_NORMAL',['../logger_8h.html#a18bb58d9747aa2127f5abbed1fe7e401',1,'logger.h']]],
+  ['format_5ferror_15',['FORMAT_ERROR',['../stdio_8c.html#aee85ee662a975234843514ad1ad3f1d1',1,'stdio.c']]]
 ];
