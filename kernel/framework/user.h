@@ -20,11 +20,18 @@
 #define O_RDWR   00000002
 #define O_CREAT  00000100
 
-struct ufs_stat {
-  uint32_t id, type, size;
-};
+#define PATH_LENGTH 32
 
-struct ufs_dirent {
-  uint32_t inode;
-  char name[28];
-} __attribute__((packed));
+// see file.h
+typedef struct {
+  int type;
+  int dev;
+  uint32_t inode_num;
+  int links;
+  uint32_t size;
+} _stat_t;
+
+typedef struct {
+  uint16_t inum;
+  char name[PATH_LENGTH];
+} __attribute__((packed)) _dirent_t;

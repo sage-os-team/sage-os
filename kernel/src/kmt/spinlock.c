@@ -21,7 +21,7 @@ void spin_init(spinlock_t *lk, const char *name) {
  */
 void spin_lock(spinlock_t *lk) {
   spin_pushcli();  // interrupt disable
-  assert(!spin_holding(lk));
+  assert_msg(!spin_holding(lk), "[spin_lock] already hold lk: %s", lk->name);
   //  assert there is lock(a) and lock(a) in code
   while (atomic_xchg((int *)&lk->lock_flag, 1)) {
     ;

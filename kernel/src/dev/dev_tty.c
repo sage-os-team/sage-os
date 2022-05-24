@@ -303,7 +303,7 @@ void dev_tty_task(void *arg) {
   tty_mark_all(ttydev->ptr);
   tty_render(ttydev->ptr);
 
-  uint64_t known_time = io_read(AM_TIMER_UPTIME).us;
+  uint64_t known_time = safe_io_read(AM_TIMER_UPTIME).us;
 
   while (1) {
     struct input_event ev;

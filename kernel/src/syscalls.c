@@ -12,7 +12,7 @@
  * @return Context*
  */
 Context *syscall_handler(Event ev, Context *context) {
-  task_t *proc     = cpu_tasks[cpu_current()];
+  task_t *proc     = current_task;
   uint64_t args[4] = {context->rdi, context->rsi, context->rdx, context->rcx};
   uint64_t retval  = 0;
   int sys_id       = context->rax;
@@ -28,6 +28,9 @@ Context *syscall_handler(Event ev, Context *context) {
       break;
     case SYS_wait:
       retval = sys_wait(proc, (int *)args[0]);
+      break;
+    case SYS_read:
+      retval = sys_read(proc, args[0], (void *)args[1], args[2]);
       break;
     case SYS_kill:
       retval = sys_kill(proc, args[0]);

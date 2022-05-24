@@ -5,6 +5,7 @@
 #include <vm.h>
 #include <common.h>
 #include <list.h>
+#include <io.h>
 
 #include "initcode.inc"
 
@@ -38,6 +39,7 @@ void uproc_init() {
  * @param name process name
  */
 int uproc_create(task_t *proc, const char *name) {
+  assert_msg(!is_on_irq, "cannot create uproc in irq handler!");
   assert_msg(proc != NULL && name != NULL, "null arguments in uproc_create");
   proc->pid      = kmt_next_pid();
   proc->name     = name;
@@ -49,6 +51,7 @@ int uproc_create(task_t *proc, const char *name) {
   proc->wait_sem = NULL;
   proc->killed   = 0;
   proc->next     = NULL;
+  proc->nctx     = 0;
 
   memset(proc->fenceA, FILL_FENCE, sizeof(proc->fenceA));
   memset(proc->stack, FILL_STACK, sizeof(proc->stack));
@@ -61,7 +64,7 @@ int uproc_create(task_t *proc, const char *name) {
   INIT_LIST_HEAD(&proc->pg_map);
 
   // ucontext entry: start addr of proc
-  proc->context = ucontext(as, kstack, as->area.start);
+  proc->context[proc->nctx++] = ucontext(as, kstack, as->area.start);
 
   // // map stack
   // intptr_t i;
@@ -96,14 +99,13 @@ int uproc_create(task_t *proc, const char *name) {
 Context *uproc_pagefault(Event ev, Context *context) {
   // ev.ref: the failed virtual addr, 48bit unsigned long
   uintptr_t ref = (uintptr_t)ev.ref;
-  info("pid=%d pagefault: %06x%06x", cpu_tasks[cpu_current()]->pid, ref >> 24,
+  info("pid=%d pagefault: %06x%06x", current_task->pid, ref >> 24,
        (uint32_t)ref & ((1L << 24) - 1));
-  AddrSpace *as = &cpu_tasks[cpu_current()]->as;
+  AddrSpace *as = &current_task->as;
   void *paddr   = pmm->pgalloc();
   // vaddr:  the start addr of that page
   uintptr_t vaddr = ref & ~(as->pgsize - 1L);
-  uproc_pgmap(cpu_tasks[cpu_current()], (void *)vaddr, paddr,
-              MMAP_READ | MMAP_WRITE);
+  uproc_pgmap(current_task, (void *)vaddr, paddr, MMAP_READ | MMAP_WRITE);
   return NULL;
 }
 
@@ -120,13 +122,12 @@ int sys_fork(task_t *proc) {
   uproc_create(subproc, proc->name);
 
   // do not copy parent's rsp0, cr3
-  uintptr_t rsp0 = subproc->context->rsp0;
-  void *cr3      = subproc->context->cr3;
-  // memcpy(subproc->stack, proc->stack, STACK_SIZE);
+  uintptr_t rsp0 = subproc->context[0]->rsp0;
+  void *cr3      = subproc->context[0]->cr3;
   memcpy(subproc->context, proc->context, sizeof(Context));
-  subproc->context->rsp0 = rsp0;
-  subproc->context->cr3  = cr3;
-  subproc->context->rax  = 0;
+  subproc->context[0]->rsp0 = rsp0;
+  subproc->context[0]->cr3  = cr3;
+  subproc->context[0]->rax  = 0;
 
   // copy pages
   copyuvm(subproc, proc, proc->pmsize);
@@ -142,8 +143,9 @@ int sys_exit(task_t *proc, int status) {
   for (p = root_task.next; p != NULL; p = p->next) {
     if (proc->parent == p) {
       if (p->state == ST_S && p->wait_subproc_status != NULL) {
-        p->state                  = ST_W;
-        *(p->wait_subproc_status) = status;
+        p->state = ST_W;
+        // ERROR: cannot assign value crossing vm
+        // *(p->wait_subproc_status) = status;
       }
       break;
     }
@@ -154,10 +156,11 @@ int sys_exit(task_t *proc, int status) {
 }
 
 int sys_wait(task_t *proc, int *status) {
-  task_t *p;
-  int havekids, pid;
-  havekids = 0;
+  assert_msg(status != NULL, "NULL pointer status in sys_wait");
+
+  int havekids = 0;
   assert_msg(!spin_holding(&task_list_lock), "already hold task_list_lock");
+  task_t *p;
   kmt->spin_lock(&task_list_lock);
   for (p = root_task.next; p != NULL; p = p->next) {
     if (p->parent != proc) continue;
@@ -197,12 +200,12 @@ int sys_sleep(task_t *proc, int seconds) {
 }
 
 int64_t sys_uptime(task_t *proc) {
-  return io_read(AM_TIMER_UPTIME).us / 1000;
+  return safe_io_read(AM_TIMER_UPTIME).us / 1000;
 }
 
 int growuproc(int n) {
   int sz;
-  task_t *task = cpu_tasks[cpu_current()];
+  task_t *task = current_task;
   sz           = task->pmsize;
   if (n > 0) {
     sz = allocuvm(task, sz, sz + n);
@@ -217,7 +220,7 @@ int growuproc(int n) {
 
 int sys_sbrk(int n) {
   int sz;
-  sz = cpu_tasks[cpu_current()]->pmsize;
+  sz = current_task->pmsize;
   if (growuproc(n) < 0) return -1;
   return sz;
 }

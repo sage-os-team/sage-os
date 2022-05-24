@@ -1,7 +1,10 @@
+#ifndef ULIB_H__
+#define ULIB_H__
+
 #include <stddef.h>
 #include <stdint.h>
-#include "../kernel/framework/syscall_defs.h"
-#include "../kernel/framework/user.h"
+#include "../../kernel/framework/syscall_defs.h"
+#include "../../kernel/framework/user.h"
 
 static inline long syscall(int num, long x1, long x2, long x3, long x4) {
   register long a0 asm("rax") = num;
@@ -82,7 +85,7 @@ static inline int unlink(const char *pathname) {
   return syscall(SYS_unlink, (uint64_t)pathname, 0, 0, 0);
 }
 
-static inline int fstat(int fd, struct ufs_stat *buf) {
+static inline int fstat(int fd, _stat_t *buf) {
   return syscall(SYS_fstat, fd, (uint64_t)buf, 0, 0);
 }
 
@@ -97,3 +100,5 @@ static inline int chdir(const char *path) {
 static inline int dup(int fd) {
   return syscall(SYS_dup, fd, 0, 0, 0);
 }
+
+#endif

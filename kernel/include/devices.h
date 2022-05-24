@@ -5,6 +5,7 @@
 #include <spinlock.h>
 #include <sem.h>
 #include <thread.h>
+#include <io.h>
 
 typedef struct devops {
   int (*init)(device_t *dev);

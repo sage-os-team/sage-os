@@ -27,7 +27,7 @@ int sys_write(task_t *proc, int fd, void *buf, size_t nbyte);
 // int sys_lseek(task_t *proc, int fd, int offset, int whence);
 int sys_link(task_t *proc, const char *oldpath, const char *newpath);
 int sys_unlink(task_t *proc, const char *pathname);
-int sys_fstat(task_t *proc, int fd, struct ufs_stat *buf);
+int sys_fstat(task_t *proc, int fd, stat_t *buf);
 int sys_mkdir(task_t *proc, const char *pathname);
 int sys_chdir(task_t *proc, const char *path);
 int sys_dup(task_t *proc, int fd);
