@@ -32,6 +32,8 @@ struct input_event {
 typedef struct {
   spinlock_t lock;
   sem_t event_sem;
+  int owner;
+  spinlock_t owner_lock;
   struct input_event *events;
   int front, rear;
   int capslock, shift_down[2], ctrl_down[2], alt_down[2];
@@ -99,6 +101,7 @@ typedef struct {
   struct tty_queue queue;
   uint8_t *dirty;
   struct sprite *sp_buf;
+  bool listen_kbrd;
 } tty_t;
 
 // -------------------------------------------------------------------

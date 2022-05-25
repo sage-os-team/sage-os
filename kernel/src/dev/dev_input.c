@@ -1,6 +1,6 @@
 #include <devices.h>
 
-#define NEVENTS 128
+#define NEVENTS 256
 static sem_t sem_kbdirq;
 static char keymap[][2];
 
@@ -119,10 +119,12 @@ static int input_init(device_t *dev) {
   input_t *in = dev->ptr;
   in->events  = pmm->alloc(sizeof(in->events[0]) * NEVENTS);
   in->front = in->rear = 0;
+  in->owner            = -1;
 
   kmt->spin_init(&in->lock, "/dev/input lock");
   kmt->sem_init(&in->event_sem, "events in queue", 0);
   kmt->sem_init(&sem_kbdirq, "keyboard-interrupt", 0);
+  kmt->spin_init(&in->owner_lock, "input owner lock");
 
   os->on_irq(0, EVENT_IRQ_IODEV, input_notify);
   os->on_irq(0, EVENT_IRQ_TIMER, input_notify);
@@ -206,17 +208,20 @@ static char keymap[256][2] = {
 // ------------------------------------------------------------------
 
 void dev_input_task(void *args) {
-  device_t *in        = dev->lookup("input");
+  device_t *in = dev->lookup("input");
+  // input_t *inp        = in->ptr;
   uint32_t known_time = safe_io_read(AM_TIMER_UPTIME).us;
 
   while (1) {
     uint32_t time;
     AM_INPUT_KEYBRD_T key;
+    // kmt->sem_wait(&inp->input_lock);
     while ((key = io_read(AM_INPUT_KEYBRD)).keycode != 0) {
       input_keydown(in, key);
     }
+    // kmt->sem_wait(&inp->input_lock);
     time = safe_io_read(AM_TIMER_UPTIME).us;
-    if ((time - known_time) / 1000 > 100 && is_empty(in->ptr)) {
+    if ((time - known_time) / 1000 > 40 && is_empty(in->ptr)) {
       push_event(in->ptr, event(0, 0, 0));
       known_time = time;
     }

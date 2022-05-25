@@ -7,7 +7,7 @@
 // see amdev.h
 #define AMDEV_CNT 24
 spinlock_t io_locks[AMDEV_CNT + 1];
-char amdev_name[AMDEV_CNT + 1][16];
+char amdev_name[AMDEV_CNT][16];
 
 void io_init();
 

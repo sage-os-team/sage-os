@@ -249,9 +249,9 @@ Context *kmt_schedule(Event ev, Context *context) {
               tp->pid, tp->name, tp->count, ev.event, ev.msg);
   } else {
     // if no task to run
-    warn("schedule: no task to run");
-    kmt_print_all_tasks(LOG_WARN);
-    kmt_print_cpu_tasks(LOG_WARN);
+    // warn("schedule: no task to run");
+    // kmt_print_all_tasks(LOG_WARN);
+    // kmt_print_cpu_tasks(LOG_WARN);
     ret = null_contexts[cpu_current()];
 
     null_contexts[cpu_current()] = NULL;
