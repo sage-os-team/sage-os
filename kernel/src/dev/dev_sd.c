@@ -14,12 +14,14 @@ static int sd_init(device_t *dev) {
 
 static void blk_read(void *buf, int blkno, int blkcnt) {
   io_write(AM_DISK_BLKIO, false, buf, blkno, blkcnt);
-  while (!io_read(AM_DISK_STATUS).ready) ;
+  while (!io_read(AM_DISK_STATUS).ready)
+    ;
 }
 
 static void blk_write(void *buf, int blkno, int blkcnt) {
   io_write(AM_DISK_BLKIO, true, buf, blkno, blkcnt);
-  while (!io_read(AM_DISK_STATUS).ready) ;
+  while (!io_read(AM_DISK_STATUS).ready)
+    ;
 }
 
 static int sd_read(device_t *dev, int offset, void *buf, int count) {
@@ -31,7 +33,7 @@ static int sd_read(device_t *dev, int offset, void *buf, int count) {
     if (n > count - pos) n = count - pos;
     blk_read(sd->buf, st / sd->blksz, 1);
     memcpy((char *)buf + pos, sd->buf + offset - st, n);
-    pos   += n;
+    pos += n;
     offset = st + sd->blksz;
   }
   return pos;
@@ -49,14 +51,14 @@ static int sd_write(device_t *dev, int offset, const void *buf, int count) {
     }
     memcpy(sd->buf + offset - st, (char *)buf + pos, n);
     blk_write(sd->buf, st / sd->blksz, 1);
-    pos   += n;
+    pos += n;
     offset = st + sd->blksz;
   }
   return pos;
 }
 
 devops_t sd_ops = {
-  .init  = sd_init,
-  .read  = sd_read,
-  .write = sd_write,
+    .init  = sd_init,
+    .read  = sd_read,
+    .write = sd_write,
 };

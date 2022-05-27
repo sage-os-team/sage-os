@@ -5,12 +5,14 @@
 struct pmm_pool global_mm_pool;
 
 static void* kalloc(size_t size) {
+  total_apply += size;
   assert((int)size > 0);
   int npage               = (size - 1) / SZ_PAGE + 1;
   int acquire_order       = power2ify(npage);
   struct chunk* page_addr = chunk_alloc(&global_mm_pool, acquire_order);
   if (page_addr != NULL) {
     success("allocate addr: 0x%x", chunk2virt(&global_mm_pool, page_addr));
+    total_mem += (1 << acquire_order) * SZ_PAGE;
     return chunk2virt(&global_mm_pool, page_addr);
   }
   warn("fail to alloc addr");
@@ -31,7 +33,9 @@ static void* kalloc_safe(size_t size) {
 
 static void kfree(void* ptr) {
   struct chunk* chunk = virt2chunk(&global_mm_pool, ptr);
+  total_mem -= (1 << chunk->order) * SZ_PAGE;
   chunk_free(&global_mm_pool, chunk);
+
   success("free successfully, address: 0x%x", ptr);
 }
 

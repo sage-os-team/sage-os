@@ -1,9 +1,11 @@
 #ifndef KLIB_H__
 #define KLIB_H__
 
+// #define __gnuc_va_list void *
+
 #include <am.h>
-#include <stddef.h>
 #include <stdarg.h>
+#include <stddef.h>
 
 #ifdef __cplusplus
 extern "C" {

@@ -1,5 +1,8 @@
 #include <logger.h>
 
+// spinlock_t logger_lock = {0, "logger lock", -1};
+int logger_lock = 0;
+
 int _log_mask = LOG_MASK;
 
 const char* logger_type_str[10] = {

@@ -51,6 +51,8 @@
  */
 int _log_mask;
 
+int logger_lock;
+
 #ifndef LOG_MASK
 #define LOG_MASK \
   (LOG_INFO | LOG_WARN | LOG_ERROR | \
@@ -66,17 +68,29 @@ extern const char* logger_type_str[10];
 
 #else
 
+#define _LOCK \
+  ({ \
+    while (atomic_xchg(&logger_lock, 1)) \
+      ; \
+  })
+
+#define _UNLOCK ({ asm volatile("movl $0, %0" : "+m"(logger_lock) :); })
+
 #define log(type, format, ...) \
   if (type & _log_mask) { \
+    _LOCK; \
     printf("#%d %s: " format "\n", cpu_current(), logger_type_str[type], \
            ##__VA_ARGS__); \
+    _UNLOCK; \
   }
 
 #define log_detail(type, format, ...) \
   if (type & _log_mask) { \
+    _LOCK; \
     printf("#%d %s (%s:%d, %s):\n" format "\n", cpu_current(), \
            logger_type_str[type], __FILE__, __LINE__, __func__, \
            ##__VA_ARGS__); \
+    _UNLOCK; \
   }
 
 #endif

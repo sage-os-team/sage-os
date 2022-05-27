@@ -1,5 +1,6 @@
 #include <common.h>
 #include <spinlock.h>
+#include <thread.h>
 
 /**
  * @brief wrap struct for handler_t, use in os_trap and os_on_irq;
@@ -14,7 +15,9 @@ typedef struct irq_handler {
 
 IRQ_handler root_irq_handler = {INT_MIN, EVENT_NULL, NULL, NULL};
 
-spinlock_t ir_lock;  // lock all os_trap
+spinlock_t irq_handler_lock;
+
+// spinlock_t ir_lock;  // lock all os_trap
 
 /**
  * @brief initialze system; will be executed only once (not per cpu)
@@ -30,9 +33,11 @@ static void os_init() {
   dev->init();
   info("device initialized");
 
-  spin_init(&ir_lock, "ir_lock");
+  // fs->init();
 
-  // should create initial threads here, after call os_init()
+  spin_init(&irq_handler_lock, "irq_handler_lock");
+
+  // spin_init(&ir_lock, "ir_lock");
 }
 
 /**
@@ -41,14 +46,6 @@ static void os_init() {
  */
 static void os_run() {
   info("CPU started");
-  // void *addr[100];
-  // for (int i = 0; i < 100; i++) {
-  //   addr[i] = pmm->pgalloc();
-  //   // printf("alloc addr : 0x%x\n", addr[i]);
-  // }
-  // for (int i = 0; i < 100; i++) {
-  //   pmm->free(addr[i]);
-  // }
   if (!ienabled()) iset(true);
   yield();
   while (1)
@@ -63,12 +60,18 @@ static void os_run() {
  * @return Context*
  */
 static Context *os_trap(Event ev, Context *context) {
-  assert_msg(!spin_holding(&ir_lock), "trap on trap! ev=%d %s", ev.event,
-             ev.msg);
-  success("os_trap: ev=%d %s", ev.event, ev.msg);
+  is_on_trap = true;
+  // assert_msg(!spin_holding(&ir_lock), "trap on trap! ev=%d %s", ev.event,
+  //            ev.msg);
+  if (ev.event != EVENT_IRQ_TIMER && ev.event != EVENT_YIELD)
+    success("os_trap: ev=%d %s", ev.event, ev.msg);
   Context *next = NULL;
-  spin_lock(&ir_lock);
+  // spin_lock(&ir_lock);
+
+  // spin_lock(&irq_handler_lock);
   assert(root_irq_handler.next);
+
+  is_on_irq = true;
   for (IRQ_handler *p = root_irq_handler.next; p != NULL; p = p->next) {
     if (p->event == EVENT_NULL || p->event == ev.event) {
       Context *r = p->handler(ev, context);
@@ -76,14 +79,20 @@ static Context *os_trap(Event ev, Context *context) {
       if (r) next = r;
     }
   }
-  spin_unlock(&ir_lock);
+  is_on_irq = false;
+  // spin_unlock(&irq_handler_lock);
+  // spin_unlock(&ir_lock);
+
   panic_on(!next, "returning NULL context");
   // panic_on(sane_context(next), "returning to invalid context");
+  is_on_trap = false;
   return next;
 }
 
 /**
  * @brief register interrupt handlers.
+ *        Notice: os_on_irq will finish before os_run,
+ *                and running in single cpu.
  *
  * @param seq determines the order in which handlers are called。
  *            smaller seq are called first。
@@ -97,8 +106,10 @@ static void os_on_irq(int seq, int event, handler_t handler) {
   new_irq_handler->event   = event;
   new_irq_handler->handler = handler;
 
+  assert_msg(!spin_holding(&irq_handler_lock), "already hold irq_handler_lock");
+  spin_lock(&irq_handler_lock);
+
   // insert to irq_handler list
-  // spin_lock(&irq_handler_lock);
   IRQ_handler *p = &root_irq_handler;
   while (p->next && p->next->seq <= seq)
     p = p->next;
@@ -106,7 +117,7 @@ static void os_on_irq(int seq, int event, handler_t handler) {
   p->next               = new_irq_handler;
   new_irq_handler->next = tmp;
 
-  // spin_unlock(&irq_handler_lock);
+  spin_unlock(&irq_handler_lock);
 }
 
 MODULE_DEF(os) = {

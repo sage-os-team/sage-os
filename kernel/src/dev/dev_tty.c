@@ -197,8 +197,8 @@ static char welcome_text1[] =
     "    \\/_____/\\/__/\\/_/\\/___L\\ \\/____/ \\/_____/\\/_____/\n"
     "                       /\\____/                       \n"
     "                       \\_/__/                        \n"
-    "                                2022/04/15 BUPT OSLAB\n"
-    "---------------------------------------------------------------------\n";
+    "                                2022/05/27 BUPT OSLAB\n"
+    "-----------------------------------------------------\n";
 static void welcome(device_t *dev) {
   // for (char *p = welcome_text; *p; p++) {
   //   switch (*p) {
@@ -229,17 +229,18 @@ static void welcome(device_t *dev) {
 }
 
 static int tty_init(device_t *ttydev) {
-  tty_t *tty   = ttydev->ptr;
-  tty->fbdev   = dev->lookup("fb");
-  fb_t *fb     = tty->fbdev->ptr;
-  tty->display = ttydev->id - 1;  // tty1 is on display #0
-  tty->lines   = fb->info->height / 16;
-  tty->columns = fb->info->width / 8;
-  tty->size    = tty->columns * tty->lines;
-  tty->buf     = pmm->alloc(tty->size * sizeof(tty->buf[0]));
-  tty->dirty   = pmm->alloc(tty->size * sizeof(tty->dirty[0]));
-  tty->end     = tty->buf + tty->size;
-  tty->sp_buf  = pmm->alloc(tty->size * 2 * sizeof(struct sprite));
+  tty_t *tty       = ttydev->ptr;
+  tty->fbdev       = dev->lookup("fb");
+  fb_t *fb         = tty->fbdev->ptr;
+  tty->display     = ttydev->id - 1;  // tty1 is on display #0
+  tty->lines       = fb->info->height / 16;
+  tty->columns     = fb->info->width / 8;
+  tty->size        = tty->columns * tty->lines;
+  tty->buf         = pmm->alloc(tty->size * sizeof(tty->buf[0]));
+  tty->dirty       = pmm->alloc(tty->size * sizeof(tty->dirty[0]));
+  tty->end         = tty->buf + tty->size;
+  tty->sp_buf      = pmm->alloc(tty->size * 2 * sizeof(struct sprite));
+  tty->listen_kbrd = true;
   for (int i = 0; i < tty->size; i++) {
     tty->buf[i] = tty_defaultch();
   }
@@ -300,15 +301,27 @@ void dev_tty_task(void *arg) {
   device_t *ttydev = dev->lookup("tty1");
   device_t *fb     = dev->lookup("fb");
 
+  input_t *inp = in->ptr;
+
   tty_mark_all(ttydev->ptr);
   tty_render(ttydev->ptr);
 
-  uint64_t known_time = io_read(AM_TIMER_UPTIME).us;
+  uint64_t known_time = safe_io_read(AM_TIMER_UPTIME).us;
+
+  // kmt->spin_lock(&inp->owner_lock);
+  // inp->owner = current_task->pid;
+  // kmt->spin_unlock(&inp->owner_lock);
 
   while (1) {
-    struct input_event ev;
-    int nread = in->ops->read(in, 0, &ev, sizeof(ev));
-    panic_on(nread == 0, "unknown error");
+    struct input_event ev = {0, 0, 0};
+
+    kmt->spin_lock(&inp->owner_lock);
+    if (inp->owner == -1) inp->owner = current_task->pid;
+    if (inp->owner == current_task->pid) {
+      int nread = in->ops->read(in, 0, &ev, sizeof(ev));
+      panic_on(nread == 0, "unknown error");
+    }
+    kmt->spin_unlock(&inp->owner_lock);
 
     tty_t *tty = ttydev->ptr;
 
@@ -337,7 +350,7 @@ void dev_tty_task(void *arg) {
       if (tty_cook(tty, ch) == 0) ttydev->ops->write(ttydev, 0, &ch, 1);
     }
 
-    uint64_t now = io_read(AM_TIMER_UPTIME).us;
+    uint64_t now = safe_io_read(AM_TIMER_UPTIME).us;
     bool changed = (ev.data != 0);
     if (changed || (now - known_time) / 1000 > 500) {
       known_time  = now;

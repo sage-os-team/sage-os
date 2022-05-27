@@ -3,10 +3,9 @@
 #include <common.h>
 #include <list.h>
 
-#define BUDDY_MAX_ORDER 24
-#define KB              1024
-#define SZ_PAGE         (4 * KB)
+int total_apply, total_mem;
 
+#define BUDDY_MAX_ORDER 24
 /**
  * @brief page metadata
  */
