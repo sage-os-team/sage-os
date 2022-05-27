@@ -30,5 +30,6 @@ inode_t* nameiparent(const char* path, char* name);
 void fs_print_datablock_bitmap_info(int level);
 void fs_print_inode_info(int level);
 void inode_print(int inum);
+void fs_readblk(device_t* dev, uint32_t blk_no, block_t* buf);
 
 #endif

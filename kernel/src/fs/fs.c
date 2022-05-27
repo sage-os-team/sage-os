@@ -202,7 +202,7 @@ void itrunc(inode_t* ip) {
     fs_readblk(ip->dev, ip->addrs[NDIRECT], &buf);
     addr = (uint32_t*)buf.data;
     for (j = 0; j < NINDIRECT; j++) {
-      if (addr) {
+      if (*addr) {
         fs_zeroblk(ip->dev, *addr);
         fs_freeblk(ip->dev, *addr);
       }
