@@ -124,8 +124,7 @@ static int input_init(device_t *dev) {
   kmt->spin_init(&in->lock, "/dev/input lock");
   kmt->sem_init(&in->event_sem, "events in queue", 0);
   kmt->sem_init(&sem_kbdirq, "keyboard-interrupt", 0);
-  kmt->spin_init(&in->owner_lock, "input read lock");
-  in->owner = -1;
+  kmt->spin_init(&in->owner_lock, "input owner lock");
 
   os->on_irq(0, EVENT_IRQ_IODEV, input_notify);
   os->on_irq(0, EVENT_IRQ_TIMER, input_notify);

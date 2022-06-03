@@ -5,10 +5,6 @@
 #include <spinlock.h>
 #include <thread.h>
 
-/**
- * Semphore for SOS
- */
-
 struct semaphore {
   spinlock_t lock;     // spinlock of semaphore instance
   const char *name;    // name of semaphore instance

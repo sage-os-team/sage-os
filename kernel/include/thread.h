@@ -16,7 +16,6 @@
 #define MAX_TASK_STATES 8
 
 #define MAX_MAP_NUM 64
-
 #ifndef PROCESS_FILE_TABLE_SIZE
 #define PROCESS_FILE_TABLE_SIZE 16
 #endif
@@ -40,29 +39,25 @@ struct mapnode {
 
 typedef struct mapnode mapnode_t;
 
-#define MAX_SLEEP_COUNT (1 << 15);
-#define MAX_PRIORITY    1024
-
 struct task {
   uint32_t pid;                      // process id
   const char* name;                  // process name for debug
   void (*entry)(void*);              // kernel thread entry
   void* arg;                         // args of entry func
   enum task_states state;            // process state
+  sem_t* wait_sem;                   // semaphore that the thread waiting for
   bool killed;                       // whether process is killed
   int32_t owner;                     // which cpu running this process now
-  int32_t priority;                  // priority, use with RR
-  int32_t count;                     // sleep count: 0 = not sleep, < 0 = sleep
+  int32_t count;                     // a counter to avoid deadlock
   char fenceA[STACK_FENCE_SIZE];     // 32 bytes fence
   char stack[STACK_SIZE];            // user stack
   char fenceB[STACK_FENCE_SIZE];     // 32 bytes fence
-  sem_t* wait_sem;                   // semaphore waiting
   Context* context[CTX_STACK_SIZE];  // process user context
-  int nctx;                          // user context stack size
   struct inode* cwd;                 // Current directory
+  int nctx;
+  struct task* next;
   /* below: only available for process */
   struct task* parent;
-  bool wait_subproc;
   int* wait_subproc_status;
 
   // fdtable size is 16,
@@ -74,8 +69,6 @@ struct task {
   AddrSpace as;
   int pmsize;  // proc memory size
   struct list_head pg_map;
-
-  struct task* next;
 };
 
 const char* task_states_str[MAX_TASK_STATES];
@@ -95,8 +88,7 @@ cpu_t percpu[MAX_CPU];
 #define is_on_trap   (percpu[cpu_current()]._is_on_trap)
 
 spinlock_t task_list_lock;
-void kmt_init_task(task_t* task, const char* name, void (*entry)(void* arg),
-                   void* arg);
+
 void kmt_print_all_tasks(int mask);
 void kmt_print_cpu_tasks(int mask);
 uint32_t kmt_next_pid();
