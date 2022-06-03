@@ -42,24 +42,21 @@ void uproc_init() {
 int uproc_create(task_t *proc, const char *name) {
   // assert_msg(!is_on_irq, "cannot create uproc in irq handler!");
   assert_msg(proc != NULL && name != NULL, "null arguments in uproc_create");
-  proc->pid                 = kmt_next_pid();
-  proc->name                = name;
-  proc->entry               = NULL;
-  proc->arg                 = NULL;
-  proc->state               = ST_E;
-  proc->owner               = -1;
-  proc->count               = 0;
-  proc->priority            = 0;
-  proc->wait_sem            = NULL;
-  proc->killed              = 0;
-  proc->next                = NULL;
-  proc->nctx                = 0;
-  proc->wait_subproc        = false;
-  proc->wait_subproc_status = NULL;
-  proc->fdtable[0]          = 0;
-  proc->fdtable[1]          = 1;
-  proc->fdtable[2]          = 2;
-  proc->cwd                 = iget(ROOTINO);
+  proc->pid        = kmt_next_pid();
+  proc->name       = name;
+  proc->entry      = NULL;
+  proc->arg        = NULL;
+  proc->state      = ST_E;
+  proc->owner      = -1;
+  proc->count      = 0;
+  proc->wait_sem   = NULL;
+  proc->killed     = 0;
+  proc->next       = NULL;
+  proc->nctx       = 0;
+  proc->fdtable[0] = 0;
+  proc->fdtable[1] = 1;
+  proc->fdtable[2] = 2;
+  proc->cwd        = iget(ROOTINO);
   for (int i = 3; i < PROCESS_FILE_TABLE_SIZE; i++)
     proc->fdtable[i] = -1;
 
@@ -152,10 +149,8 @@ int sys_exit(task_t *proc, int status) {
   kmt->spin_lock(&task_list_lock);
   for (p = root_task.next; p != NULL; p = p->next) {
     if (proc->parent == p) {
-      if (p->state == ST_S && p->wait_subproc) {
-        p->state        = ST_W;
-        p->priority     = 0;
-        p->wait_subproc = false;
+      if (p->state == ST_S && p->wait_subproc_status != NULL) {
+        p->state = ST_W;
         // ERROR: cannot assign value crossing vm
         // *(p->wait_subproc_status) = status;
       }
@@ -168,9 +163,6 @@ int sys_exit(task_t *proc, int status) {
 }
 
 int sys_wait(task_t *proc, int *status) {
-  assert_msg(proc->wait_sem == NULL,
-             "cannot wait subproc, alread wait sem! proc: %s, sem: %s",
-             proc->name, proc->wait_sem->name);
   assert_msg(status != NULL, "NULL pointer status in sys_wait");
 
   int havekids = 0;
@@ -187,9 +179,8 @@ int sys_wait(task_t *proc, int *status) {
     return -1;
   }
 
-  proc->wait_subproc = true;
-  // proc->wait_subproc_status = status;
-  proc->state = ST_S;
+  proc->wait_subproc_status = status;
+  proc->state               = ST_S;
   kmt->spin_unlock(&task_list_lock);
 
   return 0;

@@ -32,7 +32,7 @@ void sem_wait(sem_t *sem) {
     task_t *cur = kmt->get_task();
     assert(cur);
     cur->wait_sem = sem;
-    cur->state    = ST_S;
+    // cur->state    = ST_S;
     // interrupt
     spin_unlock(&task_list_lock);
     yield();
@@ -60,7 +60,6 @@ void sem_signal(sem_t *sem) {
     if (tp->wait_sem == sem) {
       if (tp->state == ST_S) tp->state = ST_W;
       tp->wait_sem = NULL;  // stop going to sleep
-      tp->priority = 0;
     }
   }
   if (!holding) spin_unlock(&task_list_lock);
